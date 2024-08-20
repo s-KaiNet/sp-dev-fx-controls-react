@@ -1,7 +1,11 @@
 import * as React from "react";
 import {
   IBasePickerStyles,
+  IBasePickerSuggestionsProps,
+  IInputProps,
   ITag,
+  TagItem,
+  TagPicker,
 } from "@fluentui/react/lib/Pickers";
 import {
   Stack,
@@ -195,11 +199,45 @@ import { TestControl } from "./TestControl";
 import { UploadFiles } from "../../../controls/uploadFiles";
 import { IFileInfo } from "@pnp/sp/files";
 import { FieldPicker } from "../../../FieldPicker";
-import { IPersonaProps, Toggle } from "@fluentui/react";
+import { IPersonaProps, IToggleStyles, Toggle } from "@fluentui/react";
 import { ListItemComments } from "../../../ListItemComments";
 import { ViewPicker } from "../../../controls/viewPicker";
+import { TermBasePicker } from "../../../controls/taxonomyPicker/TermPicker";
 
+const testTags: ITag[] = [
+  'black',
+  'blue',
+  'brown',
+  'cyan',
+  'green',
+  'magenta',
+  'mauve',
+  'orange',
+  'pink',
+  'purple',
+  'red',
+  'rose',
+  'violet',
+  'white',
+  'yellow',
+].map(item => ({ key: item, name: item }));
 
+const listContainsTagList = (tag: ITag, tagList?: ITag[]) => {
+  if (!tagList || !tagList.length || tagList.length === 0) {
+    return false;
+  }
+  return tagList.some(compareTag => compareTag.key === tag.key);
+};
+
+const filterSuggestedTags = (filterText: string, tagList: ITag[]): ITag[] => {
+  return filterText
+    ? testTags.filter(
+      tag => tag.name.toLowerCase().indexOf(filterText.toLowerCase()) === 0 && !listContainsTagList(tag, tagList),
+    )
+    : [];
+};
+
+const getTextFromItem = (item: ITag) => item.name;
 
 // Used to render document card
 /**
@@ -290,7 +328,7 @@ const toolbarFilters = [{
 export default class ControlsTest extends React.Component<IControlsTestProps, IControlsTestState> {
   private taxService: SPTermStorePickerService = null;
   private spTaxonomyService = new SPTaxonomyService(this.props.context);
-  private serviceScope : ServiceScope;
+  private serviceScope: ServiceScope;
   private richTextValue: string = null;
   private theme = window["__themeState__"].theme;
   private pickerStylesSingle: Partial<IBasePickerStyles> = {
@@ -331,6 +369,7 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
     console.log("TeamsId", teamsId);
     console.log("ChannelId", channelId);
   }
+
 
   /**
    * Static array for carousel control example.
@@ -813,7 +852,7 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
   public render(): React.ReactElement<IControlsTestProps> {
     const { controlVisibility } = this.props;
 
-    let dynamicFormListItemId:number;
+    let dynamicFormListItemId: number;
     if (!isNaN(Number(this.props.dynamicFormListItemId))) {
       dynamicFormListItemId = Number(this.props.dynamicFormListItemId);
     }
@@ -962,15 +1001,15 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
         </div>
         <div id="DynamicFormDiv" className={styles.container} hidden={!controlVisibility.DynamicForm}>
           <div className="ms-font-m">
-            <DynamicForm 
-              key={this.props.dynamicFormListId} 
-              context={this.props.context} 
-              listId={this.props.dynamicFormListId} 
-              listItemId={dynamicFormListItemId} 
+            <DynamicForm
+              key={this.props.dynamicFormListId}
+              context={this.props.context}
+              listId={this.props.dynamicFormListId}
+              listItemId={dynamicFormListItemId}
               validationErrorDialogProps={this.props.dynamicFormErrorDialogEnabled ? { showDialogOnValidationError: true } : undefined}
               returnListItemInstanceOnSubmit={true}
-              onCancelled={() => { console.log('Cancelled'); }} 
-              onSubmitted={async (data, item) => { let itemdata = await item.get(); console.log('Saved item', itemdata)}}
+              onCancelled={() => { console.log('Cancelled'); }}
+              onSubmitted={async (data, item) => { let itemdata = await item.get(); console.log('Saved item', itemdata) }}
               useClientSideValidation={this.props.dynamicFormClientSideValidationEnabled}
               useFieldValidation={this.props.dynamicFormFieldValidationEnabled}
               useCustomFormatting={this.props.dynamicFormCustomFormattingEnabled}
@@ -1063,161 +1102,51 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
         <div id="TaxonomyPickerDiv" className={styles.container} hidden={!controlVisibility.TaxonomyPicker}>
           <div className="ms-font-m">Services tester:
             <TaxonomyPicker
-              allowMultipleSelections={true}
-              selectChildrenIfParentSelected={true}
-              //termsetNameOrID="61837936-29c5-46de-982c-d1adb6664b32" // id to termset that has a custom sort
-              termsetNameOrID="8ea5ac06-fd7c-4269-8d0d-02f541df8eb9"
-              initialValues={[{
-                key: "c05250ff-80e7-41e6-bfb3-db2db62d63d3",
-                name: "Business",
-                path: "Business",
-                termSet: "8ea5ac06-fd7c-4269-8d0d-02f541df8eb9",
-                termSetName: "Trip Types"
-              }, {
-                key: "a05250ff-80e7-41e6-bfb3-db2db62d63d3",
-                name: "BBusiness",
-                path: "BBusiness",
-                termSet: "8ea5ac06-fd7c-4269-8d0d-02f541df8eb9",
-                termSetName: "Trip Types"
-              }]}
-              validateOnLoad={true}
+              simpleSelectionInSingleMode={true}
+              allowMultipleSelections={false}
+              termsetNameOrID="FolderStructure"
               panelTitle="Select Sorted Term"
               label="Service Picker with custom actions"
               context={this.props.context}
-              onChange={this.onServicePickerChange}
-              isTermSetSelectable={true}
-              termActions={{
-                actions: [{
-                  title: "Get term labels",
-                  iconName: "LocaleLanguage",
-                  id: "test",
-                  invokeActionOnRender: true,
-                  hidden: true,
-                  actionCallback: async (taxService: SPTermStorePickerService, term: ITerm) => {
-                    // const labels = await taxService.getTermLabels(term.Id);
-                    // if (labels) {
-                    //   let termLabel: string = labels.join(" ; ");
-                    //   const updateAction = {
-                    //     updateActionType: UpdateType.updateTermLabel,
-                    //     value: `${termLabel} (updated)`
-                    //   };
-                    //   return updateAction;
-                    // }
-                    const updateAction = {
-                      updateActionType: UpdateType.updateTermLabel,
-                      value: `${term.Name} (updated)`
-                    };
-                    return updateAction;
-                  },
-                  applyToTerm: (term: ITerm) => (term && term.Name && term.Name.toLowerCase() === "about us")
-                },
-                  // new TermLabelAction("Get Labels")
-                ],
-                termActionsDisplayMode: TermActionsDisplayMode.buttons,
-                termActionsDisplayStyle: TermActionsDisplayStyle.textAndIcon,
-              }}
-              onPanelSelectionChange={(prev, next) => {
-                console.log(prev);
-                console.log(next);
-              }}
             />
 
-            <TaxonomyPicker
-              allowMultipleSelections={true}
-              termsetNameOrID="8ea5ac06-fd7c-4269-8d0d-02f541df8eb9" // id to termset that has a default sort
-              panelTitle="Select Default Sorted Term"
-              label="Service Picker"
-              context={this.props.context}
-              onChange={this.onServicePickerChange}
-              isTermSetSelectable={false}
-              placeholder="Select service"
-              // validateInput={true}   /* Uncomment this to enable validation of input text */
-              required={true}
-              errorMessage='this field is required'
-              onGetErrorMessage={(value) => { return 'comment errorMessage to see this one'; }}
+            <br /><br /><br />
+
+            <div>
+              <TermBasePicker
+                itemLimit={1}
+                onRenderItem={(props: any) => (<TagItem {...props}>{props.item.name}</TagItem>)}
+                onRenderSuggestionsItem={(term: any) => (<div>{term.name}</div>)}
+                onResolveSuggestions={() => [
+                  'black',
+                  'blue',
+                  'brown',
+                  'cyan',
+                  'green',
+                  'magenta',
+                  'mauve',
+                  'orange',
+                  'pink',
+                  'purple',
+                  'red',
+                  'rose',
+                  'violet',
+                  'white',
+                  'yellow',
+                ].map(item => ({ key: item, name: item, path: '', termSet: '' }))}
+                getTextFromItem={getTextFromItem}
+              />
+            </div>
+
+            <br /><br /><br />
+
+            <TagPicker
+              itemLimit={1}
+              onResolveSuggestions={filterSuggestedTags}
+              getTextFromItem={getTextFromItem}
             />
 
-            <TaxonomyPicker
-              initialValues={this.state.initialValues}
-              allowMultipleSelections={true}
-              termsetNameOrID="41dec50a-3e09-4b3f-842a-7224cffc74c0"
-              anchorId="436a6154-9691-4925-baa5-4c9bb9212cbf"
-              // disabledTermIds={["943fd9f0-3d7c-415c-9192-93c0e54573fb", "0e415292-cce5-44ac-87c7-ef99dd1f01f4"]}
-              // disabledTermIds={["943fd9f0-3d7c-415c-9192-93c0e54573fb", "73d18756-20af-41de-808c-2a1e21851e44", "0e415292-cce5-44ac-87c7-ef99dd1f01f4"]}
-              // disabledTermIds={["cd6f6d3c-672d-4244-9320-c1e64cc0626f", "0e415292-cce5-44ac-87c7-ef99dd1f01f4"]}
-              // disableChildrenOfDisabledParents={true}
-              panelTitle="Select Term"
-              label="Taxonomy Picker"
-              context={this.props.context}
-              onChange={this._onTaxPickerChange}
-              isTermSetSelectable={false}
-              hideDeprecatedTags={true}
-              hideTagsNotAvailableForTagging={true}
-              errorMessage={this.state.errorMessage}
-              termActions={{
-                actions: [{
-                  title: "Get term labels",
-                  iconName: "LocaleLanguage",
-                  id: "test",
-                  invokeActionOnRender: true,
-                  hidden: true,
-                  actionCallback: async (taxService: SPTermStorePickerService, term: ITerm) => {
-                    console.log(term.Name, term.TermsCount);
-                    return {
-                      updateActionType: UpdateType.updateTermLabel,
-                      value: `${term.Name} (updated)`
-                    };
-                  },
-                  applyToTerm: (term: ITerm) => (term && term.Name && term.Name === "internal")
-                },
-                {
-                  title: "Hide term",
-                  id: "hideTerm",
-                  invokeActionOnRender: true,
-                  hidden: true,
-                  actionCallback: async (taxService: SPTermStorePickerService, term: ITerm) => {
-                    return {
-                      updateActionType: UpdateType.hideTerm,
-                      value: true
-                    };
-                  },
-                  applyToTerm: (term: ITerm) => (term && term.Name && (term.Name.toLowerCase() === "help desk" || term.Name.toLowerCase() === "multi-column valo site page"))
-                },
-                {
-                  title: "Disable term",
-                  id: "disableTerm",
-                  invokeActionOnRender: true,
-                  hidden: true,
-                  actionCallback: async (taxService: SPTermStorePickerService, term: ITerm) => {
-                    return {
-                      updateActionType: UpdateType.disableTerm,
-                      value: true
-                    };
-                  },
-                  applyToTerm: (term: ITerm) => (term && term.Name && term.Name.toLowerCase() === "secured")
-                },
-                {
-                  title: "Disable or hide term",
-                  id: "disableOrHideTerm",
-                  invokeActionOnRender: true,
-                  hidden: true,
-                  actionCallback: async (taxService: SPTermStorePickerService, term: ITerm) => {
-                    if (term.TermsCount > 0) {
-                      return {
-                        updateActionType: UpdateType.disableTerm,
-                        value: true
-                      };
-                    }
-                    return {
-                      updateActionType: UpdateType.hideTerm,
-                      value: true
-                    };
-                  },
-                  applyToTerm: (term: ITerm) => true
-                }],
-                termActionsDisplayMode: TermActionsDisplayMode.buttons,
-                termActionsDisplayStyle: TermActionsDisplayStyle.textAndIcon
-              }} />
+            <br /><br /><br />
 
             <DefaultButton text="Add" onClick={() => {
               this.setState({
@@ -1584,13 +1513,13 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
 
         <div id="ViewPickerDiv" className={styles.container} hidden={!controlVisibility.ViewPicker}>
           <div className="ms-font-m">View picker tester:
-                <ViewPicker context={this.props.context}
-                  label="Select view(s)"
-                  listId={"9f3908cd-1e88-4ab3-ac42-08efbbd64ec9"}
-                  placeholder={'Select list view(s)'}
-                  orderBy={1}
-                  multiSelect={true}
-                  onSelectionChanged={this.onViewPickerChange} />
+            <ViewPicker context={this.props.context}
+              label="Select view(s)"
+              listId={"9f3908cd-1e88-4ab3-ac42-08efbbd64ec9"}
+              placeholder={'Select list view(s)'}
+              orderBy={1}
+              multiSelect={true}
+              onSelectionChanged={this.onViewPickerChange} />
           </div>
         </div>
 
@@ -1938,11 +1867,11 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
               },
               {
                 id: "Field6", title: "Combo Single", type: CustomCollectionFieldType.combobox, required: true,
-                multiSelect: false, options: [{key: "choice 1", text: "choice 1"}, {key: "choice 2", text: "choice 2"}, {key: "choice 3", text: "choice 3"}]
+                multiSelect: false, options: [{ key: "choice 1", text: "choice 1" }, { key: "choice 2", text: "choice 2" }, { key: "choice 3", text: "choice 3" }]
               },
               {
                 id: "Field7", title: "Combo Multi", type: CustomCollectionFieldType.combobox,
-                allowFreeform: true, multiSelect: true, options: [{key: "choice 1", text: "choice 1"}, {key: "choice 2", text: "choice 2"}, {key: "choice 3", text: "choice 3"}]
+                allowFreeform: true, multiSelect: true, options: [{ key: "choice 1", text: "choice 1" }, { key: "choice 2", text: "choice 2" }, { key: "choice 3", text: "choice 3" }]
               },
               { id: "Field8", title: "Date field", type: CustomCollectionFieldType.date, placeholder: "Select a date" }
             ]}
@@ -2550,15 +2479,15 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
       sampleDate.setDate(sampleDate.getDate() + i);
 
       result.push({
-          "Field1": `String${i}`,
-          "Field2": i,
-          "Field3": "https://pnp.github.io/",
-          "Field4": true,
-          "Field5": null,
-          "Field6": {key: "choice 1", text: "choice 1"},
-          "Field7": [{key: "choice 1", text: "choice 1"}, {key: "choice 2", text: "choice 2"}],
-          "Field8": sampleDate
-        });
+        "Field1": `String${i}`,
+        "Field2": i,
+        "Field3": "https://pnp.github.io/",
+        "Field4": true,
+        "Field5": null,
+        "Field6": { key: "choice 1", text: "choice 1" },
+        "Field7": [{ key: "choice 1", text: "choice 1" }, { key: "choice 2", text: "choice 2" }],
+        "Field8": sampleDate
+      });
     }
     return result;
   }
@@ -2589,5 +2518,5 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
 
   // private _onFolderSelect = (folder: IFolder): void => {
   //   console.log('selected folder', folder);
-  // 
+  //
 }

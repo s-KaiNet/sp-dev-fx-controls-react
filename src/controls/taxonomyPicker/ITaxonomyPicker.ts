@@ -141,6 +141,8 @@ export interface ITaxonomyPickerProps  {
    * By default this is set to false.
    */
   selectChildrenIfParentSelected?: boolean;
+
+  simpleSelectionInSingleMode?: boolean;
 }
 
 /**

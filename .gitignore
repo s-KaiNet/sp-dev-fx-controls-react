@@ -8,7 +8,8 @@ node_modules
 
 # Build generated files
 dist
-lib
+lib/**/*.ts
+lib/**/*.map
 solution
 temp
 *.sppkg

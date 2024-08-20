@@ -6,10 +6,10 @@ import styles from './TaxonomyPicker.module.scss';
 import { ITaxonomyPickerProps } from './ITaxonomyPicker';
 import { BaseComponentContext } from '@microsoft/sp-component-base';
 import * as strings from 'ControlStrings';
-import { Icon } from '@fluentui/react/lib/Icon';
 import { ITermSet } from "../../services/ISPTermStorePickerService";
 import { Autofill } from '@fluentui/react/lib/components/Autofill/Autofill';
 import { LegacyRef, KeyboardEvent } from 'react';
+import { IconButton } from '@fluentui/react';
 
 export class TermBasePicker extends BasePicker<IPickerTerm, IBasePickerProps<IPickerTerm>>
 {
@@ -26,7 +26,7 @@ export interface ITermPickerProps {
   context: BaseComponentContext;
   disabled: boolean;
   value: IPickerTerms;
-  allowMultipleSelections : boolean;
+  allowMultipleSelections: boolean;
   isTermSetSelectable?: boolean;
   disabledTermIds?: string[];
   disableChildrenOfDisabledParents?: boolean;
@@ -76,16 +76,13 @@ export default class TermPicker extends React.Component<ITermPickerProps, ITermP
   protected onRenderItem(term: IPickerItemProps<IPickerTerm>): JSX.Element {
     return (
       <div className={styles.pickedTermRoot}
-           key={term.index}
-           data-selection-index={term.index}
-           data-is-focusable={!term.disabled && true}>
+        key={term.index}
+        data-selection-index={term.index}
+        data-is-focusable={!term.disabled && true}>
         <span className={styles.pickedTermText}>{term.item.name}</span>
         {
           !term.disabled && (
-            <span className={styles.pickedTermCloseIcon}
-              onClick={term.onRemoveItem}>
-              <Icon iconName="Cancel" />
-            </span>
+              <IconButton iconProps={{iconName: "Cancel"}} onClick={term.onRemoveItem} className={styles.pickedTermCloseIcon} />
           )
         }
       </div>
@@ -224,13 +221,13 @@ export default class TermPicker extends React.Component<ITermPickerProps, ITermP
       } else {
         throw new Error(`TermPicker.TermBasePicker.render.clearDisplayValue no autoFill to reset displayValue`);
       }
-  };
+    };
 
     const inputProps: IInputProps = { placeholder: placeholder };
 
-    if(onNewTerm) {
+    if (onNewTerm) {
       inputProps.onKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-        if (e && e.key === 'Enter' && (! (e.ctrlKey || e.altKey || e.shiftKey)) && e.target?.['value'] ) { // eslint-disable-line dot-notation
+        if (e && e.key === 'Enter' && (!(e.ctrlKey || e.altKey || e.shiftKey)) && e.target?.['value']) { // eslint-disable-line dot-notation
           onNewTerm(e.target['value']); // eslint-disable-line dot-notation
           clearDisplayValue();
         }
