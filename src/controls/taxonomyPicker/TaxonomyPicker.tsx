@@ -335,6 +335,10 @@ export class TaxonomyPicker extends React.Component<ITaxonomyPickerProps, ITaxon
       activeNodes: activeNodes
     });
 
+    if (!allowMultipleSelections && checked && this.props.simpleSelectionInSingleMode) {
+      this.onSave();
+    }
+
   }
 
   /**
@@ -622,12 +626,16 @@ export class TaxonomyPicker extends React.Component<ITaxonomyPickerProps, ITaxon
           type={PanelType.medium}
           headerText={panelTitle}
           onRenderFooterContent={() => {
+            if (allowMultipleSelections || !this.props.simpleSelectionInSingleMode) {
             return (
               <div className={styles.actions}>
                 <PrimaryButton iconProps={{ iconName: 'Save' }} text={strings.SaveButtonLabel} value="Save" onClick={this.onSave} />
                 <DefaultButton iconProps={{ iconName: 'Cancel' }} text={strings.CancelButtonLabel} value="Cancel" onClick={this.onClosePanel} />
               </div>
             );
+            } else {
+              return <></>;
+            }
           }}>
 
           {

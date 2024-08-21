@@ -141,6 +141,12 @@ export interface ITaxonomyPickerProps  {
    * By default this is set to false.
    */
   selectChildrenIfParentSelected?: boolean;
+
+  /**
+   * If true, the term will be immediately selected when it is clicked in the panel.
+   * The property takes effect only when the allowMultipleSelections property is set to false.
+   */
+  simpleSelectionInSingleMode?: boolean;
 }
 
 /**

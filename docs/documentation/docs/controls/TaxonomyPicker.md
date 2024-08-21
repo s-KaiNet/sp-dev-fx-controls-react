@@ -190,6 +190,7 @@ The TaxonomyPicker control can be configured with the following properties:
 | useSessionStorage | boolean | no | Specify if the control uses session storage. Default is set to true for better performance. |
 | onPanelSelectionChange | (prevValue: IPickerTerms, newValue: IPickerTerms) => void | no | Panel selection change handler. Can be used to interact with the control while selecting items in the panel, before Click or Cancel is clicked. |
 | selectChildrenIfParentSelected | boolean | no | Specifies if the children should be selected when parent item is selected (defaults to false). |
+| simpleSelectionInSingleMode | boolean | no | If true, then the term will immediately be selected when it is clicked in the panel. The property takes effect only when the allowMultipleSelections property is set to false. |
 
 
 Interface `IPickerTerm`
