@@ -333,11 +333,11 @@ export class TaxonomyPicker extends React.Component<ITaxonomyPickerProps, ITaxon
     // Update the current state
     this.setState({
       activeNodes: activeNodes
+    }, () => {
+      if (!allowMultipleSelections && checked && this.props.simpleSelectionInSingleMode) {
+        this.onSave();
+      }
     });
-
-    if (!allowMultipleSelections && checked && this.props.simpleSelectionInSingleMode) {
-      this.onSave();
-    }
   }
 
   /**
@@ -595,24 +595,24 @@ export class TaxonomyPicker extends React.Component<ITaxonomyPickerProps, ITaxon
         {label && <Label required={required}>{label}</Label>}
         <div className={styles.termField}>
           <div className={styles.termFieldInput}>
-        <TermPicker
-          context={context}
-          termPickerHostProps={this.props}
-          disabled={disabled}
-          value={activeNodes}
-          isTermSetSelectable={isTermSetSelectable}
-          onChanged={this.termsFromPickerChanged}
-          onInputChange={this.onInputChange}
-          onBlur={this.onBlur}
-          onNewTerm={this.props.onNewTerm ? this.onNewTerm : undefined}
-          allowMultipleSelections={allowMultipleSelections}
-          disabledTermIds={disabledTermIds}
-          disableChildrenOfDisabledParents={disableChildrenOfDisabledParents}
-          placeholder={placeholder} />
+            <TermPicker
+              context={context}
+              termPickerHostProps={this.props}
+              disabled={disabled}
+              value={activeNodes}
+              isTermSetSelectable={isTermSetSelectable}
+              onChanged={this.termsFromPickerChanged}
+              onInputChange={this.onInputChange}
+              onBlur={this.onBlur}
+              onNewTerm={this.props.onNewTerm ? this.onNewTerm : undefined}
+              allowMultipleSelections={allowMultipleSelections}
+              disabledTermIds={disabledTermIds}
+              disableChildrenOfDisabledParents={disableChildrenOfDisabledParents}
+              placeholder={placeholder} />
           </div>
-        <div className={styles.termFieldButton}>
-          <IconButton disabled={disabled} iconProps={{ iconName: 'Tag' }} onClick={this.onOpenPanel} />
-        </div>
+          <div className={styles.termFieldButton}>
+            <IconButton disabled={disabled} iconProps={{ iconName: 'Tag' }} onClick={this.onOpenPanel} />
+          </div>
         </div>
 
         <FieldErrorMessage errorMessage={errorMessage || internalErrorMessage} />
