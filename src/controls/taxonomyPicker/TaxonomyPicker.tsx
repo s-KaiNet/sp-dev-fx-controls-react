@@ -333,11 +333,11 @@ export class TaxonomyPicker extends React.Component<ITaxonomyPickerProps, ITaxon
     // Update the current state
     this.setState({
       activeNodes: activeNodes
+    }, () => {
+      if (!allowMultipleSelections && checked && this.props.simpleSelectionInSingleMode) {
+        this.onSave();
+      }
     });
-
-    if (!allowMultipleSelections && checked && this.props.simpleSelectionInSingleMode) {
-      this.onSave();
-    }
 
   }
 
