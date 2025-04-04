@@ -1103,11 +1103,30 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
           <div className="ms-font-m">Services tester:
             <TaxonomyPicker
               simpleSelectionInSingleMode={true}
-              allowMultipleSelections={false}
-              termsetNameOrID="FolderStructure"
+              allowMultipleSelections={true}
+              termsetNameOrID="Country_TEST"
               panelTitle="Select Sorted Term"
               label="Service Picker with custom actions"
               context={this.props.context}
+              anchorId="a6591658-60bb-41d8-ae90-1d12bbecd06a"
+              termActions={{
+                actions: [{
+                  title: "",
+                  id: "disableMultiLeveledTerm",
+                  invokeActionOnRender: true,
+                  hidden: true,
+                  actionCallback: async (taxService: any, term: ITerm) => {
+                    return ({
+                      updateActionType: UpdateType.disableTerm,
+                      value: true
+                    });
+                  },
+                  applyToTerm: (term: any, triggerActionCb: (updateAction: any) => void, setActionStateForTerm: (actionId: string, termId: string, type: "disabled" | "hidden", value: boolean) => void) => {
+
+                    return term.Name.toLowerCase().indexOf("new") >= 0;
+                  }
+                },]
+              }}
             />
 
             <br /><br /><br />

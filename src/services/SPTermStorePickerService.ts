@@ -23,6 +23,7 @@ export default class SPTermStorePickerService {
   private formDigest: string;
   private clientServiceUrl: string;
   private suggestionServiceUrl: string;
+  private allTermsCache: ITerm[];
 
   /**
    * Service constructor
@@ -258,6 +259,39 @@ export default class SPTermStorePickerService {
     return this.searchTermsByTermSet(searchText);
   }
 
+
+  /**
+ * Retrieve all terms that contains the searchText
+ * @param searchText
+ */
+  public async searchAllTermsByName(searchText: string): Promise<ITerm[]> {
+    if (this.allTermsCache) {
+      return this.searchAllTerms(this.allTermsCache, searchText);
+    }
+    const {
+      termsetNameOrID,
+      hideDeprecatedTags,
+      hideTagsNotAvailableForTagging,
+      useSessionStorage,
+      anchorId
+    } = this.props;
+
+    const terms = !!anchorId ? await this.getAllTermsByAnchorId(
+      termsetNameOrID,
+      anchorId,
+      hideDeprecatedTags,
+      hideTagsNotAvailableForTagging,
+      useSessionStorage) : (await this.getAllTerms(
+        termsetNameOrID,
+        hideDeprecatedTags,
+        hideTagsNotAvailableForTagging,
+        useSessionStorage)).Terms;
+
+    this.allTermsCache = terms;
+
+    return this.searchAllTerms(terms, searchText);
+  }
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private getTermsById<T>(termId, useSessionStorage: boolean = true): T | null {
     try {
@@ -285,45 +319,20 @@ export default class SPTermStorePickerService {
       return [];
   }
 
-  public async searchTermsByTermId(searchText: string, termId: string): Promise<IPickerTerm[]> {
-    const { useSessionStorage } = this.props;
-    const childTerms = this.getTermsById<IPickerTerm[]>(termId, useSessionStorage);
-    if (childTerms) {
-      return this.searchTermsBySearchText(childTerms, searchText);
+  private searchAllTerms(terms: ITerm[] | undefined, searchText: string): ITerm[] {
+    if (terms) {
+      return terms.filter((t) => { return t.Name.toLowerCase().indexOf(searchText.toLowerCase()) > -1; });
     }
-    else {
-      const {
-        termsetNameOrID,
-        hideDeprecatedTags,
-        hideTagsNotAvailableForTagging,
-      } = this.props;
-
-      const terms = await this.getAllTermsByAnchorId(
-        termsetNameOrID,
-        termId,
-        hideDeprecatedTags,
-        hideTagsNotAvailableForTagging,
-        useSessionStorage);
-
-      if (terms) {
-        return this.searchTermsBySearchText(terms, searchText);
-      }
-    }
-
-    return null;
+    else
+      return [];
   }
 
   /**
    * Retrieve all terms for the given term set and anchorId
    */
-  public async getAllTermsByAnchorId(termsetNameOrID: string, anchorId: string, hideDeprecatedTags?: boolean, hideTagsNotAvailableForTagging?: boolean, useSessionStorage: boolean = true): Promise<IPickerTerm[]> {
+  public async getAllTermsByAnchorId(termsetNameOrID: string, anchorId: string, hideDeprecatedTags?: boolean, hideTagsNotAvailableForTagging?: boolean, useSessionStorage: boolean = true): Promise<ITerm[]> {
 
-    const returnTerms: IPickerTerm[] = [];
-
-    const childTerms = this.getTermsById<IPickerTerm[]>(anchorId, useSessionStorage);
-    if (childTerms) {
-      return childTerms;
-    }
+    const returnTerms: ITerm[] = [];
 
     const termSet = await this.getAllTerms(termsetNameOrID, hideDeprecatedTags, hideTagsNotAvailableForTagging);
     const terms = termSet.Terms;
@@ -335,21 +344,12 @@ export default class SPTermStorePickerService {
         const anchorTerms: ITerm[] = terms.filter(t => t.PathOfTerm.substring(0, anchorTermPath.length) === anchorTermPath && t.Id !== anchorTerm.Id);
 
         anchorTerms.forEach(term => {
-          returnTerms.push(this.convertTermToPickerTerm(term));
+          returnTerms.push(term);
         });
-
-        try {
-          if (useSessionStorage && window.sessionStorage) {
-            window.sessionStorage.setItem(anchorId, JSON.stringify(returnTerms));
-          }
-        }
-        catch (error) {
-          // do nothing
-        }
       }
     } else {
       terms.forEach(term => {
-        returnTerms.push(this.convertTermToPickerTerm(term));
+        returnTerms.push(term);
       });
     }
 
@@ -518,7 +518,7 @@ export default class SPTermStorePickerService {
     }
   }
 
-  private convertTermToPickerTerm(term: ITerm): IPickerTerm {
+  public convertTermToPickerTerm(term: ITerm): IPickerTerm {
     return {
       key: this.cleanGuid(term.Id),
       name: term.Name,

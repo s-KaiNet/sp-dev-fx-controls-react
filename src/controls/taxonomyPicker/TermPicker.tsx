@@ -6,13 +6,13 @@ import styles from './TaxonomyPicker.module.scss';
 import { ITaxonomyPickerProps } from './ITaxonomyPicker';
 import { BaseComponentContext } from '@microsoft/sp-component-base';
 import * as strings from 'ControlStrings';
-import { ITermSet } from "../../services/ISPTermStorePickerService";
+import { ITerm, ITermSet } from "../../services/ISPTermStorePickerService";
 import { Autofill } from '@fluentui/react/lib/components/Autofill/Autofill';
 import { LegacyRef, KeyboardEvent } from 'react';
 import { IconButton } from '@fluentui/react';
+import { UpdateType } from './termActions';
 
-export class TermBasePicker extends BasePicker<IPickerTerm, IBasePickerProps<IPickerTerm>>
-{
+export class TermBasePicker extends BasePicker<IPickerTerm, IBasePickerProps<IPickerTerm>> {
 
 }
 
@@ -82,7 +82,7 @@ export default class TermPicker extends React.Component<ITermPickerProps, ITermP
         <span className={styles.pickedTermText}>{term.item.name}</span>
         {
           !term.disabled && (
-              <IconButton iconProps={{iconName: "Cancel"}} onClick={term.onRemoveItem} className={styles.pickedTermCloseIcon} />
+            <IconButton iconProps={{ iconName: "Cancel" }} onClick={term.onRemoveItem} className={styles.pickedTermCloseIcon} />
           )
         }
       </div>
@@ -119,7 +119,9 @@ export default class TermPicker extends React.Component<ITermPickerProps, ITermP
         isTermSetSelectable
       } = this.props;
 
-      const terms: IPickerTerm[] = await this.termsService.searchTermsByName(filterText);
+      const termResults: ITerm[] = await this.termsService.searchAllTermsByName(filterText);
+
+      const terms = termResults.map(r => this.termsService.convertTermToPickerTerm(r));
       // Check if the termset can be selected
       if (isTermSetSelectable && !termPickerHostProps.anchorId) {
         // Retrieve the current termset
@@ -140,6 +142,23 @@ export default class TermPicker extends React.Component<ITermPickerProps, ITermP
       const { disabledTermIds, disableChildrenOfDisabledParents } = this.props;
       for (const term of terms) {
         let canBePicked = true;
+        const sourceTerm = termResults.filter(t => t.Id === term.key)[0];
+
+        if (this.props.termPickerHostProps.termActions.actions?.length > 0) {
+          for (const action of this.props.termPickerHostProps.termActions.actions) {
+            const shouldApply = await action.applyToTerm(sourceTerm, () => {
+              // no-op
+            }, () => {
+              // no-op
+            });
+            if (shouldApply) {
+              const result = await action.actionCallback(null, sourceTerm);
+              if (result.updateActionType === UpdateType.disableTerm || result.updateActionType === UpdateType.hideTerm) {
+                canBePicked = false;
+              }
+            }
+          }
+        }
 
         // Check if term is not disabled
         if (disabledTermIds && disabledTermIds.length > 0) {

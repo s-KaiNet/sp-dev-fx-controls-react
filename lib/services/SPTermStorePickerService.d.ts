@@ -7,7 +7,7 @@
 import { BaseComponentContext } from '@microsoft/sp-component-base';
 import { ITaxonomyPickerProps } from '../controls/taxonomyPicker/ITaxonomyPicker';
 import { IPickerTerm } from '../controls/taxonomyPicker/ITermPicker';
-import { ITermStore, ITermSet } from './ISPTermStorePickerService';
+import { ITermStore, ITerm, ITermSet } from './ISPTermStorePickerService';
 /**
  * Service implementation to manage term stores in SharePoint
  */
@@ -18,6 +18,7 @@ export default class SPTermStorePickerService {
     private formDigest;
     private clientServiceUrl;
     private suggestionServiceUrl;
+    private allTermsCache;
     /**
      * Service constructor
      */
@@ -47,13 +48,18 @@ export default class SPTermStorePickerService {
      * @param searchText
      */
     searchTermsByName(searchText: string): Promise<IPickerTerm[]>;
+    /**
+   * Retrieve all terms that contains the searchText
+   * @param searchText
+   */
+    searchAllTermsByName(searchText: string): Promise<ITerm[]>;
     private getTermsById;
     private searchTermsBySearchText;
-    searchTermsByTermId(searchText: string, termId: string): Promise<IPickerTerm[]>;
+    private searchAllTerms;
     /**
      * Retrieve all terms for the given term set and anchorId
      */
-    getAllTermsByAnchorId(termsetNameOrID: string, anchorId: string, hideDeprecatedTags?: boolean, hideTagsNotAvailableForTagging?: boolean, useSessionStorage?: boolean): Promise<IPickerTerm[]>;
+    getAllTermsByAnchorId(termsetNameOrID: string, anchorId: string, hideDeprecatedTags?: boolean, hideTagsNotAvailableForTagging?: boolean, useSessionStorage?: boolean): Promise<ITerm[]>;
     /**
        * Searches terms for the given term set
        * @param searchText
@@ -79,7 +85,7 @@ export default class SPTermStorePickerService {
      * @param guid
      */
     cleanGuid(guid: string): string;
-    private convertTermToPickerTerm;
+    convertTermToPickerTerm(term: ITerm): IPickerTerm;
     private convertSuggestTermToPickerTerm;
 }
 //# sourceMappingURL=SPTermStorePickerService.d.ts.map
