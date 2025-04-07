@@ -1103,12 +1103,12 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
           <div className="ms-font-m">Services tester:
             <TaxonomyPicker
               simpleSelectionInSingleMode={true}
-              allowMultipleSelections={true}
+              allowMultipleSelections={false}
               termsetNameOrID="Country_TEST"
               panelTitle="Select Sorted Term"
               label="Service Picker with custom actions"
               context={this.props.context}
-              anchorId="a6591658-60bb-41d8-ae90-1d12bbecd06a"
+              //anchorId="a6591658-60bb-41d8-ae90-1d12bbecd06a"
               termActions={{
                 actions: [{
                   title: "",

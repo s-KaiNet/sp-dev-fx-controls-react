@@ -50,6 +50,11 @@ export interface ITerms {
     _ObjectType_: string;
     _Child_Items_: ITerm[];
 }
+export interface ITermsTree {
+    term: ITerm;
+    children: ITermsTree[];
+    parent: ITermsTree | undefined;
+}
 /**
  * Term
  */

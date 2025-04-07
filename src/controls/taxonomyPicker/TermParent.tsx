@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Spinner, SpinnerSize } from '@fluentui/react/lib/Spinner';
 import { ITermParentProps, ITermParentState } from './ITaxonomyPicker';
-import { ITerm } from '../../services/ISPTermStorePickerService';
-import { EXPANDED_IMG, COLLAPSED_IMG, TERMSET_IMG, TERM_IMG } from './TaxonomyPicker';
+import { ITerm, ITermsTree } from '../../services/ISPTermStorePickerService';
+import { TERMSET_IMG, TERM_IMG } from './TaxonomyPicker';
 import Term from './Term';
 
 import styles from './TaxonomyPicker.module.scss';
@@ -14,8 +14,9 @@ import * as strings from 'ControlStrings';
  */
 export default class TermParent extends React.Component<ITermParentProps, ITermParentState> {
 
-  private _terms : ITerm[];
-  private _anchorName : string;
+  private _terms: ITerm[];
+  private _anchorName: string;
+  private _termsMap: Map<string, ITermsTree>;
 
   constructor(props: ITermParentProps) {
     super(props);
@@ -23,7 +24,8 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
     this._terms = this.props.termset.Terms;
     this.state = {
       loaded: true,
-      expanded: true
+      expanded: true,
+      collapseClickedTerm: null
     };
     this._handleClick = this._handleClick.bind(this);
   }
@@ -33,14 +35,13 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
    */
   public UNSAFE_componentWillMount(): void {
     // fix term depth if anchroid for rendering
-    if (this.props.anchorId)
-    {
+    if (this.props.anchorId) {
       const anchorTerm = this._terms.filter(t => t.Id.toLowerCase() === this.props.anchorId.toLowerCase()).shift();
       if (anchorTerm) {
         // Append ';' separator, as a suffix to anchor term path.
         const anchorTermPath = `${anchorTerm.PathOfTerm};`;
         this._anchorName = anchorTerm.Name;
-        let anchorTerms : ITerm[] = this._terms.filter(t => t.PathOfTerm.substring(0, anchorTermPath.length) === anchorTermPath && t.Id !== anchorTerm.Id);
+        let anchorTerms: ITerm[] = this._terms.filter(t => t.PathOfTerm.substring(0, anchorTermPath.length) === anchorTermPath && t.Id !== anchorTerm.Id);
 
         anchorTerms = anchorTerms.map(term => {
           term.PathDepth = term.PathDepth - anchorTerm.PathDepth;
@@ -71,6 +72,49 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
     this.props.termSetSelectedChange(this.props.termset, isChecked);
   }
 
+  private onToggleClick = (term: ITerm): void => {
+    this.setState({
+      collapseClickedTerm: { ...term }
+    })
+  }
+
+  /**
+ * Converts a flat array of terms into a hierarchical tree structure
+ * @param terms The flat array of terms
+ * @returns An array of ITermsTree representing the root nodes with their children
+ */
+  private buildTermsTree(terms: ITerm[]): Map<string, ITermsTree> {
+    // Create a map for quick term lookup by ID
+    const termMap = new Map<string, ITermsTree>();
+
+    // First pass: create tree nodes for all terms
+    terms.forEach(term => {
+      termMap.set(term.Id, {
+        term,
+        children: [],
+        parent: undefined
+      });
+    });
+
+    // Second pass: establish parent-child relationships
+    const rootTerms: ITermsTree[] = [];
+
+    terms.forEach(term => {
+      const termNode = termMap.get(term.Id);
+
+      if (term.ParentId && termMap.has(term.ParentId)) {
+        // This term has a parent in our collection, add it as a child
+        const parentNode = termMap.get(term.ParentId);
+        parentNode.children.push(termNode);
+        termNode.parent = parentNode;
+      } else {
+        // This is a root term with no parent in our collection
+        rootTerms.push(termNode);
+      }
+    });
+
+    return termMap;
+  }
 
   /**
    * Default React render method
@@ -85,6 +129,15 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
 
     // Check if the terms have been loaded
     if (this.state.loaded) {
+
+      const maxLevel = this._terms.reduce((maxDepth, currentTerm) => {
+        return currentTerm.PathDepth > maxDepth ? currentTerm.PathDepth : maxDepth;
+      }, 0);
+
+      if (!this._termsMap) {
+        this._termsMap = this.buildTermsTree(this._terms);
+      }
+
       if (this._terms.length > 0) {
         const disabledPaths = [];
         termElm = (
@@ -108,15 +161,20 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
                 }
 
                 return <Term key={term.Id}
-                             term={term}
-                             termset={this.props.termset.Id}
-                             activeNodes={this.props.activeNodes}
-                             changedCallback={this.props.changedCallback}
-                             multiSelection={this.props.multiSelection}
-                             disabled={disabled}
-                             termActions={this.props.termActions}
-                             updateTaxonomyTree={this.props.updateTaxonomyTree}
-                             spTermService={this.props.spTermService} />;
+                  term={term}
+                  termset={this.props.termset.Id}
+                  activeNodes={this.props.activeNodes}
+                  changedCallback={this.props.changedCallback}
+                  multiSelection={this.props.multiSelection}
+                  disabled={disabled}
+                  termActions={this.props.termActions}
+                  updateTaxonomyTree={this.props.updateTaxonomyTree}
+                  spTermService={this.props.spTermService}
+                  onToggleClick={this.onToggleClick}
+                  toggledTerm={this.state.collapseClickedTerm}
+                  maxLevel={maxLevel}
+                  termsMap={this._termsMap}
+                />;
               })
             }
           </div>
@@ -132,13 +190,12 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
     return (
       <div>
         <div className={`${styles.listItem} ${styles.termset} ${(!this.props.anchorId && this.props.isTermSetSelectable) ? styles.termSetSelectable : ""}`} onClick={this._handleClick}>
-          <img src={this.state.expanded ? EXPANDED_IMG : COLLAPSED_IMG} alt={strings.TaxonomyPickerExpandTitle} title={strings.TaxonomyPickerExpandTitle} />
           {
             // Show the termset selection box
             (!this.props.anchorId && this.props.isTermSetSelectable) &&
             <Checkbox className={styles.termSetSelector}
-                      checked={this.props.activeNodes.filter(a => a.path === "" && a.key === a.termSet).length >= 1}
-                      onChange={this.termSetSelectionChange} />
+              checked={this.props.activeNodes.filter(a => a.path === "" && a.key === a.termSet).length >= 1}
+              onChange={this.termSetSelectionChange} />
           }
           <img src={this.props.anchorId ? TERM_IMG : TERMSET_IMG} alt={strings.TaxonomyPickerMenuTermSet} title={strings.TaxonomyPickerMenuTermSet} />
           {

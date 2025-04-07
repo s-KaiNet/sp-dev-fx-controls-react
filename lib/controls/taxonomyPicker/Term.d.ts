@@ -16,11 +16,13 @@ export default class Term extends React.Component<ITermProps, ITermState> {
      * @param nextContext
      */
     UNSAFE_componentWillReceiveProps(nextProps: ITermProps, nextContext: any): void;
+    private hasParentWithId;
     /**
      * Get the right class name for the term
      */
     private getClassName;
     private termActionCallback;
+    private onCollapseClick;
     /**
      * Default React render
      */

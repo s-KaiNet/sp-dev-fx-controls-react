@@ -1,5 +1,5 @@
 import { IPickerTerm, IPickerTerms } from './ITermPicker';
-import { ITermSet, ITerm } from '../../services/ISPTermStorePickerService';
+import { ITermSet, ITerm, ITermsTree } from '../../services/ISPTermStorePickerService';
 import { ITermActions } from './termActions/ITermsActions';
 import SPTermStorePickerService from '../../services/SPTermStorePickerService';
 import { BaseComponentContext } from '@microsoft/sp-component-base';
@@ -162,6 +162,7 @@ export interface ITermParentProps extends ITermChanges {
 export interface ITermParentState {
     loaded?: boolean;
     expanded?: boolean;
+    collapseClickedTerm: ITerm;
 }
 export interface ITermProps extends ITermChanges {
     termset: string;
@@ -171,11 +172,17 @@ export interface ITermProps extends ITermChanges {
     termActions?: ITermActions;
     spTermService: SPTermStorePickerService;
     updateTaxonomyTree: () => void;
+    onToggleClick: (termId: ITerm) => void;
+    toggledTerm: ITerm;
+    maxLevel: number;
+    termsMap: Map<string, ITermsTree>;
 }
 export interface ITermState {
     selected?: boolean;
     termLabel: string;
     hidden?: boolean;
     disabled?: boolean;
+    collapsed: boolean;
+    toggleHidden: boolean;
 }
 //# sourceMappingURL=ITaxonomyPicker.d.ts.map

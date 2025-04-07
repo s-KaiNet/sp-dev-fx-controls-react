@@ -1,5 +1,5 @@
 import { IPickerTerm, IPickerTerms } from './ITermPicker';
-import { ITermSet, ITerm } from '../../services/ISPTermStorePickerService';
+import { ITermSet, ITerm, ITermsTree } from '../../services/ISPTermStorePickerService';
 import { ITermActions } from './termActions/ITermsActions';
 import SPTermStorePickerService from '../../services/SPTermStorePickerService';
 import { BaseComponentContext } from '@microsoft/sp-component-base';
@@ -7,7 +7,7 @@ import { BaseComponentContext } from '@microsoft/sp-component-base';
 /**
  * PropertyFieldTermPickerHost properties interface
 //  */
-export interface ITaxonomyPickerProps  {
+export interface ITaxonomyPickerProps {
   /**
   * Property field label displayed on top
   */
@@ -149,7 +149,7 @@ export interface ITaxonomyPickerProps  {
  * PropertyFieldTermPickerHost state interface
  */
 export interface ITaxonomyPickerState {
-  termSetAndTerms? : ITermSet;
+  termSetAndTerms?: ITermSet;
   errorMessage?: string;
   /**
    * Error message populated in the component. errorMessage takes precedence over this.
@@ -172,7 +172,7 @@ export interface ITermChanges {
 export interface ITermParentProps extends ITermChanges {
   termset: ITermSet;
   multiSelection: boolean;
-  anchorId? : string;
+  anchorId?: string;
   isTermSetSelectable?: boolean;
   termActions?: ITermActions;
   spTermService: SPTermStorePickerService;
@@ -186,6 +186,7 @@ export interface ITermParentState {
 
   loaded?: boolean;
   expanded?: boolean;
+  collapseClickedTerm: ITerm;
 }
 
 export interface ITermProps extends ITermChanges {
@@ -195,8 +196,11 @@ export interface ITermProps extends ITermChanges {
   disabled: boolean;
   termActions?: ITermActions;
   spTermService: SPTermStorePickerService;
-
   updateTaxonomyTree: () => void;
+  onToggleClick: (termId: ITerm) => void;
+  toggledTerm: ITerm;
+  maxLevel: number;
+  termsMap: Map<string, ITermsTree>;
 }
 
 export interface ITermState {
@@ -204,4 +208,6 @@ export interface ITermState {
   termLabel: string;
   hidden?: boolean;
   disabled?: boolean;
+  collapsed: boolean;
+  toggleHidden: boolean;
 }
