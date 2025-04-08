@@ -1109,7 +1109,7 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
               label="Service Picker with custom actions"
               context={this.props.context}
               //anchorId="a6591658-60bb-41d8-ae90-1d12bbecd06a" //USA
-              //anchorId="c092563a-2eea-4b52-9494-13a9ff03ba68" //california
+              anchorId="c092563a-2eea-4b52-9494-13a9ff03ba68" //california
               termActions={{
                 actions: [{
                   title: "",

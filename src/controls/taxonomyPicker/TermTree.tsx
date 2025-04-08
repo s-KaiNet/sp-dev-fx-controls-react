@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { FC } from "react";
 import Term from "./Term";
-import { ITermsTree } from "../../services/ISPTermStorePickerService";
+import { ITerm, ITermsTree } from "../../services/ISPTermStorePickerService";
 import styles from './TaxonomyPicker.module.scss';
 import * as strings from 'ControlStrings';
 import { COLLAPSED_IMG, EXPANDED_IMG } from "./TaxonomyPicker";
-import { UpdateType } from "./termActions";
+import { ITermAction, UpdateType } from "./termActions";
 
 export const TermTree: FC<ITermsTree> = ({ props, term, children }) => {
 
@@ -47,6 +47,24 @@ export const TermTree: FC<ITermsTree> = ({ props, term, children }) => {
     setExpanded(!expanded);
   };
 
+  const isHiddenByActions = async (term: ITerm, actions: ITermAction[]): Promise<boolean> => {
+    for (const action of actions) {
+      const shouldApply = await action.applyToTerm(term, () => {
+        // no-op
+      }, () => {
+        // no-op
+      });
+
+      if (shouldApply) {
+        const result = await action.actionCallback(null, term);
+        if (result.updateActionType === UpdateType.hideTerm) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
   useEffect(() => {
     const hasVisibleChild = async (): Promise<boolean> => {
       if (!props.termActions.actions?.length) {
@@ -54,27 +72,13 @@ export const TermTree: FC<ITermsTree> = ({ props, term, children }) => {
       }
 
       for (const child of children) {
-        let childIsHidden = false;
-        for (const action of props.termActions.actions) {
-          const shouldApply = await action.applyToTerm(child.term, () => {
-            // no-op
-          }, () => {
-            // no-op
-          });
-          if (shouldApply) {
-            const result = await action.actionCallback(null, child.term);
-            if (result.updateActionType === UpdateType.hideTerm) {
-              childIsHidden = true;
-              break;
-            }
-          }
-        }
+        const childIsHidden = await isHiddenByActions(child.term, props.termActions.actions);
         if (!childIsHidden) {
           return true;
         }
       }
 
-      return true;
+      return false;
     }
 
     // eslint-disable-next-line @typescript-eslint/no-floating-promises
