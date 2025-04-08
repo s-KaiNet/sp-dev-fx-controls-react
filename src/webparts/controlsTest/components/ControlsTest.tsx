@@ -1117,13 +1117,13 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
                   hidden: true,
                   actionCallback: async (taxService: any, term: ITerm) => {
                     return ({
-                      updateActionType: UpdateType.disableTerm,
+                      updateActionType: UpdateType.hideTerm,
                       value: true
                     });
                   },
                   applyToTerm: (term: any, triggerActionCb: (updateAction: any) => void, setActionStateForTerm: (actionId: string, termId: string, type: "disabled" | "hidden", value: boolean) => void) => {
 
-                    return term.Name.toLowerCase().indexOf("new") >= 0;
+                    return term.Name.toLowerCase().indexOf("bytom") >= 0 || term.Name.toLowerCase().indexOf("warsaw") >= 0;
                   }
                 },]
               }}

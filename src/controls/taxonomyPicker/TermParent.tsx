@@ -3,11 +3,11 @@ import { Spinner, SpinnerSize } from '@fluentui/react/lib/Spinner';
 import { ITermParentProps, ITermParentState } from './ITaxonomyPicker';
 import { ITerm, ITermsTree } from '../../services/ISPTermStorePickerService';
 import { TERMSET_IMG, TERM_IMG } from './TaxonomyPicker';
-import Term from './Term';
 
 import styles from './TaxonomyPicker.module.scss';
 import { Checkbox } from '@fluentui/react/lib/Checkbox';
 import * as strings from 'ControlStrings';
+import { TermTree } from './TermTree';
 
 /**
  * Term Parent component, represents termset or term if anchorId
@@ -16,7 +16,7 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
 
   private _terms: ITerm[];
   private _anchorName: string;
-  private _termsMap: Map<string, ITermsTree>;
+  private _termTree: ITermsTree[];
 
   constructor(props: ITermParentProps) {
     super(props);
@@ -72,9 +72,9 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
     this.props.termSetSelectedChange(this.props.termset, isChecked);
   }
 
-  private onToggleClick = (term: ITerm): void => {
+  private onToggleClick = (term: ITerm, collapse: boolean): void => {
     this.setState({
-      collapseClickedTerm: { ...term }
+      collapseClickedTerm: { term, collapsed: collapse }
     })
   }
 
@@ -83,16 +83,19 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
  * @param terms The flat array of terms
  * @returns An array of ITermsTree representing the root nodes with their children
  */
-  private buildTermsTree(terms: ITerm[]): Map<string, ITermsTree> {
+  private buildTermsTree(terms: ITerm[]):ITermsTree[] {
     // Create a map for quick term lookup by ID
     const termMap = new Map<string, ITermsTree>();
-
+    const maxLevel = terms.reduce((maxDepth, currentTerm) => {
+      return currentTerm.PathDepth > maxDepth ? currentTerm.PathDepth : maxDepth;
+    }, 0);
     // First pass: create tree nodes for all terms
     terms.forEach(term => {
       termMap.set(term.Id, {
         term,
         children: [],
-        parent: undefined
+        parent: undefined,
+        props: undefined
       });
     });
 
@@ -101,19 +104,52 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
 
     terms.forEach(term => {
       const termNode = termMap.get(term.Id);
-
+      termNode.props = {
+        term: termNode.term,
+        termset: this.props.termset.Id,
+        activeNodes: this.props.activeNodes,
+        changedCallback: this.props.changedCallback,
+        multiSelection: this.props.multiSelection,
+        disabled: this.resolveDisalbedState(termNode.term),
+        termActions: this.props.termActions,
+        updateTaxonomyTree: this.props.updateTaxonomyTree,
+        spTermService: this.props.spTermService,
+        maxLevel: maxLevel
+      }
       if (term.ParentId && termMap.has(term.ParentId)) {
         // This term has a parent in our collection, add it as a child
         const parentNode = termMap.get(term.ParentId);
         parentNode.children.push(termNode);
         termNode.parent = parentNode;
+
       } else {
         // This is a root term with no parent in our collection
         rootTerms.push(termNode);
       }
     });
 
-    return termMap;
+    return rootTerms;
+  }
+
+  private resolveDisalbedState = (term: ITerm): boolean => {
+    const disabledPaths = [];
+    let disabled = false;
+    if (this.props.disabledTermIds && this.props.disabledTermIds.length > 0) {
+      // Check if the current term ID exists in the disabled term IDs array
+      disabled = this.props.disabledTermIds.indexOf(term.Id) !== -1;
+      if (disabled) {
+        // Push paths to the disabled list
+        disabledPaths.push(term.PathOfTerm);
+      }
+    }
+
+    if (this.props.disableChildrenOfDisabledParents) {
+      // Check if parent is disabled
+      const parentPath = disabledPaths.filter(p => term.PathOfTerm.indexOf(p) !== -1);
+      disabled = parentPath && parentPath.length > 0;
+    }
+
+    return disabled;
   }
 
   /**
@@ -130,50 +166,18 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
     // Check if the terms have been loaded
     if (this.state.loaded) {
 
-      const maxLevel = this._terms.reduce((maxDepth, currentTerm) => {
-        return currentTerm.PathDepth > maxDepth ? currentTerm.PathDepth : maxDepth;
-      }, 0);
-
-      if (!this._termsMap) {
-        this._termsMap = this.buildTermsTree(this._terms);
+      if (!this._termTree) {
+        this._termTree = this.buildTermsTree(this._terms);
       }
 
       if (this._terms.length > 0) {
-        const disabledPaths = [];
+
         termElm = (
           <div style={styleProps}>
             {
-              this._terms.map(term => {
-                let disabled = false;
-                if (this.props.disabledTermIds && this.props.disabledTermIds.length > 0) {
-                  // Check if the current term ID exists in the disabled term IDs array
-                  disabled = this.props.disabledTermIds.indexOf(term.Id) !== -1;
-                  if (disabled) {
-                    // Push paths to the disabled list
-                    disabledPaths.push(term.PathOfTerm);
-                  }
-                }
-
-                if (this.props.disableChildrenOfDisabledParents) {
-                  // Check if parent is disabled
-                  const parentPath = disabledPaths.filter(p => term.PathOfTerm.indexOf(p) !== -1);
-                  disabled = parentPath && parentPath.length > 0;
-                }
-
-                return <Term key={term.Id}
-                  term={term}
-                  termset={this.props.termset.Id}
-                  activeNodes={this.props.activeNodes}
-                  changedCallback={this.props.changedCallback}
-                  multiSelection={this.props.multiSelection}
-                  disabled={disabled}
-                  termActions={this.props.termActions}
-                  updateTaxonomyTree={this.props.updateTaxonomyTree}
-                  spTermService={this.props.spTermService}
-                  onToggleClick={this.onToggleClick}
-                  toggledTerm={this.state.collapseClickedTerm}
-                  maxLevel={maxLevel}
-                  termsMap={this._termsMap}
+              this._termTree.map((termsTree) => {
+                return <TermTree key={termsTree.term.Id}
+                  {...termsTree}
                 />;
               })
             }

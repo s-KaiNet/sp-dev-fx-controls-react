@@ -6,8 +6,6 @@ import styles from './TaxonomyPicker.module.scss';
 import TermActionsControl from './termActions/TermActionsControl';
 import { UpdateAction, UpdateType } from './termActions';
 import { IStyle } from '@fluentui/react';
-import * as strings from 'ControlStrings';
-import { COLLAPSED_IMG, EXPANDED_IMG } from './TaxonomyPicker';
 
 /**
  * Term component
@@ -24,9 +22,7 @@ export default class Term extends React.Component<ITermProps, ITermState> {
       selected: active.length > 0,
       termLabel: this.props.term.Name,
       hidden: false,
-      disabled: false,
-      collapsed: this.props.term.PathDepth > 1,
-      toggleHidden: this.props.term.PathDepth > 2
+      disabled: false
     };
 
     this._handleChange = this._handleChange.bind(this);
@@ -56,29 +52,6 @@ export default class Term extends React.Component<ITermProps, ITermState> {
       termLabel: this.state.termLabel
     });
     //}
-
-    if (this.props.toggledTerm !== nextProps.toggledTerm) {
-      if (this.hasParentWithId(nextProps.toggledTerm?.Id)) {
-        this.setState({
-          toggleHidden: !this.state.toggleHidden
-        })
-      }
-    }
-  }
-
-  private hasParentWithId(id: string): boolean {
-    const term = this.props.termsMap.get(this.props.term.Id);
-    if (!term || !term.parent) return false;
-
-    let parent = term.parent;
-    while (parent) {
-      if (parent.term.Id === id) {
-        return true;
-      }
-      parent = this.props.termsMap.get(parent.term.Id)?.parent;
-    }
-
-    return false;
   }
 
   /**
@@ -123,39 +96,21 @@ export default class Term extends React.Component<ITermProps, ITermState> {
     }
   }
 
-
-  private onCollapseClick = (ev: React.MouseEvent<HTMLElement>): void => {
-    ev.preventDefault();
-    ev.stopPropagation();
-
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-
-    if (this.props.onToggleClick) {
-      this.props.onToggleClick(this.props.term);
-    }
-  }
-
   /**
    * Default React render
    */
   public render(): JSX.Element {
-    const styleProps: React.CSSProperties = {
-      marginLeft: `${((this.props.term.PathDepth - 1) * 35)}px`
-    };
     const checkBoxStyle: IStyle = {
       display: "inline-flex"
     };
 
-    if (this.state.hidden || this.state.toggleHidden) {
+    if (this.state.hidden) {
       return null;
     }
 
     return (
       <div>
-        <div className={`${styles.listItem} ${styles.term}`} style={styleProps}>
-          {this.props.term.PathDepth < this.props.maxLevel && <img onClick={this.onCollapseClick} src={this.state.collapsed ? COLLAPSED_IMG : EXPANDED_IMG} alt={strings.TaxonomyPickerExpandTitle} title={strings.TaxonomyPickerExpandTitle} />}
+        <div className={`${styles.listItem} ${styles.term}`}>
           <div>
             <Checkbox
               checked={this.state.selected}

@@ -1,3 +1,5 @@
+import { ITermProps } from "../TaxonomyPicker";
+
 /**
  * Interfaces for Term store, groups and term sets
  */
@@ -62,6 +64,7 @@ export interface ITermsTree {
   term: ITerm;
   children: ITermsTree[];
   parent: ITermsTree | undefined;
+  props: ITermProps;
 }
 
 /**
