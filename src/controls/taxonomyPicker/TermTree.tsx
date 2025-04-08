@@ -9,7 +9,7 @@ import { UpdateType } from "./termActions";
 
 export const TermTree: FC<ITermsTree> = ({ props, term, children }) => {
   const [shouldRenderImg, setShouldRenderImg] = useState(true);
-  const [expanded, setExpanded] = useState(term.PathDepth < 2);
+  const [expanded, setExpanded] = useState(term.PathDepth < 1);
 
   const onCollapseClick = (): void => {
     setExpanded(!expanded);
