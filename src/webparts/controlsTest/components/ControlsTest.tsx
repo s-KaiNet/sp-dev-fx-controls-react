@@ -1102,13 +1102,14 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
         <div id="TaxonomyPickerDiv" className={styles.container} hidden={!controlVisibility.TaxonomyPicker}>
           <div className="ms-font-m">Services tester:
             <TaxonomyPicker
-              simpleSelectionInSingleMode={true}
-              allowMultipleSelections={false}
+              simpleSelectionInSingleMode={false}
+              allowMultipleSelections={true}
               termsetNameOrID="Country_TEST"
               panelTitle="Select Sorted Term"
               label="Service Picker with custom actions"
               context={this.props.context}
-              //anchorId="a6591658-60bb-41d8-ae90-1d12bbecd06a"
+              //anchorId="a6591658-60bb-41d8-ae90-1d12bbecd06a" //USA
+              anchorId="c092563a-2eea-4b52-9494-13a9ff03ba68" //california
               termActions={{
                 actions: [{
                   title: "",
@@ -1123,7 +1124,7 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
                   },
                   applyToTerm: (term: any, triggerActionCb: (updateAction: any) => void, setActionStateForTerm: (actionId: string, termId: string, type: "disabled" | "hidden", value: boolean) => void) => {
 
-                    return term.Name.toLowerCase().indexOf("bytom") >= 0 || term.Name.toLowerCase().indexOf("warsaw") >= 0;
+                    return term.Name.toLowerCase().indexOf("bytom") >= 0;
                   }
                 },]
               }}

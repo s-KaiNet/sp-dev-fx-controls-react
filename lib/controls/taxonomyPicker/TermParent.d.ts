@@ -6,7 +6,6 @@ import { ITermParentProps, ITermParentState } from './ITaxonomyPicker';
 export default class TermParent extends React.Component<ITermParentProps, ITermParentState> {
     private _terms;
     private _anchorName;
-    private _termTree;
     constructor(props: ITermParentProps);
     /**
      * componentWillMount
@@ -20,7 +19,6 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
      * The term set selection changed
      */
     private termSetSelectionChange;
-    private onToggleClick;
     /**
    * Converts a flat array of terms into a hierarchical tree structure
    * @param terms The flat array of terms

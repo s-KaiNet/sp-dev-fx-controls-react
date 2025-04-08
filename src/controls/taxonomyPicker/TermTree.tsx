@@ -8,16 +8,48 @@ import { COLLAPSED_IMG, EXPANDED_IMG } from "./TaxonomyPicker";
 import { UpdateType } from "./termActions";
 
 export const TermTree: FC<ITermsTree> = ({ props, term, children }) => {
-  const [shouldRenderImg, setShouldRenderImg] = useState(true);
-  const [expanded, setExpanded] = useState(term.PathDepth < 1);
+
+  const findActiveDescendantRecursive = (nodes: ITermsTree[]): boolean => {
+    for (const node of nodes) {
+      // Check if this child is active
+      if (props.activeNodes.some(activeNode => activeNode.key === node.term.Id)) {
+        return true;
+      }
+
+      // Check its children recursively
+      if (node.children && node.children.length > 0) {
+        const hasActiveChild = findActiveDescendantRecursive(node.children);
+        if (hasActiveChild) return true;
+      }
+    }
+    return false;
+  };
+
+  const isActiveOrHasActiveDescendant = (): boolean => {
+    // Check if current term is active
+    const isCurrentTermActive = props.activeNodes.some(node => node.key === term.Id);
+
+    // If current term is active, no need to check children
+    if (isCurrentTermActive) return true;
+
+    // Check if any descendant term is active
+    const hasActiveDescendant = findActiveDescendantRecursive(children);
+
+    return hasActiveDescendant;
+  };
+
+  const [hasVisibleChild, setHasVisibleChild] = useState(true);
+  const [expanded, setExpanded] = useState(() => {
+    return term.PathDepth < 1 || isActiveOrHasActiveDescendant();
+  });
 
   const onCollapseClick = (): void => {
     setExpanded(!expanded);
   };
 
   useEffect(() => {
-    const shouldRenderImg = async (): Promise<boolean> => {
-      if (!props.termActions.actions?.length || !children.length) {
+    const hasVisibleChild = async (): Promise<boolean> => {
+      if (!props.termActions.actions?.length) {
         return true;
       }
 
@@ -42,18 +74,18 @@ export const TermTree: FC<ITermsTree> = ({ props, term, children }) => {
         }
       }
 
-      return false;
+      return true;
     }
 
     // eslint-disable-next-line @typescript-eslint/no-floating-promises
-    shouldRenderImg().then((result) => {
-      setShouldRenderImg(result);
+    hasVisibleChild().then((result) => {
+      setHasVisibleChild(result);
     });
   }, []);
 
   return (
     <div className={styles.termTree}>
-      {term.PathDepth < props.maxLevel && shouldRenderImg && <img onClick={onCollapseClick} src={expanded ? EXPANDED_IMG : COLLAPSED_IMG} alt={strings.TaxonomyPickerExpandTitle} title={strings.TaxonomyPickerExpandTitle} />}
+      {term.PathDepth < props.maxLevel && hasVisibleChild && term.TermsCount > 0 && <img onClick={onCollapseClick} src={expanded ? EXPANDED_IMG : COLLAPSED_IMG} alt={strings.TaxonomyPickerExpandTitle} title={strings.TaxonomyPickerExpandTitle} />}
       <div>
         <Term {...props} />
         <div style={{ display: expanded ? 'block' : 'none' }}>

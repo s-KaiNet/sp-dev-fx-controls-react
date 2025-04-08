@@ -16,7 +16,6 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
 
   private _terms: ITerm[];
   private _anchorName: string;
-  private _termTree: ITermsTree[];
 
   constructor(props: ITermParentProps) {
     super(props);
@@ -70,12 +69,6 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
    */
   private termSetSelectionChange = (ev: React.FormEvent<HTMLElement>, isChecked: boolean): void => {
     this.props.termSetSelectedChange(this.props.termset, isChecked);
-  }
-
-  private onToggleClick = (term: ITerm, collapse: boolean): void => {
-    this.setState({
-      collapseClickedTerm: { term, collapsed: collapse }
-    })
   }
 
   /**
@@ -166,16 +159,14 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
     // Check if the terms have been loaded
     if (this.state.loaded) {
 
-      if (!this._termTree) {
-        this._termTree = this.buildTermsTree(this._terms);
-      }
+      const termTree = this.buildTermsTree(this._terms);
 
       if (this._terms.length > 0) {
 
         termElm = (
           <div style={styleProps}>
             {
-              this._termTree.map((termsTree) => {
+              termTree.map((termsTree) => {
                 return <TermTree key={termsTree.term.Id}
                   {...termsTree}
                 />;
