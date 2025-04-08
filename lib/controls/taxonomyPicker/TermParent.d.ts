@@ -6,7 +6,7 @@ import { ITermParentProps, ITermParentState } from './ITaxonomyPicker';
 export default class TermParent extends React.Component<ITermParentProps, ITermParentState> {
     private _terms;
     private _anchorName;
-    private _termsMap;
+    private _termTree;
     constructor(props: ITermParentProps);
     /**
      * componentWillMount
@@ -27,6 +27,7 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
    * @returns An array of ITermsTree representing the root nodes with their children
    */
     private buildTermsTree;
+    private resolveDisalbedState;
     /**
      * Default React render method
      */
