@@ -77,6 +77,7 @@ export default class TermPicker extends React.Component<ITermPickerProps, ITermP
     return (
       <div className={styles.pickedTermRoot}
         key={term.index}
+        title={term.item.name}
         data-selection-index={term.index}
         data-is-focusable={!term.disabled && true}>
         <span className={styles.pickedTermText}>{term.item.name}</span>
