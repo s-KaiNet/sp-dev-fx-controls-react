@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { PropsOfElement } from "@fluentui/react-northstar";
 import "./toolbar.css";
 import { TActionGroups, TFilters } from "./ToolbarActionsUtils";

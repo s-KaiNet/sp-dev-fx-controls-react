@@ -1,5 +1,5 @@
-import { ETeamTypes } from "./ETeamTypes";
-import { ITeamState } from "./ITeamState";
+import { ETeamTypes } from './ETeamTypes';
+import { ITeamState } from './ITeamState';
 export declare const teamsReducer: (state: ITeamState, action: {
     type: ETeamTypes;
     payload: any;

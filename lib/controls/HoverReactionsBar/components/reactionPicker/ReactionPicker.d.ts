@@ -4,7 +4,7 @@ export interface IReactionProps {
     onSelect: (emoji: string | undefined, emojiInfo?: IEmojiInfo) => void;
     isOpen: boolean;
     onDismiss: () => void;
-    returnType?: "emoji" | "image";
+    returnType?: 'emoji' | 'image';
     target?: HTMLDivElement;
 }
 export declare const ReactionPicker: React.FunctionComponent<IReactionProps>;

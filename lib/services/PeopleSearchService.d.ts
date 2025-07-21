@@ -1,19 +1,18 @@
-import { BaseComponentContext } from '@microsoft/sp-component-base';
 import "@pnp/sp/site-users/web";
 import "@pnp/sp/sputilities";
 import "@pnp/sp/webs";
-import { IPeoplePickerUserItem, PrincipalType } from "../PeoplePicker";
+import { IPeoplePickerContext, IPeoplePickerUserItem, PrincipalType } from "../PeoplePicker";
 /**
  * Service implementation to search people in SharePoint
  */
 export default class SPPeopleSearchService {
     private context;
-    private cachedPersonas;
+    private substrateSearchEnabled;
     private cachedLocalUsers;
     /**
      * Service constructor
      */
-    constructor(context: BaseComponentContext);
+    constructor(context: IPeoplePickerContext, substrateSearchEnabled: boolean);
     /**
      * Generate the user photo link using SharePoint user photo endpoint.
      *

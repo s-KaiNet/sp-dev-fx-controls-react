@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ThemePrepared } from "@fluentui/react-northstar";
 import { IWidget } from "./IWidget";
 export declare const WidgetTitle: ({ widget, globalTheme, allowHidingWidget, onWidgetHiding }: {

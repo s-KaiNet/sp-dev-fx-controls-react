@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { BindingPreviewMode } from 'adaptivecards-designer';
 import { IAdaptiveCardDesignerHostProps } from './IAdaptiveCardDesignerProps';
 export declare const EmptyCard: {

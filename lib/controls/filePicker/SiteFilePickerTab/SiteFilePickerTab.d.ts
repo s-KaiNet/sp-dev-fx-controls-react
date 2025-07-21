@@ -4,14 +4,12 @@ import { ISiteFilePickerTabState } from './ISiteFilePickerTabState';
 export default class SiteFilePickerTab extends React.Component<ISiteFilePickerTabProps, ISiteFilePickerTabState> {
     private _defaultLibraryNamePromise;
     constructor(props: ISiteFilePickerTabProps);
-    private _parseInitialLocationState;
-    private parseBreadcrumbsFromPaths;
     componentDidMount(): void;
     render(): React.ReactElement<ISiteFilePickerTabProps>;
     /**
-     * Handles breadcrump item click
+     * Handles breadcrumb item click
      */
-    private onBreadcrumpItemClick;
+    private onBreadcrumbItemClick;
     /**
      * Is called when user selects a different file
      */
@@ -32,5 +30,24 @@ export default class SiteFilePickerTab extends React.Component<ISiteFilePickerTa
      * Triggered when user opens a top-level document library
      */
     private _handleOpenLibrary;
+    /**
+     * Initializes the initial location for the navigation
+     * @param folderAbsPath Absolute folder path
+     * @param param1 custom object with absolute & relative Url
+     * @returns initial location parameters set
+     */
+    private _parseInitialLocationState;
+    /**
+     * Creates a breadcrumb from the paths
+     * @param libraryServRelUrl Library server relative URL
+     * @param folderServRelPath Folder server relative path
+     * @param folderWebRelPath Folder web relative path
+     * @param webAbsUrl Web absolute URL
+     * @param tenantUrl Tenant URL
+     * @param libInternalName Library internal name
+     * @param webServRelUrl Web server relative URL
+     * @returns Breadcrumb items
+     */
+    private parseBreadcrumbsFromPaths;
 }
 //# sourceMappingURL=SiteFilePickerTab.d.ts.map

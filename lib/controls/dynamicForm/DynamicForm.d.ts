@@ -8,11 +8,13 @@ import { IDynamicFormState } from "./IDynamicFormState";
 /**
  * DynamicForm Class Control
  */
-export declare class DynamicForm extends React.Component<IDynamicFormProps, IDynamicFormState> {
+export declare class DynamicFormBase extends React.Component<IDynamicFormProps, IDynamicFormState> {
     private _spService;
     private _formulaEvaluation;
     private _customFormatter;
+    private _taxonomyService;
     private webURL;
+    private _classNames;
     constructor(props: IDynamicFormProps);
     /**
      * Lifecycle hook when component is mounted
@@ -23,6 +25,7 @@ export declare class DynamicForm extends React.Component<IDynamicFormProps, IDyn
      * Default React component render method
      */
     render(): JSX.Element;
+    private sortFields;
     private renderField;
     private updateFormMessages;
     /** Triggered when the user submits the form. */
@@ -74,6 +77,7 @@ export declare class DynamicForm extends React.Component<IDynamicFormProps, IDyn
      * @returns
      */
     private buildFieldCollection;
+    private getTermsForModernTaxonomyPicker;
     private cultureNameLookup;
     private uploadImage;
     private getImageArrayBuffer;
@@ -82,5 +86,31 @@ export declare class DynamicForm extends React.Component<IDynamicFormProps, IDyn
     private getValidationErrorMessage;
     private renderFileSelectionControl;
     private getFileIconFromExtension;
+    /**
+     * Creates a folder name based on the FileLeafRef field (if rendered) or the Title field (if rendered)
+     * Replaces not allowed chars in folder name and trims spaces at the start and end of the string
+     * Empty string will be replaced by SPO with Folder Item ID
+     * @param objects The object containing the field values
+     * @returns the folder name
+     */
+    private getFolderName;
+    /**
+     * Returns a pnp/sp folder object based on the folderPath and the library the folder is in.
+     * The folderPath can be a server relative path, but should be in the same library.
+     * @param folderPath The path to the folder coming from the component properties
+     * @param rootFolder The rootFolder object of the library
+     * @returns
+     */
+    private getFolderByPath;
+    /**
+     * Updates a list item and retries the operation if a 409 (Save Conflict) was thrown.
+     * @param list The list/library on which to execute the operation
+     * @param itemId The item ID
+     * @param objects The values to update the item with
+     * @param retry The retry index
+     * @returns An update result
+     */
+    private updateListItemRetry;
 }
+export declare const DynamicForm: React.FunctionComponent<IDynamicFormProps>;
 //# sourceMappingURL=DynamicForm.d.ts.map

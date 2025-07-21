@@ -20,7 +20,7 @@ export default class SPService implements ISPService {
     /**
      * Get List Items
      */
-    getListItems(filterText: string, listId: string, internalColumnName: string, field: ISPField | undefined, keyInternalColumnName?: string, webUrl?: string, filterString?: string, substringSearch?: boolean, orderBy?: string, cacheInterval?: number): Promise<any[]>;
+    getListItems(filterText: string, listId: string, internalColumnName: string, field: ISPField | undefined, keyInternalColumnName?: string, webUrl?: string, filterString?: string, substringSearch?: boolean, orderBy?: string, top?: number, cacheInterval?: number): Promise<any[]>;
     /**
   * Gets list items for list item picker
   * @param filterText
@@ -96,7 +96,7 @@ export default class SPService implements ISPService {
     getTaxonomyFieldInternalName(listId: string, fieldId: string, webUrl?: string): Promise<any>;
     getUsersUPNFromFieldValue(listId: string, listItemId: number, fieldName: string, webUrl?: string): Promise<any[]>;
     getUserUPNFromFieldValue(listId: string, listItemId: number, fieldName: string, webUrl?: string): Promise<any>;
-    getSingleManagedMetadataLabel(listId: string, listItemId: number, fieldName: string): Promise<any>;
+    getSingleManagedMetadataLabel(listId: string, listItemId: number, fieldName: string, webUrl?: string): Promise<any>;
     uploadImage(listId: string, itemId: number | undefined, fileName: string, file: ArrayBuffer, listTitle: string | undefined, webUrl?: string): Promise<IUploadImageResult>;
     getRegionalWebSettings(webUrl?: string): Promise<any>;
     /**

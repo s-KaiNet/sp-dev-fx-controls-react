@@ -1,4 +1,4 @@
-export declare type ValidControls = "all" | "accessibleAccordion" | "adaptiveCardDesignerHost" | "adaptiveCardHost" | "animatedDialog" | "Carousel" | "ChartControl" | "ComboBoxListItemPicker" | "Dashboard" | "DateTimePicker" | "DragDropFiles" | "DynamicForm" | "EnhancedThemeProvider" | "FieldCollectionData" | "FieldPicker" | "FilePicker" | "FileTypeIcon" | "FolderExplorer" | "FolderPicker" | "GridLayout" | "IconPicker" | "IFrameDialog" | "IFramePanel" | "ListPicker" | "ListItemPicker" | "ListItemComments" | "ViewPicker" | "ListView" | "LocationPicker" | "Map" | "ModernAudio" | "ModernTaxonomyPicker" | "Pagination" | "PeoplePicker" | "Placeholder" | "Progress" | "RichText" | "SecurityTrimmedControl" | "SiteBreadcrumb" | "SitePicker" | "TaxonomyPicker" | "TaxonomyTree" | "Teams" | "TestControl" | "Toolbar" | "TreeView" | "UploadFiles" | "VariantThemeProvider" | "WebPartTitle";
+export declare type ValidControls = "all" | "AccessibleAccordion" | "AdaptiveCardDesignerHost" | "AdaptiveCardHost" | "AnimatedDialog" | "Carousel" | "ChartControl" | "ComboBoxListItemPicker" | "ContentTypePicker" | "Dashboard" | "DateTimePicker" | "DragDropFiles" | "DynamicForm" | "EnhancedThemeProvider" | "FieldCollectionData" | "FieldPicker" | "FilePicker" | "FileTypeIcon" | "FilterBar" | "FolderExplorer" | "FolderPicker" | "GridLayout" | "HoverReactionsBar" | "IconPicker" | "IFrameDialog" | "IFramePanel" | "ImagePicker" | "ListItemAttachments" | "ListItemComments" | "ListItemPicker" | "ListPicker" | "ListView" | "LivePersona" | "LocationPicker" | "Map" | "ModernAudio" | "ModernTaxonomyPicker" | "MonacoEditor" | "Pagination" | "PeoplePicker" | "Placeholder" | "Progress" | "ProgressStepsIndicator" | "RichText" | "ShareDialog" | "SecurityTrimmedControl" | "SiteBreadcrumb" | "SitePicker" | "TaxonomyPicker" | "TaxonomyTree" | "Teams" | "TermSetNavigation" | "TestControl" | "Toolbar" | "TreeView" | "UploadFiles" | "UserPicker" | "VariantThemeProvider" | "ViewPicker" | "WebPartTitle" | "Calendar";
 export declare type ControlVisibility = {
     [K in ValidControls]: boolean;
 };
@@ -13,6 +13,7 @@ export interface IControlsTestWebPartProps {
     dynamicFormClientSideValidationEnabled: boolean;
     dynamicFormFieldValidationEnabled: boolean;
     dynamicFormFileSelectionEnabled: boolean;
+    dynamicFormToggleTaxonomyPicker: boolean;
     controlVisibility: ControlVisibility;
 }
 //# sourceMappingURL=IControlsTestWebPartProps.d.ts.map

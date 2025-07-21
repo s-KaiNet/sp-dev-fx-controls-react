@@ -1,5 +1,6 @@
 import { BaseComponentContext } from '@microsoft/sp-component-base';
 import { IDropdownOption } from "@fluentui/react/lib/Dropdown";
+import { IStyle, IStyleFunctionOrObject, Theme } from '@fluentui/react';
 import { IFilePickerResult } from '../../filePicker';
 export declare type DateFormat = 'DateTime' | 'DateOnly';
 export declare type FieldChangeAdditionalData = IFilePickerResult;
@@ -25,7 +26,8 @@ export interface IDynamicFieldProps {
     /** Holds a field value. Set on all fields in the form. */
     value?: any;
     /** Fired by DynamicField when a field value is changed */
-    onChanged?: (columnInternalName: string, newValue: any, validate: boolean, additionalData?: FieldChangeAdditionalData) => void;
+    onChanged?: (columnInternalName: string, newValue: any, // eslint-disable-line @typescript-eslint/no-explicit-any
+    validate: boolean, additionalData?: FieldChangeAdditionalData) => void;
     /** Represents the value of the field as updated by the user. Only updated by fields when changed. */
     newValue?: any;
     /** Represents a stringified value of the field. Used in custom formatting and validation. */
@@ -48,6 +50,8 @@ export interface IDynamicFieldProps {
     Order: number;
     /** Used for files / image uploads */
     additionalData?: FieldChangeAdditionalData;
+    /** Used to Render TaxonomyPicker or ModernTaxonomyPicker */
+    useModernTaxonomyPickerControl?: boolean;
     options?: IDropdownOption[];
     isRichText?: boolean;
     dateFormat?: DateFormat;
@@ -57,5 +61,31 @@ export interface IDynamicFieldProps {
     maximumValue?: number;
     minimumValue?: number;
     showAsPercentage?: boolean;
+    itemsQueryCountLimit?: number;
+    customIcon?: string;
+    orderBy?: string;
+    /** Used for customize component styling */
+    styles?: IStyleFunctionOrObject<IDynamicFieldStyleProps, IDynamicFieldStyles>;
+}
+export interface IDynamicFieldStyleProps {
+    theme: Theme;
+    required?: boolean;
+}
+export interface IDynamicFieldStyles {
+    titleContainer: IStyle;
+    fieldIcon: IStyle;
+    fieldDisplay: IStyle;
+    fieldDisplayNoPadding: IStyle;
+    fieldContainer: IStyle;
+    fieldDescription: IStyle;
+    fieldLabel: IStyle;
+    labelContainer: IStyle;
+    pickersContainer: IStyle;
+    fieldEditor: IStyle;
+    errormessage: IStyle;
+    richText: IStyle;
+    thumbnailFieldButtons: IStyle;
+    selectedFileContainer: IStyle;
+    fieldRequired: IStyle;
 }
 //# sourceMappingURL=IDynamicFieldProps.d.ts.map

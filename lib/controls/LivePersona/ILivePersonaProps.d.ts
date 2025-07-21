@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ServiceScope } from "@microsoft/sp-core-library";
 export interface ILivePersonatProps {
     /**

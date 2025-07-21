@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { BaseComponentContext, IReadonlyTheme } from '@microsoft/sp-component-base';
 import { ITermInfo, ITermSetInfo, ITermStoreInfo } from '@pnp/sp/taxonomy';
 import { ISuggestionItemProps } from '@fluentui/react/lib/Pickers';

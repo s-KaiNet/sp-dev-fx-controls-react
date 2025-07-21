@@ -29,5 +29,6 @@ export interface IListItemPickerProps {
      */
     enableDefaultSuggestions?: boolean;
     styles?: IBasePickerStyles;
+    itemsQueryCountLimit?: number;
 }
 //# sourceMappingURL=IListItemPickerProps.d.ts.map

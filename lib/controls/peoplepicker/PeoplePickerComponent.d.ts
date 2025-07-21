@@ -1,5 +1,15 @@
 import * as React from 'react';
-import { IPeoplePickerProps, IPeoplePickerState } from './IPeoplePicker';
+import { IPeoplePickerProps } from './IPeoplePicker';
+import { IPersonaProps } from '@fluentui/react/lib/Persona';
+interface IPeoplePickerState {
+    mostRecentlyUsedPersons?: IPersonaProps[];
+    errorMessage?: string;
+    internalErrorMessage?: string;
+    resolveDelay?: number;
+    selectedPersons?: IPersonaProps[];
+    peoplePersonaMenu?: IPersonaProps[];
+    delayResults?: boolean;
+}
 /**
  * PeoplePicker component
  */
@@ -18,6 +28,10 @@ export declare class PeoplePicker extends React.Component<IPeoplePickerProps, IP
      */
     UNSAFE_componentWillUpdate(nextProps: IPeoplePickerProps, nextState: IPeoplePickerState): void;
     UNSAFE_componentWillReceiveProps(nextProps: IPeoplePickerProps): void;
+    /**
+     * clears all users and groups
+     */
+    clearSelectedPersons(): void;
     /**
      * Get initial persons
      */
@@ -62,4 +76,5 @@ export declare class PeoplePicker extends React.Component<IPeoplePickerProps, IP
      */
     render(): React.ReactElement<IPeoplePickerProps>;
 }
+export {};
 //# sourceMappingURL=PeoplePickerComponent.d.ts.map

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { IDropdownOption } from '@fluentui/react/lib/Dropdown';
 import { IRenderFunction } from '@uifabric/utilities/lib/IRenderFunction';
 import { ISelectableOption } from '@fluentui/react/lib/utilities/selectableOption/SelectableOption.types';

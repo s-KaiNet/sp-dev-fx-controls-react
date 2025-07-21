@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ChartSize, ChartData, ChartOptions } from 'chart.js';
 /**
  * The properties for the ChartComponent object

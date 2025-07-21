@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { Position } from "@fluentui/react-northstar";
 import { TAction } from "../../common/model/TAction";
 import { TToolbarLayout } from "./ToolbarActionsUtils";

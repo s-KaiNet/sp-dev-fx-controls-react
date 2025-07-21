@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ObjectShorthandCollection, ShorthandCollection, ToolbarItemProps, ToolbarItemShorthandKinds, TreeItemProps } from "@fluentui/react-northstar";
 import { TActions } from "../../common/model/TAction";
 export declare type TToolbarItems = ShorthandCollection<ToolbarItemProps, ToolbarItemShorthandKinds>;

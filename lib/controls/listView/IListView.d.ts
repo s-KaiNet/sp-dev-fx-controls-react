@@ -1,5 +1,4 @@
-/// <reference types="react" />
-import { IColumn, IGroup, SelectionMode, IDetailsRowProps } from '@fluentui/react/lib/components/DetailsList';
+import { IColumn, IGroup, SelectionMode, IDetailsRowProps } from '@fluentui/react/lib/DetailsList';
 export { SelectionMode };
 export declare enum GroupOrder {
     ascending = 1,

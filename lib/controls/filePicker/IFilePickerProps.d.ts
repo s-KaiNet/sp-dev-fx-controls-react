@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { IIconProps } from "@fluentui/react/lib/Icon";
 import { BaseComponentContext } from '@microsoft/sp-component-base';
 import { IFilePickerResult } from "./FilePicker.types";

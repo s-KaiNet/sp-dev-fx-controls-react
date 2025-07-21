@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ISecurityTrimmedControlProps, ISecurityTrimmedControlState } from '.';
 export declare class SecurityTrimmedControl extends React.Component<ISecurityTrimmedControlProps, ISecurityTrimmedControlState> {
-    constructor(props: ISecurityTrimmedControlProps);
+    constructor(props: React.PropsWithChildren<ISecurityTrimmedControlProps>);
     /**
      * componentDidMount lifecycle method
      */

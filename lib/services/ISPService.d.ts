@@ -49,8 +49,8 @@ export declare enum IMEMode {
     Active = 2,
     Disabled = 3
 }
-export declare type ClientFormFieldInfoFieldType = "Attachments" | "Text" | "Number" | "Boolean" | "Choice" | "MultiChoice" | "User" | "UserMulti" | "Note" | "DateTime" | "URL" | "Lookup" | "LookupMulti" | "Hyperlink" | "Thumbnail" | "Currency" | "Location" | "TaxonomyFieldType" | "TaxonomyFieldTypeMulti";
-export declare type ClientFormFieldInfoType = "Attachments" | "Text" | "Number" | "Boolean" | "Choice" | "User" | "Note" | "DateTime" | "URL" | "Lookup" | "URL" | "Thumbnail" | "Currency" | "Location";
+export declare type ClientFormFieldInfoFieldType = "Attachments" | "Text" | "Number" | "Boolean" | "Choice" | "MultiChoice" | "User" | "UserMulti" | "Note" | "DateTime" | "URL" | "Lookup" | "LookupMulti" | "Hyperlink" | "Thumbnail" | "Currency" | "Location" | "TaxonomyFieldType" | "TaxonomyFieldTypeMulti" | "File";
+export declare type ClientFormFieldInfoType = "Attachments" | "Text" | "Number" | "Boolean" | "Choice" | "User" | "Note" | "DateTime" | "URL" | "Lookup" | "URL" | "Thumbnail" | "Currency" | "Location" | "File";
 export interface IClientFormBaseInfo {
     Id: string;
     Title: string;
@@ -86,6 +86,10 @@ export interface IClientFormLocationFieldInfo extends IClientFormBaseInfo {
 export interface IClientFormBooleanFieldInfo extends IClientFormBaseInfo {
     FieldType: "Boolean";
     Type: "Boolean";
+}
+export interface IClientFormFileFieldInfo extends IClientFormBaseInfo {
+    FieldType: "File";
+    Type: "File";
 }
 export interface IClientFormTextFieldInfo extends IClientFormBaseInfo {
     FieldType: "Text" | "Note";
@@ -201,7 +205,7 @@ export interface IClientFormLookupFieldInfo extends IClientFormBaseLookupFieldIn
     LookupListUrl: string;
     LookupFieldName: string;
 }
-export declare type ClientFormFieldInfo = IClientFormTextFieldInfo | IClientFormNumberFieldInfo | IClientFormChoiceFieldInfo | IClientFormDateFieldInfo | IClientFormLookupFieldInfo | IClientFormUserFieldInfo | IClientFormTaxonomyFieldInfo | IClientFormImageFieldInfo | IClientFormHyperlinkFieldInfo | IClientFormLocationFieldInfo | IClientFormCurrencyFieldInfo | IClientFormBooleanFieldInfo;
+export declare type ClientFormFieldInfo = IClientFormTextFieldInfo | IClientFormNumberFieldInfo | IClientFormChoiceFieldInfo | IClientFormDateFieldInfo | IClientFormLookupFieldInfo | IClientFormUserFieldInfo | IClientFormTaxonomyFieldInfo | IClientFormImageFieldInfo | IClientFormHyperlinkFieldInfo | IClientFormLocationFieldInfo | IClientFormCurrencyFieldInfo | IClientFormBooleanFieldInfo | IClientFormFileFieldInfo;
 export interface IClientFormInfoByContentType {
     [contentType: string]: ClientFormFieldInfo[];
 }

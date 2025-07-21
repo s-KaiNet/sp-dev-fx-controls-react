@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { SiteVariablesPrepared } from "@fluentui/react-northstar";
 import { IWidget } from "./IWidget";
 export declare const WidgetBody: ({ widget, siteVariables, }: {

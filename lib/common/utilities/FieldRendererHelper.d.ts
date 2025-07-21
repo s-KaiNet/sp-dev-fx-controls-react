@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ListItemAccessor } from '@microsoft/sp-listview-extensibility';
 import { IContext } from '../Interfaces';
 import { IFieldRendererProps } from '../../controls/fields/fieldCommon/IFieldRendererProps';

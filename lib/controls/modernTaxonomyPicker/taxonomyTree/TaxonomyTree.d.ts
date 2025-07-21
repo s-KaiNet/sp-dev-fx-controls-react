@@ -15,7 +15,8 @@ export interface ITaxonomyTreeProps {
     termStoreInfo: ITermStoreInfo;
     languageTag: string;
     themeVariant?: IReadonlyTheme;
-    onRenderActionButton?: (termStoreInfo: ITermStoreInfo, termSetInfo: ITermSetInfo, termInfo: ITermInfo, updateTaxonomyTreeViewCallback?: (newTermItems?: ITermInfo[], updatedTermItems?: ITermInfo[], deletedTermItems?: ITermInfo[]) => void) => JSX.Element;
+    onRenderActionButton?: (termStoreInfo: ITermStoreInfo, termSetInfo: ITermSetInfo, termInfo: ITermInfo, updateTaxonomyTreeViewCallback?: (newTermItems?: ITermInfo[], parentTerm?: ITermInfo[], //only for adding new terms
+    updatedTermItems?: ITermInfo[], deletedTermItems?: ITermInfo[]) => void) => JSX.Element;
     terms: ITermInfo[];
     setTerms: React.Dispatch<React.SetStateAction<ITermInfo[]>>;
     selection?: Selection<any>;

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { BaseComponentContext } from '@microsoft/sp-component-base';
 import { SPPermission } from '@microsoft/sp-page-context';
 import { PermissionLevel } from '.';

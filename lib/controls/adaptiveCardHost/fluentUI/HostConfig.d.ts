@@ -1,4 +1,4 @@
-import { ITheme } from '@fluentui/react/lib/Styling';
+import type { ITheme } from '@fluentui/react';
 export declare const createSharePointHostConfig: (theme: ITheme) => any;
 export declare const createDefaultTeamsHostConfig: (theme: ITheme) => any;
 export declare const createDarkTeamsHostConfig: (theme: ITheme) => any;

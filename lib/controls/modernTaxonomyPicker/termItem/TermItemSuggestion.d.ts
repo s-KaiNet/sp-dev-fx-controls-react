@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ISuggestionItemProps } from '@fluentui/react/lib/Pickers';
 import { Guid } from '@microsoft/sp-core-library';
 import { ITermInfo, ITermStoreInfo } from '@pnp/sp/taxonomy';

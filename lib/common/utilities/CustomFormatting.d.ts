@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { FormulaEvaluation } from "./FormulaEvaluation";
 import { Context } from "./FormulaEvaluation.types";
 import { ICustomFormattingNode } from "./ICustomFormatting";

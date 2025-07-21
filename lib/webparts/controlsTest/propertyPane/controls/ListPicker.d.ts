@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IDropdownOption } from '@fluentui/react/lib/components/Dropdown';
+import { IDropdownOption } from '@fluentui/react/lib/Dropdown';
 import { WebPartContext } from '@microsoft/sp-webpart-base';
 export interface IListPickerProps {
     label: string;

@@ -1,5 +1,5 @@
-import { EMyTeamsTypes } from "./EMyTeamsTypes";
-import { IMyTeamsState } from "./IMyTeamsState";
+import { EMyTeamsTypes } from './EMyTeamsTypes';
+import { IMyTeamsState } from './IMyTeamsState';
 export declare const myTeamsReducer: (state: IMyTeamsState, action: {
     type: EMyTeamsTypes;
     payload: any;

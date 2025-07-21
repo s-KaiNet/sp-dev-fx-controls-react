@@ -77,12 +77,16 @@ export interface ICarouselProps {
     canMovePrev?: boolean;
     /**
      * Specifies the location of the buttons inside the container.
+     *
+     * Default: CarouselButtonsLocation.center
      */
-    buttonsLocation: CarouselButtonsLocation;
+    buttonsLocation?: CarouselButtonsLocation;
     /**
      * Specifies the buttons container display mode.
+     *
+     * Default: CarouselButtonsDisplay.block
      */
-    buttonsDisplay: CarouselButtonsDisplay;
+    buttonsDisplay?: CarouselButtonsDisplay;
     /**
      * Allows to specify own styles for carousel container.
      */
@@ -198,5 +202,9 @@ export interface ICarouselProps {
      * Allows to specify own styles for indicators container when indicatorsDisplay is set to "block".
      */
     indicatorsContainerStyles?: ICssInput;
+    /**
+     * Allows to specify the height of the content. Can be used instead of providing styles for the content container.
+     */
+    contentHeight?: number;
 }
 //# sourceMappingURL=ICarouselProps.d.ts.map

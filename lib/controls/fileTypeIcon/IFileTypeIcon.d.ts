@@ -1,3 +1,4 @@
+import { MouseEventHandler } from "react";
 /**
  * Available icon types
  */
@@ -78,6 +79,12 @@ export interface IFileTypeIconProps {
     application?: ApplicationType;
     path?: string;
     size?: ImageSize;
+    onClick?: MouseEventHandler<HTMLElement> | undefined;
+    onDoubleClick?: MouseEventHandler<HTMLElement> | undefined;
+    onMouseEnter?: MouseEventHandler<HTMLElement> | undefined;
+    onMouseLeave?: MouseEventHandler<HTMLElement> | undefined;
+    onMouseOver?: MouseEventHandler<HTMLElement> | undefined;
+    onMouseUp?: MouseEventHandler<HTMLElement> | undefined;
 }
 /**
  * Generic file type icons base64 encoded

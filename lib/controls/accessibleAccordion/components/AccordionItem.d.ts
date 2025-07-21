@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import DisplayName from "../helpers/DisplayName";
 import { DivAttributes } from "../helpers/types";
 import { UUID } from "./ItemContext";

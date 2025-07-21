@@ -552,7 +552,7 @@ export class TaxonomyPicker extends React.Component<ITaxonomyPickerProps, ITaxon
           });
         }
       }
-      catch (err) {
+      catch {
         this.validated(value);
       }
     }

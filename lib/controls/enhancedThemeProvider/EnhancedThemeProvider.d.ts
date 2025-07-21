@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ITheme } from "@fluentui/react/lib/Styling";
 import IEnhancedThemeProviderProps from './IEnhancedThemeProviderProps';
 import { ThemeContext, useTheme } from '@fluentui/react-theme-provider';

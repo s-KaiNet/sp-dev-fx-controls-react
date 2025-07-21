@@ -1,14 +1,11 @@
-import * as React from "react";
-import { IControlsTestProps } from "./IControlsTestProps";
-import { IControlsTestState } from "./IControlsTestState";
+import * as React from 'react';
+import { IControlsTestProps } from './IControlsTestProps';
+import { IControlsTestState } from './IControlsTestState';
 /**
  * Component that can be used to test out the React controls from this project
  */
 export default class ControlsTest extends React.Component<IControlsTestProps, IControlsTestState> {
-    private taxService;
     private spTaxonomyService;
-    private serviceScope;
-    private richTextValue;
     private theme;
     private pickerStylesSingle;
     private onSelectedChannel;
@@ -18,11 +15,16 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
     private carouselElements;
     private skypeCheckIcon;
     private treeitems;
+    private progressSteps;
+    private divRefAddReaction;
+    private peoplePickerContext;
+    private termSetId;
     constructor(props: IControlsTestProps);
     /**
      * React componentDidMount lifecycle hook
      */
     componentDidMount(): Promise<void>;
+    componentDidUpdate(prevProps: Readonly<IControlsTestProps>, prevState: Readonly<IControlsTestState>, snapshot?: any): Promise<void>;
     /**
      * Event handler when changing the icon size in the dropdown
      * @param element
@@ -94,6 +96,9 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
     private toggleToolbarFilter;
     private rootFolder;
     private _onFolderSelect;
+    private addFilter;
+    private onClearFilters;
+    private onRemoveFilter;
     private _onFileClick;
     private _onRenderGridItem;
     /**

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { IPartialTheme, ITheme } from '@fluentui/react/lib/Styling';
 import { ITreeItem } from './ITreeItem';
 import { TreeItemActionsDisplayMode } from './ITreeItemActions';

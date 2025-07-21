@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { IInstalledLanguageInfo } from '@pnp/sp/regional-settings';
 import { ISPField } from '../../common/SPEntities';
 import { MessageBarType } from '@fluentui/react/lib/MessageBar';

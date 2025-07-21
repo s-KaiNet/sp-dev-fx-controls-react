@@ -10,7 +10,7 @@ export declare class DragDropFiles extends React.Component<IDragDropFilesProps, 
     private _IconName;
     private _dropEffect;
     private _enable;
-    constructor(props: IDragDropFilesProps);
+    constructor(props: React.PropsWithChildren<IDragDropFilesProps>);
     /**
    * Lifecycle hook when component is mounted
    */

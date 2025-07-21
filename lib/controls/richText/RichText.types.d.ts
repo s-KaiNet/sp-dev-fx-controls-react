@@ -1,4 +1,4 @@
-/// <reference types="react" />
+import React from 'react';
 import { ISwatchColor } from './SwatchColorPickerGroup.types';
 export interface IRichTextProps {
     /**
@@ -16,6 +16,11 @@ export interface IRichTextProps {
      * @defaultvalue null
      */
     className?: string;
+    /**
+     * Styles to apply to the rich text editor.
+     * @defaultvalue null
+     */
+    style?: React.CSSProperties;
     /**
      * Indicates if the rich text editor should be in edit mode
      * @defaultvalue true

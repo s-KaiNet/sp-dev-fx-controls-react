@@ -88,7 +88,7 @@ export declare class RichText extends React.Component<IRichTextProps, IRichTextS
      */
     private renderLinkDialog;
     /**
-    * Renders the "Insert Image" dialog
+     * Renders the "Insert Image" dialog
      */
     private renderImageDialog;
     /**

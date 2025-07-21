@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ComponentEventHandler, ObjectShorthandCollection, PopupProps, TreeItemProps } from "@fluentui/react-northstar";
 import { TToolbarLayout } from "./ToolbarActionsUtils";
 export interface IExtendedToolbarFilterProps {

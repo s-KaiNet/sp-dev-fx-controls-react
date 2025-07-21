@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { DivAttributes } from "../helpers/types";
 declare type Props = DivAttributes & {
     className?: string;

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ComponentEventHandler, PopupProps, ThemePrepared } from "@fluentui/react-northstar";
 import { IWidgetActionKey } from "./widget/IWidget";
 export interface IDashboardCallout {
