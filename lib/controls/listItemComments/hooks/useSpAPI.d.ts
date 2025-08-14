@@ -6,6 +6,8 @@ interface returnObject {
     getNextPageOfComments: (nextLink: string) => Promise<IlistItemCommentsResults>;
     addComment: (comment: IAddCommentPayload) => Promise<IComment>;
     deleteComment: (commentId: number) => Promise<void>;
+    likeComment: (commentId: number) => Promise<void>;
+    unlikeComment: (commentId: number) => Promise<void>;
 }
 export declare const useSpAPI: () => returnObject;
 export {};

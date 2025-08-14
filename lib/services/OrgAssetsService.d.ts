@@ -6,6 +6,8 @@ import { ILibrary, FilesQueryResult } from "./FileBrowserService.types";
  */
 export declare class OrgAssetsService extends FileBrowserService {
     private _orgAssetsLibraryServerRelativeSiteUrl;
+    private get orgAssetsLibraryServerRelativeSiteUrl();
+    private set orgAssetsLibraryServerRelativeSiteUrl(value);
     /**
      * Constructor
      * @param context Component context

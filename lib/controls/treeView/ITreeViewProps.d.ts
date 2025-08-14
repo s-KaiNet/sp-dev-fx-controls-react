@@ -11,10 +11,10 @@ export declare enum TreeViewSelectionMode {
 }
 export declare enum SelectChildrenMode {
     None = 0,
-    Select = 1,
-    Unselect = 2,
-    Mount = 4,
-    Update = 8,
+    Select = 1,// 0001
+    Unselect = 2,// 0010
+    Mount = 4,// 0100
+    Update = 8,// 1000
     All = 15
 }
 /**

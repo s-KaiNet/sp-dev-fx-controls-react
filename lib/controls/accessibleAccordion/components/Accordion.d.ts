@@ -2,7 +2,7 @@ import "../css/AccordionStylesOverride.css";
 import { DivAttributes } from "../helpers/types";
 import { UUID } from "./ItemContext";
 import { IPartialTheme, ITheme } from '@fluentui/react/lib/Styling';
-declare type AccordionProps = Pick<DivAttributes, Exclude<keyof DivAttributes, 'onChange'>> & {
+type AccordionProps = Pick<DivAttributes, Exclude<keyof DivAttributes, 'onChange'>> & {
     className?: string;
     preExpanded?: UUID[];
     allowMultipleExpanded?: boolean;

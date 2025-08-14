@@ -1,6 +1,7 @@
 import { IIconProps } from "@fluentui/react/lib/Icon";
 import { BaseComponentContext } from '@microsoft/sp-component-base';
 import { IFilePickerResult } from "./FilePicker.types";
+import { FilePickerTab } from "./FilePickerTab";
 export interface IFilePickerProps {
     /**
      * Specifies the text describing the file picker
@@ -144,5 +145,15 @@ export interface IFilePickerProps {
      * Specifies if file check should be done
      */
     checkIfFileExists?: boolean;
+    /**
+     * Specifies tab order
+     * Default [FilePickerTab.Recent, FilePickerTab.StockImages, FilePickerTab.Web, FilePickerTab.OrgAssets, FilePickerTab.OneDrive, FilePickerTab.Site, FilePickerTab.Upload, FilePickerTab.Link, FilePickerTab.MultipleUpload]
+     */
+    tabOrder?: FilePickerTab[];
+    /**
+     * Specifies default selected tab
+     * One of the values from the FilePickerTab enum: Recent, StockImages, Web, OrgAssets, OneDrive, Site, Upload, Link, or MultipleUpload.
+    */
+    defaultSelectedTab?: FilePickerTab;
 }
 //# sourceMappingURL=IFilePickerProps.d.ts.map

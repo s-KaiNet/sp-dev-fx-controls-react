@@ -146,7 +146,7 @@ export interface IDynamicFormProps {
      */
     className?: string;
 }
-export declare type IDynamicFormStyleProps = Pick<IDynamicFormProps, 'className'> & {};
+export type IDynamicFormStyleProps = Pick<IDynamicFormProps, 'className'> & {};
 export interface IDynamicFormSubComponentStyles {
     fieldStyles: IDynamicFieldStyles;
 }

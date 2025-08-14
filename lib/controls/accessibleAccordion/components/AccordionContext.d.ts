@@ -8,7 +8,7 @@ export interface ProviderProps {
     children?: React.ReactNode;
     onChange?(args: UUID[]): void;
 }
-declare type ProviderState = AccordionStore;
+type ProviderState = AccordionStore;
 export interface AccordionContext {
     allowMultipleExpanded: boolean;
     allowZeroExpanded: boolean;

@@ -2,7 +2,7 @@ import { DayOfWeek, FirstWeekOfYear } from '@fluentui/react/lib/DateTimeUtilitie
 import { TimeConvention, DateConvention } from './DateTimeConventions';
 import { IDateTimePickerStrings } from './IDateTimePickerStrings';
 import { TimeDisplayControlType } from './TimeDisplayControlType';
-export declare type MinutesIncrement = 1 | 5 | 10 | 15 | 30;
+export type MinutesIncrement = 1 | 5 | 10 | 15 | 30;
 /**
  * Public properties of the DateTimePicker custom field
  *

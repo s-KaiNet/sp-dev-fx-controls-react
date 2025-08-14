@@ -2,9 +2,9 @@ export interface ISearchSuggestion {
     topic: string;
     backgroundUrl: string;
 }
-export declare type ImageSize = 'All' | 'Small' | 'Medium' | 'Large' | 'Wallpaper';
-export declare type ImageAspect = 'All' | 'Square' | 'Wide' | 'Tall';
-export declare type ImageLicense = 'All' | 'Any';
+export type ImageSize = 'All' | 'Small' | 'Medium' | 'Large' | 'Wallpaper';
+export type ImageAspect = 'All' | 'Square' | 'Wide' | 'Tall';
+export type ImageLicense = 'All' | 'Any';
 /**
  * Rows per page
  */

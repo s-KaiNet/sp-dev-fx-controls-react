@@ -1,15 +1,15 @@
 import * as React from "react";
 import { InjectedButtonAttributes, InjectedHeadingAttributes, InjectedPanelAttributes } from "../helpers/AccordionStore";
 import { AccordionContext } from "./AccordionContext";
-export declare type UUID = string;
-declare type ProviderProps = {
+export type UUID = string;
+type ProviderProps = {
     children?: React.ReactNode;
     uuid: UUID;
     accordionContext: AccordionContext;
     dangerouslySetExpanded?: boolean;
 };
-export declare type ProviderWrapperProps = Pick<ProviderProps, Exclude<keyof ProviderProps, 'accordionContext'>>;
-export declare type ItemContext = {
+export type ProviderWrapperProps = Pick<ProviderProps, Exclude<keyof ProviderProps, 'accordionContext'>>;
+export type ItemContext = {
     uuid: UUID;
     expanded: boolean;
     disabled: boolean;
@@ -20,7 +20,7 @@ export declare type ItemContext = {
 };
 declare const ProviderWrapper: React.SFC<ProviderWrapperProps>;
 export { ProviderWrapper as Provider };
-declare type ConsumerProps = {
+type ConsumerProps = {
     children(container: ItemContext): React.ReactNode;
 };
 export declare const Consumer: ({ children }: ConsumerProps) => JSX.Element;

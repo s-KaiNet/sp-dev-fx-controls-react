@@ -40,6 +40,13 @@ export declare class FilePicker extends React.Component<IFilePickerProps, IFileP
      * Prepares navigation panel options
      */
     private _getNavPanelOptions;
-    private getDefaultSelectedTabKey;
+    /**
+     * Sorts navigation tabs based on the tabOrder prop
+     */
+    private _getTabOrder;
+    /**
+     * Returns the default selected tab key
+     */
+    private _getDefaultSelectedTabKey;
 }
 //# sourceMappingURL=FilePicker.d.ts.map

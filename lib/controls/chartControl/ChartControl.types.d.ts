@@ -243,7 +243,7 @@ export interface IChartPlugin {
 /**
  * The types of charts available
  */
-export declare type ChartType = 'line' | 'bar' | 'horizontalBar' | 'radar' | 'doughnut' | 'polarArea' | 'bubble' | 'pie' | 'scatter';
+export type ChartType = 'line' | 'bar' | 'horizontalBar' | 'radar' | 'doughnut' | 'polarArea' | 'bubble' | 'pie' | 'scatter';
 /**
  * The types of charts available
  */

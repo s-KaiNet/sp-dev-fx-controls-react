@@ -18,7 +18,7 @@ export interface IEvent {
     onRenderInMonthView?: (event: IEvent) => JSX.Element;
     onRenderInWeekView?: (event: IEvent) => JSX.Element;
     onRenderInDayView?: (event: IEvent) => JSX.Element;
-    enableOnHouver?: boolean;
+    enableOnHover?: boolean;
     imageUrl?: string;
     webLink?: string;
     color?: AvatarNamedColor;

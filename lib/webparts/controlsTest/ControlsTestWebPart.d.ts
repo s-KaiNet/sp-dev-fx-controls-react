@@ -1,7 +1,7 @@
-import { Version } from '@microsoft/sp-core-library';
+import { IControlsTestWebPartProps } from './IControlsTestWebPartProps';
 import { IPropertyPaneConfiguration } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { IControlsTestWebPartProps } from './IControlsTestWebPartProps';
+import { Version } from '@microsoft/sp-core-library';
 /**
  * Web part to test the React controls
  */

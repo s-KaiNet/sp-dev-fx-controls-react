@@ -1,6 +1,6 @@
 import * as React from "react";
 import { DivAttributes } from "../helpers/types";
-declare type Props = DivAttributes;
+type Props = DivAttributes;
 declare const defaultProps: {
     className: string;
     'aria-level': number;

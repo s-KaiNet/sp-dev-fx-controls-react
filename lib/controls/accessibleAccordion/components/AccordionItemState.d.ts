@@ -1,6 +1,6 @@
 import * as React from "react";
 import { DivAttributes } from "../helpers/types";
-declare type Props = Pick<DivAttributes, Exclude<keyof DivAttributes, 'children'>> & {
+type Props = Pick<DivAttributes, Exclude<keyof DivAttributes, 'children'>> & {
     children(args: Partial<{
         expanded: boolean;
         disabled: boolean;

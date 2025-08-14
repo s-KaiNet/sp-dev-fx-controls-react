@@ -18,7 +18,7 @@ export interface ITermItemProps extends IPickerItemProps<ITermInfo> {
     termStoreInfo: ITermStoreInfo;
     languageTag: string;
 }
-export declare type ITermItemStyleProps = Required<Pick<ITermItemProps, 'theme'>> & Pick<ITermItemProps, 'className' | 'selected' | 'disabled'> & {};
+export type ITermItemStyleProps = Required<Pick<ITermItemProps, 'theme'>> & Pick<ITermItemProps, 'className' | 'selected' | 'disabled'> & {};
 export interface ITermItemStyles {
     /** Root element of picked TermItem */
     root: IStyle;
@@ -35,7 +35,7 @@ export interface ITermItemSuggestionElementProps extends React.AllHTMLAttributes
     /** Theme provided by High-Order Component. */
     theme?: ITheme;
 }
-export declare type ITermItemSuggestionStyleProps = Required<Pick<ITermItemSuggestionElementProps, 'theme'>> & Pick<ITermItemSuggestionElementProps, 'className'> & {};
+export type ITermItemSuggestionStyleProps = Required<Pick<ITermItemSuggestionElementProps, 'theme'>> & Pick<ITermItemSuggestionElementProps, 'className'> & {};
 export interface ITermItemSuggestionStyles {
     /** Refers to the text element of the TermItemSuggestion */
     suggestionTextOverflow?: IStyle;

@@ -1,8 +1,9 @@
 import { IDocumentCardStyles } from "@fluentui/react/lib/DocumentCard";
 import { IStackStyles } from "@fluentui/react/lib/Stack";
+import { IButtonStyles } from '@fluentui/react';
 interface returnObjectStyles {
     itemContainerStyles: IStackStyles;
-    deleteButtonContainerStyles: Partial<IStackStyles>;
+    buttonsContainerStyles: Partial<IStackStyles>;
     userListContainerStyles: Partial<IStackStyles>;
     renderUserContainerStyles: Partial<IStackStyles>;
     documentCardStyles: Partial<IDocumentCardStyles>;
@@ -10,6 +11,8 @@ interface returnObjectStyles {
     documentCardHighlightedStyles: Partial<IDocumentCardStyles>;
     documentCardUserStyles: Partial<IDocumentCardStyles>;
     configurationListClasses: any;
+    contentStyles: any;
+    iconButtonStyles: Partial<IButtonStyles>;
 }
 export declare const useListItemCommentsStyles: () => returnObjectStyles;
 export {};

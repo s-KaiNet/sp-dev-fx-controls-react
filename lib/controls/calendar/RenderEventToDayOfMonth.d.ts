@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { IEvent } from './models/IEvents';
+import * as React from "react";
+import { IEvent } from "./models/IEvents";
 export interface IRenderEventToDayOfMonthProps {
     events: IEvent[];
     date: Date;

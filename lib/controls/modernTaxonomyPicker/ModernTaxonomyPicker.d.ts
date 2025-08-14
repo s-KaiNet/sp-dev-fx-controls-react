@@ -2,7 +2,7 @@ import { BaseComponentContext, IReadonlyTheme } from '@microsoft/sp-component-ba
 import { ITermInfo, ITermSetInfo, ITermStoreInfo } from '@pnp/sp/taxonomy';
 import { ISuggestionItemProps } from '@fluentui/react/lib/Pickers';
 import { IModernTermPickerProps, ITermItemProps } from './modernTermPicker/ModernTermPicker.types';
-export declare type Optional<T, K extends keyof T> = Pick<Partial<T>, K> & Omit<T, K>;
+export type Optional<T, K extends keyof T> = Pick<Partial<T>, K> & Omit<T, K>;
 export interface IModernTaxonomyPickerProps {
     allowMultipleSelections?: boolean;
     isPathRendered?: boolean;
