@@ -68,7 +68,7 @@ export const CommentsList: React.FunctionComponent = () => {
         payload: false,
       });
     } catch (error) {
-      const _errorInfo: IErrorInfo = { showError: true, error: error.message };
+      const _errorInfo: IErrorInfo = { showError: true, error: error as Error };
       setlistItemCommentsState({
         type: EListItemCommentsStateTypes.SET_ERROR_INFO,
         payload: _errorInfo,
@@ -87,7 +87,7 @@ export const CommentsList: React.FunctionComponent = () => {
         await addComment(commentText);
         await _loadComments();
       } catch (error) {
-        const _errorInfo: IErrorInfo = { showError: true, error: error };
+        const _errorInfo: IErrorInfo = { showError: true, error: error as Error };
         setlistItemCommentsState({
           type: EListItemCommentsStateTypes.SET_ERROR_INFO,
           payload: _errorInfo,
@@ -110,7 +110,7 @@ export const CommentsList: React.FunctionComponent = () => {
         await deleteComment(commentId);
         await _loadComments();
       } catch (error) {
-        const _errorInfo: IErrorInfo = { showError: true, error: error };
+        const _errorInfo: IErrorInfo = { showError: true, error: error as Error };
         setlistItemCommentsState({
           type: EListItemCommentsStateTypes.SET_ERROR_INFO,
           payload: _errorInfo,
@@ -131,7 +131,7 @@ export const CommentsList: React.FunctionComponent = () => {
         await likeComment(commentId);
         await _loadComments();
       } catch (error) {
-        const _errorInfo: IErrorInfo = { showError: true, error: error };
+        const _errorInfo: IErrorInfo = { showError: true, error: error as Error };
         setlistItemCommentsState({
           type: EListItemCommentsStateTypes.SET_ERROR_INFO,
           payload: _errorInfo,
@@ -151,7 +151,7 @@ export const CommentsList: React.FunctionComponent = () => {
         await unlikeComment(commentId);
         await _loadComments();
       } catch (error) {
-        const _errorInfo: IErrorInfo = { showError: true, error: error };
+        const _errorInfo: IErrorInfo = { showError: true, error: error as Error };
         setlistItemCommentsState({
           type: EListItemCommentsStateTypes.SET_ERROR_INFO,
           payload: _errorInfo,
@@ -257,14 +257,14 @@ export const CommentsList: React.FunctionComponent = () => {
 
   return (
     <>
-      <Stack tokens={{ childrenGap: 10, maxWidth: 335 }}>
+      <Stack tokens={{ childrenGap: 10 }}>
         <RenderError errorInfo={errorInfo} />
         <AddComment />
         <Text variant="small" block style={{ fontWeight: 600 }}>
           {strings.ListItemCommentsLabel}
         </Text>
         <div className={configurationListClasses.titlesContainer} onScroll={handleScroll} ref={scrollPanelRef}>
-          <Stack>
+          <Stack styles={{ root: { width: '100%' }}}>
             <RenderComments />
           </Stack>
         </div>

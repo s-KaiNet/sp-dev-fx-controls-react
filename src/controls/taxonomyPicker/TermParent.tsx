@@ -162,7 +162,7 @@ export default class TermParent extends React.Component<ITermParentProps, ITermP
       const termTree = this.buildTermsTree(this._terms);
 
       if (this._terms.length > 0) {
-
+        const disabledPaths: string[] = [];
         termElm = (
           <div style={styleProps}>
             {
