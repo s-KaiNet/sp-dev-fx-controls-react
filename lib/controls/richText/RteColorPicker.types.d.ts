@@ -5,7 +5,7 @@ export interface IRteColorPickerProps {
     colorPickerGroups: string[];
     defaultButtonLabel?: string;
     fillThemeColor?: boolean;
-    onColorChanged: (string: any) => void;
+    onColorChanged: (color: string) => void;
     previewColor: string;
     selectedColor: string;
     switchToDefaultColor: () => void;

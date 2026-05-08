@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { BaseComponentContext } from '@microsoft/sp-component-base';
 import { Action, CardElement, CardObjectRegistry, HostCapabilities } from 'adaptivecards';
 import { IPartialTheme, ITheme } from '@fluentui/react/lib/Styling';

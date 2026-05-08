@@ -22,6 +22,15 @@ export declare class UploadAttachment extends React.Component<IUploadAttachmentP
      */
     private addAttachment;
     /**
+     * Called when the hidden file input is clicked (activated).
+     * @param e - Mouse click event on the file input element.
+    */
+    private onInputActivated;
+    /**
+     * Handles window focus event after the file picker dialog is closed.
+    */
+    private handleFocusAfterDialog;
+    /**
      * Close dialog
      */
     private closeDialog;

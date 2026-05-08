@@ -1,0 +1,80 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+.ellipsis, .user {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.relative, .main, .ellipsis, .user {
+  position: relative;
+}
+
+.fabricIcon {
+  display: inline-block;
+  font-family: "FabricMDL2Icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+}
+
+.user span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.main {
+  padding: 20px 24px;
+  background: #fff;
+}
+.main .actions {
+  margin: 16px -4px 0 -8px;
+}
+.main .actions a {
+  margin-left: 0px !important;
+}
+.main .actions .chat i {
+  position: relative;
+  top: 1px;
+}
+
+.sections {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+}
+.sections .section {
+  padding: 20px 0;
+  background: #fff;
+}
+.sections .section .header {
+  display: inline-block;
+  position: relative;
+  margin: 0 24px 12px;
+  text-align: left;
+  padding: 0 20px 0 0;
+}
+.sections .section .header .chevron {
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  vertical-align: middle;
+}
+.sections .section .contactItem {
+  padding: 0 24px;
+  display: flex;
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+}
+.sections .section .contactItem i {
+  padding-top: 0.1em;
+}
+.sections .section .contactItem .content {
+  margin: 0 12px;
+}

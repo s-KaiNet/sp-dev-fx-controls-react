@@ -8,6 +8,11 @@ export declare class GridLayout extends React.Component<IGridLayoutProps, IGridL
     * Constructor method
     */
     constructor(props: IGridLayoutProps);
+    private ROWS_PER_PAGE;
+    private MAX_WIDTH;
+    private MIN_WIDTH;
+    private PADDING;
+    private COMPACT_THRESHOLD;
     private _columnCount;
     private _columnWidth;
     private _rowHeight;

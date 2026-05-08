@@ -1,0 +1,28 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.relative, .link, .image, .ellipsis {
+  position: relative;
+}
+
+.fabricIcon {
+  display: inline-block;
+  font-family: "FabricMDL2Icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+}
+
+.image {
+  max-width: 64px;
+  max-height: 64px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}

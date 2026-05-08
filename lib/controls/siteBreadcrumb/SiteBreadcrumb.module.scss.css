@@ -1,0 +1,15 @@
+.breadcrumb > div {
+  padding-left: 7px;
+}
+.breadcrumb div[role=navigation] {
+  margin-top: 0;
+}
+.breadcrumb .breadcrumbLinks ol li a {
+  font-size: 14px;
+}
+.breadcrumb .breadcrumbLinks ol li a:hover {
+  background-color: #fff;
+}
+.breadcrumb .breadcrumbLinks ol li i {
+  font-size: 10px;
+}

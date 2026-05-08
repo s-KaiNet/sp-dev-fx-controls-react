@@ -20,5 +20,5 @@ export declare class DynamicFieldBase extends React.Component<IDynamicFieldProps
     private MultiChoice_selection;
     private saveIntoSharePoint;
 }
-export declare const DynamicField: React.FunctionComponent<IDynamicFieldProps>;
+export declare const DynamicField: React.FunctionComponent<React.PropsWithChildren<React.PropsWithChildren<IDynamicFieldProps>>>;
 //# sourceMappingURL=DynamicField.d.ts.map

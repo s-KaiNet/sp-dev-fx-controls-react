@@ -1,2 +1,2 @@
-export declare const useReactionPickerStyles: () => Record<"card" | "emoji" | "emojiList" | "cardContent" | "searchBox" | "emojiRoot" | "emojiImage" | "emojiGroupContainer" | "emojiImageGroup" | "emojiSelected" | "groupButton", string>;
+export declare const useReactionPickerStyles: () => Record<"emoji" | "card" | "emojiList" | "cardContent" | "searchBox" | "emojiRoot" | "emojiImage" | "emojiGroupContainer" | "emojiImageGroup" | "emojiSelected" | "groupButton", string>;
 //# sourceMappingURL=useReactionPickerStyle.d.ts.map

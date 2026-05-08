@@ -5,6 +5,7 @@ export interface ITermItemSuggestionProps<T> extends ISuggestionItemProps<T> {
     term: ITermInfo;
     languageTag?: string;
     termStoreInfo?: ITermStoreInfo;
+    searchFilter?: string;
     onLoadParentLabel?: (termId: Guid) => Promise<string>;
 }
 export declare function TermItemSuggestion(props: ITermItemSuggestionProps<ITermInfo>): JSX.Element;

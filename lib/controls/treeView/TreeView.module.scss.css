@@ -1,0 +1,86 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+.treeView {
+  padding: 15px;
+}
+.treeView .listItem {
+  display: flex;
+  margin-top: 6px;
+  align-items: flex-start;
+}
+.treeView .treeSelector {
+  vertical-align: middle;
+  margin: 4px 4px 0 0;
+  cursor: pointer;
+}
+.treeView .treeSelector > button {
+  height: 20px;
+  width: 20px;
+  padding: 0;
+}
+.treeView .itemContent {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 4px;
+}
+.treeView .itemContent.disabled {
+  cursor: default;
+  color: var(--treeview-disabledBodyText);
+}
+.treeView .itemContent.disabled .labels .itemSubLabel {
+  color: var(--treeview-disabledSubtext);
+}
+.treeView .itemContent.noCheckBox:not(.disabled):hover {
+  background-color: var(--treeview-listItemBackgroundHovered);
+}
+.treeView .itemContent.noCheckBox:not(.disabled).checked {
+  background-color: var(--treeview-listItemBackgroundChecked);
+}
+.treeView .itemContent .checkbox {
+  margin-right: 8px;
+}
+.treeView .itemContent .icon {
+  height: 18px;
+  line-height: 18px;
+}
+.treeView .itemContent .labels {
+  line-height: 18px;
+}
+.treeView .itemContent .labels .itemLabel {
+  padding: 0;
+}
+.treeView .itemContent .labels .itemSubLabel {
+  font-size: 12px;
+  color: var(--treeview-bodySubtext);
+}
+.treeView .itemMenu {
+  display: flex;
+  margin-left: 8px;
+}
+.treeView .itemMenu .actionMore {
+  width: 14px;
+  height: 20px;
+  padding: 0;
+}
+.treeView .itemMenu .actionButton {
+  height: 20px;
+  padding: 0;
+  background-color: transparent;
+}
+.treeView .itemMenu .actionButton:hover {
+  background-color: var(--treeview-buttonBackgroundHovered);
+  color: var(--treeview-buttonTextHovered);
+}
+.treeView .itemMenu .actionButton:pressed {
+  background-color: var(--treeview-buttonBackgroundPressed);
+  color: var(--treeview-buttonTextPressed);
+}
+.treeView .tree label > span {
+  padding-left: 0px;
+}
+.treeView .tree .blankspace {
+  padding-left: 35px;
+}

@@ -17,5 +17,5 @@ export declare const getMd5HashForUrl: (url: string) => Promise<string>;
  * @param userId
  * @returns user photo
  */
-export declare const getUserPhoto: (userId: any) => Promise<string>;
+export declare const getUserPhoto: (userId: string | number) => Promise<string>;
 //# sourceMappingURL=utils.d.ts.map

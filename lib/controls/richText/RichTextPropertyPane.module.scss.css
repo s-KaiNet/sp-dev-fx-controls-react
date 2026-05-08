@@ -1,0 +1,95 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+:export {
+  NeutralPrimary: "[theme:neutralPrimary, default:#323130]";
+}
+
+.richTextPropertyPane .formattingPaneTitle {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: "[theme:neutralDark, default:#201f1e]";
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  display: flex;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  color: "[theme:white, default:#ffffff]";
+  font-family: "Segoe UI Web (West European)", Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 21px;
+  font-weight: 100;
+  line-height: 25.2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.richTextPropertyPane .propertyPaneGroupContent {
+  padding: 0 20px 16px;
+}
+.richTextPropertyPane .controlsInOneRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.richTextPropertyPane .propertyPaneClose {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: "[theme:white, default:#ffffff]";
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0;
+  min-width: 0px;
+}
+.richTextPropertyPane :global .ms-Panel-content {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 16px;
+  padding-left: 0px;
+}
+.richTextPropertyPane :global .ms-Panel-contentInner {
+  top: 67px;
+}
+
+.propertyPaneButton {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+.propertyPaneButton:hover {
+  background-color: "[theme:neutralLight, default:#edebe9]";
+  color: "[theme:themePrimary, default:#0078d4]";
+}
+.propertyPaneButton:global(.is-checked) {
+  color: "[theme:themePrimary, default:#0078d4]";
+}
+.propertyPaneButton:global(.is-disabled) {
+  background-color: "[theme:white, default:#ffffff]";
+}
+
+.propertyPaneGroupField {
+  padding-top: 4px;
+  color: "[theme:neutralPrimaryAlt, default:#3b3a39]";
+  word-wrap: break-word;
+}
+
+.propertyPaneGroupHeaderNoAccordion {
+  font-size: 14px;
+  font-weight: 400;
+  font-weight: 600;
+  color: "[theme:neutralPrimaryAlt, default:#3b3a39]";
+  padding-right: 0;
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
+  padding-top: 4px;
+  width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

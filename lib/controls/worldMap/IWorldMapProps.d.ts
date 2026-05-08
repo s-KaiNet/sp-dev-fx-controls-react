@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { Theme } from "@fluentui/react-components";
 export interface IWorldMapProps {
     description: string;

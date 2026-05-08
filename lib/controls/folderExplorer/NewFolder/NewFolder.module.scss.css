@@ -1,0 +1,44 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+.libraryItem {
+  padding: 5px 0 5px 10px;
+  cursor: pointer;
+  min-height: 32px;
+  line-height: 32px;
+  border-width: 1px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.libraryItem:hover {
+  background-color: #f4f4f4;
+}
+
+.folderIcon {
+  margin-right: 10px;
+  color: #2b88d8;
+}
+
+.defaultText {
+  width: 100%;
+}
+
+.button {
+  background-color: #0078d4;
+  color: white;
+}
+.button:hover {
+  background-color: #2b88d8;
+  color: white;
+}
+.button:disabled {
+  background-color: #f4f4f4;
+}
+.button i {
+  font-weight: bolder;
+}
+
+.spinner {
+  padding-right: 10px;
+}

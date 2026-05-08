@@ -1,0 +1,18 @@
+.modernTaxonomyPicker .termField {
+  align-items: center;
+  border-spacing: 0;
+  display: flex;
+  width: 100%;
+}
+.modernTaxonomyPicker .termField .termFieldInput {
+  flex-grow: 1;
+}
+.modernTaxonomyPicker .termField .termFieldButton {
+  text-align: center;
+  width: 42px;
+}
+.modernTaxonomyPicker .termField input[type=text] {
+  cursor: pointer;
+  opacity: 0.8;
+  width: 100%;
+}

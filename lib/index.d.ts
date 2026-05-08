@@ -21,7 +21,6 @@ export * from './IFrameDialog';
 export * from './IFramePanel';
 export * from './Common';
 export * from './Utilities';
-export * from './IFrameDialog';
 export * from './FieldPicker';
 export * from './FieldCommon';
 export * from './FieldAttachmentsRenderer';
@@ -46,4 +45,5 @@ export * from './MonacoEditor';
 export * from './UploadFiles';
 export * from './ShareDialog';
 export * from './Calendar';
+export * from './GroupPicker';
 //# sourceMappingURL=index.d.ts.map

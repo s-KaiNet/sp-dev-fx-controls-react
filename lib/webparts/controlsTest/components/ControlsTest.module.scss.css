@@ -1,0 +1,219 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+@keyframes ms-motion-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes ms-motion-fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes ms-motion-scaleDownIn {
+  from {
+    transform: scale3d(1.15, 1.15, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes ms-motion-scaleDownOut {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    transform: scale3d(0.9, 0.9, 1);
+  }
+}
+@keyframes ms-motion-slideLeftOut {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-48px, 0, 0);
+  }
+}
+@keyframes ms-motion-slideRightOut {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(48px, 0, 0);
+  }
+}
+@keyframes ms-motion-slideLeftIn {
+  from {
+    transform: translate3d(48px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes ms-motion-slideRightIn {
+  from {
+    transform: translate3d(-48px, 0, 0);
+  }
+  to {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+@keyframes ms-motion-slideUpOut {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -48px, 0);
+  }
+}
+@keyframes ms-motion-slideDownOut {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 48px, 0);
+  }
+}
+@keyframes ms-motion-slideUpIn {
+  from {
+    transform: translate3d(0, 48px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes ms-motion-slideDownIn {
+  from {
+    transform: translate3d(0, -48px, 0);
+  }
+  to {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+.controlsTest .instruction {
+  animation-duration: 400ms !important;
+  animation-delay: 0.5s !important;
+}
+[dir=ltr] .controlsTest .instruction {
+  animation: ms-motion-slideLeftIn 100ms cubic-bezier(0.1, 0.9, 0.2, 1) both, ms-motion-fadeIn 100ms cubic-bezier(0, 0, 1, 1) both;
+}
+[dir=rtl] .controlsTest .instruction {
+  animation: ms-motion-slideRightIn 100ms cubic-bezier(0.1, 0.9, 0.2, 1) both, ms-motion-fadeIn 100ms cubic-bezier(0, 0, 1, 1) both;
+}
+.controlsTest .container {
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0px auto 20px auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+.controlsTest .toggleFilter {
+  display: flex;
+  float: left;
+  margin: 10px;
+}
+.controlsTest .controlFiltersContainer {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.controlsTest .row {
+  padding: 10px;
+}
+.controlsTest .row > div > div {
+  margin-bottom: 10px;
+}
+.controlsTest .listItem {
+  max-width: 715px;
+  margin: 5px auto 5px auto;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+.controlsTest .button {
+  text-decoration: none;
+  height: 32px;
+  min-width: 80px;
+  background-color: #0078d7;
+  border-color: #0078d7;
+  color: #ffffff;
+  outline: transparent;
+  position: relative;
+  font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  font-weight: 400;
+  border-width: 0;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 16px;
+}
+.controlsTest .button .label {
+  font-weight: 600;
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 4px;
+  vertical-align: top;
+  display: inline-block;
+}
+.controlsTest .siteBreadcrumb {
+  background-color: #0078d7;
+  margin-bottom: 10px;
+}
+.controlsTest .siteBreadcrumb i,
+.controlsTest .siteBreadcrumb a {
+  color: #fff;
+}
+.controlsTest .siteBreadcrumb ol {
+  height: 30px;
+}
+.controlsTest .siteBreadcrumb ol a {
+  height: 100%;
+  line-height: 30px;
+}
+.controlsTest .carouselContent {
+  height: 200px;
+  width: 80%;
+  color: darkblue;
+  font-style: italic;
+}
+.controlsTest .carouselButtonsContainer {
+  background-color: orange !important;
+  opacity: 0.3;
+}
+.controlsTest .carouselImageContent {
+  height: 400px;
+}
+.controlsTest .listViewWrapper {
+  height: 200px;
+}
+
+.dialogContainer {
+  border-top: 4px;
+  border-top-color: "[theme:themePrimary, default:#0078d7]";
+  border-top-style: solid;
+  min-width: 400px;
+}
+.dialogContainer .dialogContent {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1.125em;
+}
+.dialogContainer .dialogFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25em;
+}
+.dialogContainer .dialogFooter button {
+  min-width: 100px;
+  margin: 0px 10px;
+}
+.dialogContainer .dialogFooter .loader {
+  margin-top: 15px;
+}

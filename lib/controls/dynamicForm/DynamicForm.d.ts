@@ -17,6 +17,14 @@ export declare class DynamicFormBase extends React.Component<IDynamicFormProps, 
     private _classNames;
     constructor(props: IDynamicFormProps);
     /**
+     * Updates the ETag stored in the component's state.
+     * This is useful when the list item has been modified externally (e.g., by adding/removing attachments)
+     * and you need to update the ETag to prevent 412 conflict errors on save.
+     *
+     * @param itemData - The updated item data containing the new ETag
+     */
+    updateETag(itemData: any): void;
+    /**
      * Lifecycle hook when component is mounted
      */
     componentDidMount(): void;
@@ -112,5 +120,5 @@ export declare class DynamicFormBase extends React.Component<IDynamicFormProps, 
      */
     private updateListItemRetry;
 }
-export declare const DynamicForm: React.FunctionComponent<IDynamicFormProps>;
+export declare const DynamicForm: React.FunctionComponent<React.PropsWithChildren<React.PropsWithChildren<IDynamicFormProps>>>;
 //# sourceMappingURL=DynamicForm.d.ts.map

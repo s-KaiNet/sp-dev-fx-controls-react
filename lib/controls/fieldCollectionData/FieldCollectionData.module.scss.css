@@ -1,0 +1,165 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+.collectionData {
+  background-color: #edebe9;
+  padding: 10px;
+}
+
+.noCollectionData {
+  text-align: center;
+}
+
+.panelActions {
+  margin-top: 15px;
+  text-align: right;
+}
+.panelActions button {
+  margin-right: 15px;
+}
+.panelActions button:last-child {
+  margin-right: 0;
+}
+
+.required {
+  color: #d83b01;
+  font-size: 8px;
+  vertical-align: super;
+}
+
+.addBtn {
+  color: #0078d4;
+}
+
+.inputField {
+  color: inherit;
+}
+
+.numberField {
+  box-sizing: border-box;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #a19f9d;
+  background: #ffffff;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  position: relative;
+}
+.numberField:hover {
+  border-color: #201f1e;
+}
+.numberField input {
+  box-sizing: border-box;
+  box-shadow: none;
+  margin: 0;
+  font-size: 14px;
+  border-radius: 0;
+  border: none;
+  background: none;
+  color: #323130;
+  padding: 0 12px 0 12px;
+  width: 100%;
+  text-overflow: ellipsis;
+  outline: 0;
+}
+.numberField.invalidField {
+  border-color: #a80000;
+}
+
+.iconField {
+  position: relative;
+}
+.iconField i {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  vertical-align: top;
+}
+
+.collectionDataField > span {
+  display: none;
+}
+.collectionDataField div[class^=invalid_] {
+  border-color: #a80000 !important;
+}
+
+/* Table layout */
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableRow {
+  display: table-row;
+  line-height: 30px;
+}
+.tableRow:hover {
+  background-color: #f3f2f1;
+  cursor: pointer;
+  outline: 1px solid transparent;
+}
+.tableRow.tableFooter {
+  background-color: #edebe9;
+  border-top: 1px solid #a19f9d;
+}
+
+.tableCell {
+  display: table-cell;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+.tableCell > div {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.tableCell:global > div.ms-TextField {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.errorCallout {
+  padding: 0 15px;
+  min-width: 200px;
+}
+
+.errorCalloutLink:not([disabled]) {
+  color: #a80000;
+}
+
+.errorMsgs {
+  font-size: 14px;
+  font-weight: 400;
+}
+.errorMsgs p {
+  font-size: 17px;
+  font-weight: 300;
+}
+.errorMsgs ul {
+  padding-left: 15px;
+}
+.errorMsgs li {
+  color: #a80000;
+}
+
+.tableHead {
+  font-weight: 300;
+  font-size: 12px;
+  color: #605e5c;
+}
+
+.tableHead .tableCell {
+  font-weight: normal;
+  text-align: left;
+  border-bottom: 1px solid #a19f9d;
+}
+
+.peoplePicker {
+  background-color: #fff;
+}

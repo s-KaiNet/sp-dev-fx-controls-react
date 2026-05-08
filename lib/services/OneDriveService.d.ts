@@ -35,5 +35,9 @@ export declare class OneDriveService extends FileBrowserService {
      * Creates an absolute URL
      */
     protected buildAbsoluteUrl: (relativeUrl: string) => string;
+    /**
+     * Checks if the current language is default (en-US)
+     */
+    isCurrentLanguageDefault(): boolean;
 }
 //# sourceMappingURL=OneDriveService.d.ts.map

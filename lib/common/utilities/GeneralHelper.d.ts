@@ -49,7 +49,7 @@ export declare class GeneralHelper {
      * @param blob
      */
     static getFileFromBlob(blob: Blob, fileName: string): File;
-    static formatBytes(bytes: any, decimals: any): string;
+    static formatBytes(bytes: number, decimals: number): string;
     /**
      * Returns file name without extension.
      */
@@ -62,7 +62,7 @@ export declare class GeneralHelper {
     /**
      * Returns extension of the file
      */
-    static getFileExtension(fileName: any): string;
+    static getFileExtension(fileName: string): string;
     private static _getEncodedChar;
 }
 export declare function urlCombine(urlStart: string, urlFinish: string, escapeFinish?: boolean): string;

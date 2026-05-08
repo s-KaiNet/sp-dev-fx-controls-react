@@ -1,0 +1,44 @@
+.ListItemAttachments {
+  margin-bottom: 15px;
+}
+.ListItemAttachments .documentCard {
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  max-width: 320px;
+  min-width: 187px;
+  user-select: none;
+  position: relative;
+}
+.ListItemAttachments .documentCardWrapper {
+  margin-top: 15px;
+  min-Width: 187px;
+  width: 187px;
+  display: inline-block;
+  margin-left: 12px;
+}
+.ListItemAttachments .fileLabel {
+  margin-left: 12px;
+  margin-right: 12px;
+  overflow: "hidden";
+  white-space: "nowrap";
+  text-overflow: "ellipsis";
+}
+.ListItemAttachments .uploadfile {
+  background-color: transparent !important;
+  font-size: 15px;
+}
+.ListItemAttachments .detailsList .detailsListIcon {
+  vertical-align: middle;
+  max-height: 16px;
+  max-width: 16px;
+}
+.ListItemAttachments .detailsList .detailsListLink {
+  padding-top: 2px;
+}
+
+.uploadBar {
+  margin-top: 15px;
+  text-align: left;
+}

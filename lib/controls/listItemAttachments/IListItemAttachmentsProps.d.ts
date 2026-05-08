@@ -1,4 +1,5 @@
 import { BaseComponentContext } from '@microsoft/sp-component-base';
+import { AttachmentsDisplayMode } from './AttachmentsDisplayMode';
 export interface IListItemAttachmentsProps {
     listId: string;
     itemId?: number;
@@ -15,5 +16,14 @@ export interface IListItemAttachmentsProps {
      * Description text to display on the placeholder, below the main text and icon
      */
     description?: string;
+    /**
+   * Display mode for rendering attachments. Defaults to Tiles.
+   */
+    displayMode?: AttachmentsDisplayMode;
+    /**
+     * Callback function to notify parent components when attachments are modified and the item ETag changes
+     * @param itemData - The updated item data including the new ETag
+     */
+    onAttachmentChange?: (itemData: any) => void;
 }
 //# sourceMappingURL=IListItemAttachmentsProps.d.ts.map

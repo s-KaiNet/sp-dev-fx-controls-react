@@ -1,0 +1,13 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+.taxonomyPanelContents .taxonomyTreeSelector {
+  border-bottom-color: blue;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin-bottom: 30px;
+}
+.taxonomyPanelContents .taxonomyTreeLabel {
+  font-size: 18px;
+  font-weight: 100;
+}

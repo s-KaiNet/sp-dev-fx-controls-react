@@ -1,0 +1,8 @@
+.pagination {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.pagination .buttonStyle {
+  min-width: auto;
+}

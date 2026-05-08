@@ -3,6 +3,7 @@ import { IFolderExplorerService } from "./IFolderExplorerService";
 import { IFolder } from "./IFolderExplorerService";
 import "@pnp/sp/webs";
 import "@pnp/sp/folders";
+import "@pnp/sp/files";
 import "@pnp/sp/lists";
 import { IFileInfo } from "@pnp/sp/files";
 export declare class FolderExplorerService implements IFolderExplorerService {

@@ -29,6 +29,7 @@ export interface IControlsTestState {
     showErrorDialog?: boolean;
     selectedTeam: ITag[];
     selectedTeamChannels: ITag[];
+    selectedGroups?: ITag[];
     filePickerDefaultFolderAbsolutePath?: string;
     errorMessage?: string;
     termPanelIsOpen?: boolean;

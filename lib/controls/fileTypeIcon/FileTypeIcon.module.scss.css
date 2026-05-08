@@ -1,0 +1,2190 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+:global .ms-BrandIcon--access.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_16x1.png);
+}
+:global .ms-BrandIcon--access.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_48x1.png);
+}
+:global .ms-BrandIcon--access.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_96x1.png);
+}
+:global .ms-BrandIcon--excel.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_16x1.png);
+}
+:global .ms-BrandIcon--excel.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_48x1.png);
+}
+:global .ms-BrandIcon--excel.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_96x1.png);
+}
+:global .ms-BrandIcon--infopath.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_16x1.png);
+}
+:global .ms-BrandIcon--infopath.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_48x1.png);
+}
+:global .ms-BrandIcon--infopath.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_96x1.png);
+}
+:global .ms-BrandIcon--office.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_16x1.png);
+}
+:global .ms-BrandIcon--office.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_48x1.png);
+}
+:global .ms-BrandIcon--office.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_96x1.png);
+}
+:global .ms-BrandIcon--onedrive.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_16x1.png);
+}
+:global .ms-BrandIcon--onedrive.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_48x1.png);
+}
+:global .ms-BrandIcon--onedrive.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_96x1.png);
+}
+:global .ms-BrandIcon--onenote.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_16x1.png);
+}
+:global .ms-BrandIcon--onenote.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_48x1.png);
+}
+:global .ms-BrandIcon--onenote.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_96x1.png);
+}
+:global .ms-BrandIcon--outlook.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_16x1.png);
+}
+:global .ms-BrandIcon--outlook.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_48x1.png);
+}
+:global .ms-BrandIcon--outlook.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_96x1.png);
+}
+:global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_16x1.png);
+}
+:global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_48x1.png);
+}
+:global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_96x1.png);
+}
+:global .ms-BrandIcon--project.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_16x1.png);
+}
+:global .ms-BrandIcon--project.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_48x1.png);
+}
+:global .ms-BrandIcon--project.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_96x1.png);
+}
+:global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_16x1.png);
+}
+:global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_48x1.png);
+}
+:global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_96x1.png);
+}
+:global .ms-BrandIcon--teams.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_16x1.png);
+}
+:global .ms-BrandIcon--teams.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_48x1.png);
+}
+:global .ms-BrandIcon--teams.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_96x1.png);
+}
+:global .ms-BrandIcon--visio.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_16x1.png);
+}
+:global .ms-BrandIcon--visio.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_48x1.png);
+}
+:global .ms-BrandIcon--visio.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_96x1.png);
+}
+:global .ms-BrandIcon--word.ms-BrandIcon--icon16 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_16x1.png);
+}
+:global .ms-BrandIcon--word.ms-BrandIcon--icon48 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_48x1.png);
+}
+:global .ms-BrandIcon--word.ms-BrandIcon--icon96 {
+  background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_96x1.png);
+}
+:global .ms-BrandIcon--accdb.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/accdb.png);
+}
+:global .ms-BrandIcon--accdb.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/accdb.png);
+}
+:global .ms-BrandIcon--accdb.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/accdb.png);
+}
+:global .ms-BrandIcon--archive.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/archive.png);
+}
+:global .ms-BrandIcon--archive.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/archive.png);
+}
+:global .ms-BrandIcon--archive.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/archive.png);
+}
+:global .ms-BrandIcon--audio.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/audio.png);
+}
+:global .ms-BrandIcon--audio.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/audio.png);
+}
+:global .ms-BrandIcon--audio.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/audio.png);
+}
+:global .ms-BrandIcon--code.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/code.png);
+}
+:global .ms-BrandIcon--code.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/code.png);
+}
+:global .ms-BrandIcon--code.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/code.png);
+}
+:global .ms-BrandIcon--csv.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/csv.png);
+}
+:global .ms-BrandIcon--csv.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/csv.png);
+}
+:global .ms-BrandIcon--csv.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/csv.png);
+}
+:global .ms-BrandIcon--docset.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/docset.png);
+}
+:global .ms-BrandIcon--docset.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/docset.png);
+}
+:global .ms-BrandIcon--docset.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/docset.png);
+}
+:global .ms-BrandIcon--docx.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/docx.png);
+}
+:global .ms-BrandIcon--docx.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/docx.png);
+}
+:global .ms-BrandIcon--docx.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/docx.png);
+}
+:global .ms-BrandIcon--dotx.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/dotx.png);
+}
+:global .ms-BrandIcon--dotx.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/dotx.png);
+}
+:global .ms-BrandIcon--dotx.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/dotx.png);
+}
+:global .ms-BrandIcon--email.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/email.png);
+}
+:global .ms-BrandIcon--email.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/email.png);
+}
+:global .ms-BrandIcon--email.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/email.png);
+}
+:global .ms-BrandIcon--exe.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/exe.png);
+}
+:global .ms-BrandIcon--exe.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/exe.png);
+}
+:global .ms-BrandIcon--exe.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/exe.png);
+}
+:global .ms-BrandIcon--folder.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/folder.png);
+}
+:global .ms-BrandIcon--folder.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/folder.png);
+}
+:global .ms-BrandIcon--folder.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/folder.png);
+}
+:global .ms-BrandIcon--font.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/font.png);
+}
+:global .ms-BrandIcon--font.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/font.png);
+}
+:global .ms-BrandIcon--font.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/font.png);
+}
+:global .ms-BrandIcon--genericfile.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/genericfile.png);
+}
+:global .ms-BrandIcon--genericfile.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/genericfile.png);
+}
+:global .ms-BrandIcon--genericfile.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/genericfile.png);
+}
+:global .ms-BrandIcon--html.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/html.png);
+}
+:global .ms-BrandIcon--html.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/html.png);
+}
+:global .ms-BrandIcon--html.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/html.png);
+}
+:global .ms-BrandIcon--link.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/link.png);
+}
+:global .ms-BrandIcon--link.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/link.png);
+}
+:global .ms-BrandIcon--link.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/link.png);
+}
+:global .ms-BrandIcon--listitem.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/listitem.png);
+}
+:global .ms-BrandIcon--listitem.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/listitem.png);
+}
+:global .ms-BrandIcon--listitem.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/listitem.png);
+}
+:global .ms-BrandIcon--model.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/model.png);
+}
+:global .ms-BrandIcon--model.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/model.png);
+}
+:global .ms-BrandIcon--model.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/model.png);
+}
+:global .ms-BrandIcon--mpp.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/mpp.png);
+}
+:global .ms-BrandIcon--mpp.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/mpp.png);
+}
+:global .ms-BrandIcon--mpp.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/mpp.png);
+}
+:global .ms-BrandIcon--mpt.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/mpt.png);
+}
+:global .ms-BrandIcon--mpt.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/mpt.png);
+}
+:global .ms-BrandIcon--mpt.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/mpt.png);
+}
+:global .ms-BrandIcon--odp.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/odp.png);
+}
+:global .ms-BrandIcon--odp.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/odp.png);
+}
+:global .ms-BrandIcon--odp.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/odp.png);
+}
+:global .ms-BrandIcon--ods.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/ods.png);
+}
+:global .ms-BrandIcon--ods.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/ods.png);
+}
+:global .ms-BrandIcon--ods.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/ods.png);
+}
+:global .ms-BrandIcon--odt.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/odt.png);
+}
+:global .ms-BrandIcon--odt.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/odt.png);
+}
+:global .ms-BrandIcon--odt.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/odt.png);
+}
+:global .ms-BrandIcon--one.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/one.png);
+}
+:global .ms-BrandIcon--one.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/one.png);
+}
+:global .ms-BrandIcon--one.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/one.png);
+}
+:global .ms-BrandIcon--onetoc.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/onetoc.png);
+}
+:global .ms-BrandIcon--onetoc.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/onetoc.png);
+}
+:global .ms-BrandIcon--onetoc.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/onetoc.png);
+}
+:global .ms-BrandIcon--pdf.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/pdf.png);
+}
+:global .ms-BrandIcon--pdf.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/pdf.png);
+}
+:global .ms-BrandIcon--pdf.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/pdf.png);
+}
+:global .ms-BrandIcon--photo.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/photo.png);
+}
+:global .ms-BrandIcon--photo.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/photo.png);
+}
+:global .ms-BrandIcon--photo.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/photo.png);
+}
+:global .ms-BrandIcon--potx.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/potx.png);
+}
+:global .ms-BrandIcon--potx.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/potx.png);
+}
+:global .ms-BrandIcon--potx.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/potx.png);
+}
+:global .ms-BrandIcon--ppsx.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/ppsx.png);
+}
+:global .ms-BrandIcon--ppsx.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/ppsx.png);
+}
+:global .ms-BrandIcon--ppsx.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/ppsx.png);
+}
+:global .ms-BrandIcon--pptx.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/pptx.png);
+}
+:global .ms-BrandIcon--pptx.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/pptx.png);
+}
+:global .ms-BrandIcon--pptx.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/pptx.png);
+}
+:global .ms-BrandIcon--pub.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/pub.png);
+}
+:global .ms-BrandIcon--pub.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/pub.png);
+}
+:global .ms-BrandIcon--pub.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/pub.png);
+}
+:global .ms-BrandIcon--rtf.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/rtf.png);
+}
+:global .ms-BrandIcon--rtf.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/rtf.png);
+}
+:global .ms-BrandIcon--rtf.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/rtf.png);
+}
+:global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/sharedfolder.png);
+}
+:global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/sharedfolder.png);
+}
+:global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/sharedfolder.png);
+}
+:global .ms-BrandIcon--spo.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/spo.png);
+}
+:global .ms-BrandIcon--spo.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/spo.png);
+}
+:global .ms-BrandIcon--spo.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/spo.png);
+}
+:global .ms-BrandIcon--sysfile.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/sysfile.png);
+}
+:global .ms-BrandIcon--sysfile.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/sysfile.png);
+}
+:global .ms-BrandIcon--sysfile.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/sysfile.png);
+}
+:global .ms-BrandIcon--txt.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/txt.png);
+}
+:global .ms-BrandIcon--txt.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/txt.png);
+}
+:global .ms-BrandIcon--txt.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/txt.png);
+}
+:global .ms-BrandIcon--vector.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/vector.png);
+}
+:global .ms-BrandIcon--vector.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/vector.png);
+}
+:global .ms-BrandIcon--vector.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/vector.png);
+}
+:global .ms-BrandIcon--video.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/video.png);
+}
+:global .ms-BrandIcon--video.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/video.png);
+}
+:global .ms-BrandIcon--video.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/video.png);
+}
+:global .ms-BrandIcon--vsdx.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/vsdx.png);
+}
+:global .ms-BrandIcon--vsdx.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/vsdx.png);
+}
+:global .ms-BrandIcon--vsdx.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/vsdx.png);
+}
+:global .ms-BrandIcon--vssx.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/vssx.png);
+}
+:global .ms-BrandIcon--vssx.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/vssx.png);
+}
+:global .ms-BrandIcon--vssx.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/vssx.png);
+}
+:global .ms-BrandIcon--vstx.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/vstx.png);
+}
+:global .ms-BrandIcon--vstx.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/vstx.png);
+}
+:global .ms-BrandIcon--vstx.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/vstx.png);
+}
+:global .ms-BrandIcon--xlsx.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/xlsx.png);
+}
+:global .ms-BrandIcon--xlsx.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/xlsx.png);
+}
+:global .ms-BrandIcon--xlsx.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/xlsx.png);
+}
+:global .ms-BrandIcon--xltx.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/xltx.png);
+}
+:global .ms-BrandIcon--xltx.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/xltx.png);
+}
+:global .ms-BrandIcon--xltx.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/xltx.png);
+}
+:global .ms-BrandIcon--xml.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/xml.png);
+}
+:global .ms-BrandIcon--xml.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/xml.png);
+}
+:global .ms-BrandIcon--xml.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/xml.png);
+}
+:global .ms-BrandIcon--xsn.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/xsn.png);
+}
+:global .ms-BrandIcon--xsn.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/xsn.png);
+}
+:global .ms-BrandIcon--xsn.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/xsn.png);
+}
+:global .ms-BrandIcon--zip.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/zip.png);
+}
+:global .ms-BrandIcon--zip.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/zip.png);
+}
+:global .ms-BrandIcon--zip.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/zip.png);
+}
+:global .ms-BrandIcon--icon16 {
+  background-size: 100% 100%;
+  width: 16px;
+  height: 16px;
+}
+:global .ms-BrandIcon--icon48 {
+  background-size: 100% 100%;
+  width: 48px;
+  height: 48px;
+}
+:global .ms-BrandIcon--icon96 {
+  background-size: 100% 100%;
+  width: 96px;
+  height: 96px;
+}
+@media only screen and (min-resolution: 144dpi) {
+  :global .ms-BrandIcon--access.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_16x1_5.png);
+  }
+  :global .ms-BrandIcon--access.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_48x1_5.png);
+  }
+  :global .ms-BrandIcon--access.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_96x1_5.png);
+  }
+  :global .ms-BrandIcon--excel.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_16x1_5.png);
+  }
+  :global .ms-BrandIcon--excel.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_48x1_5.png);
+  }
+  :global .ms-BrandIcon--excel.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_96x1_5.png);
+  }
+  :global .ms-BrandIcon--infopath.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_16x1_5.png);
+  }
+  :global .ms-BrandIcon--infopath.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_48x1_5.png);
+  }
+  :global .ms-BrandIcon--infopath.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_96x1_5.png);
+  }
+  :global .ms-BrandIcon--office.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_16x1_5.png);
+  }
+  :global .ms-BrandIcon--office.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_48x1_5.png);
+  }
+  :global .ms-BrandIcon--office.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_96x1_5.png);
+  }
+  :global .ms-BrandIcon--onedrive.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_16x1_5.png);
+  }
+  :global .ms-BrandIcon--onedrive.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_48x1_5.png);
+  }
+  :global .ms-BrandIcon--onedrive.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_96x1_5.png);
+  }
+  :global .ms-BrandIcon--onenote.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_16x1_5.png);
+  }
+  :global .ms-BrandIcon--onenote.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_48x1_5.png);
+  }
+  :global .ms-BrandIcon--onenote.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_96x1_5.png);
+  }
+  :global .ms-BrandIcon--outlook.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_16x1_5.png);
+  }
+  :global .ms-BrandIcon--outlook.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_48x1_5.png);
+  }
+  :global .ms-BrandIcon--outlook.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_96x1_5.png);
+  }
+  :global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_16x1_5.png);
+  }
+  :global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_48x1_5.png);
+  }
+  :global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_96x1_5.png);
+  }
+  :global .ms-BrandIcon--project.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_16x1_5.png);
+  }
+  :global .ms-BrandIcon--project.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_48x1_5.png);
+  }
+  :global .ms-BrandIcon--project.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_96x1_5.png);
+  }
+  :global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_16x1_5.png);
+  }
+  :global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_48x1_5.png);
+  }
+  :global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_96x1_5.png);
+  }
+  :global .ms-BrandIcon--teams.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_16x1_5.png);
+  }
+  :global .ms-BrandIcon--teams.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_48x1_5.png);
+  }
+  :global .ms-BrandIcon--teams.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_96x1_5.png);
+  }
+  :global .ms-BrandIcon--visio.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_16x1_5.png);
+  }
+  :global .ms-BrandIcon--visio.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_48x1_5.png);
+  }
+  :global .ms-BrandIcon--visio.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_96x1_5.png);
+  }
+  :global .ms-BrandIcon--word.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_16x1_5.png);
+  }
+  :global .ms-BrandIcon--word.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_48x1_5.png);
+  }
+  :global .ms-BrandIcon--word.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_96x1_5.png);
+  }
+  :global .ms-BrandIcon--accdb.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/accdb.png);
+  }
+  :global .ms-BrandIcon--accdb.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/accdb.png);
+  }
+  :global .ms-BrandIcon--accdb.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/accdb.png);
+  }
+  :global .ms-BrandIcon--archive.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/archive.png);
+  }
+  :global .ms-BrandIcon--archive.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/archive.png);
+  }
+  :global .ms-BrandIcon--archive.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/archive.png);
+  }
+  :global .ms-BrandIcon--audio.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/audio.png);
+  }
+  :global .ms-BrandIcon--audio.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/audio.png);
+  }
+  :global .ms-BrandIcon--audio.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/audio.png);
+  }
+  :global .ms-BrandIcon--code.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/code.png);
+  }
+  :global .ms-BrandIcon--code.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/code.png);
+  }
+  :global .ms-BrandIcon--code.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/code.png);
+  }
+  :global .ms-BrandIcon--csv.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/csv.png);
+  }
+  :global .ms-BrandIcon--csv.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/csv.png);
+  }
+  :global .ms-BrandIcon--csv.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/csv.png);
+  }
+  :global .ms-BrandIcon--docset.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/docset.png);
+  }
+  :global .ms-BrandIcon--docset.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/docset.png);
+  }
+  :global .ms-BrandIcon--docset.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/docset.png);
+  }
+  :global .ms-BrandIcon--docx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/docx.png);
+  }
+  :global .ms-BrandIcon--docx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/docx.png);
+  }
+  :global .ms-BrandIcon--docx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/docx.png);
+  }
+  :global .ms-BrandIcon--dotx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/dotx.png);
+  }
+  :global .ms-BrandIcon--dotx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/dotx.png);
+  }
+  :global .ms-BrandIcon--dotx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/dotx.png);
+  }
+  :global .ms-BrandIcon--email.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/email.png);
+  }
+  :global .ms-BrandIcon--email.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/email.png);
+  }
+  :global .ms-BrandIcon--email.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/email.png);
+  }
+  :global .ms-BrandIcon--exe.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/exe.png);
+  }
+  :global .ms-BrandIcon--exe.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/exe.png);
+  }
+  :global .ms-BrandIcon--exe.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/exe.png);
+  }
+  :global .ms-BrandIcon--folder.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/folder.png);
+  }
+  :global .ms-BrandIcon--folder.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/folder.png);
+  }
+  :global .ms-BrandIcon--folder.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/folder.png);
+  }
+  :global .ms-BrandIcon--font.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/font.png);
+  }
+  :global .ms-BrandIcon--font.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/font.png);
+  }
+  :global .ms-BrandIcon--font.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/font.png);
+  }
+  :global .ms-BrandIcon--genericfile.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/genericfile.png);
+  }
+  :global .ms-BrandIcon--genericfile.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/genericfile.png);
+  }
+  :global .ms-BrandIcon--genericfile.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/genericfile.png);
+  }
+  :global .ms-BrandIcon--html.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/html.png);
+  }
+  :global .ms-BrandIcon--html.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/html.png);
+  }
+  :global .ms-BrandIcon--html.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/html.png);
+  }
+  :global .ms-BrandIcon--link.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/link.png);
+  }
+  :global .ms-BrandIcon--link.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/link.png);
+  }
+  :global .ms-BrandIcon--link.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/link.png);
+  }
+  :global .ms-BrandIcon--listitem.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/listitem.png);
+  }
+  :global .ms-BrandIcon--listitem.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/listitem.png);
+  }
+  :global .ms-BrandIcon--listitem.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/listitem.png);
+  }
+  :global .ms-BrandIcon--model.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/model.png);
+  }
+  :global .ms-BrandIcon--model.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/model.png);
+  }
+  :global .ms-BrandIcon--model.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/model.png);
+  }
+  :global .ms-BrandIcon--mpp.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/mpp.png);
+  }
+  :global .ms-BrandIcon--mpp.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/mpp.png);
+  }
+  :global .ms-BrandIcon--mpp.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/mpp.png);
+  }
+  :global .ms-BrandIcon--mpt.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/mpt.png);
+  }
+  :global .ms-BrandIcon--mpt.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/mpt.png);
+  }
+  :global .ms-BrandIcon--mpt.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/mpt.png);
+  }
+  :global .ms-BrandIcon--odp.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/odp.png);
+  }
+  :global .ms-BrandIcon--odp.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/odp.png);
+  }
+  :global .ms-BrandIcon--odp.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/odp.png);
+  }
+  :global .ms-BrandIcon--ods.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/ods.png);
+  }
+  :global .ms-BrandIcon--ods.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/ods.png);
+  }
+  :global .ms-BrandIcon--ods.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/ods.png);
+  }
+  :global .ms-BrandIcon--odt.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/odt.png);
+  }
+  :global .ms-BrandIcon--odt.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/odt.png);
+  }
+  :global .ms-BrandIcon--odt.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/odt.png);
+  }
+  :global .ms-BrandIcon--one.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/one.png);
+  }
+  :global .ms-BrandIcon--one.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/one.png);
+  }
+  :global .ms-BrandIcon--one.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/one.png);
+  }
+  :global .ms-BrandIcon--onetoc.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/onetoc.png);
+  }
+  :global .ms-BrandIcon--onetoc.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/onetoc.png);
+  }
+  :global .ms-BrandIcon--onetoc.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/onetoc.png);
+  }
+  :global .ms-BrandIcon--pdf.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/pdf.png);
+  }
+  :global .ms-BrandIcon--pdf.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/pdf.png);
+  }
+  :global .ms-BrandIcon--pdf.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/pdf.png);
+  }
+  :global .ms-BrandIcon--photo.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/photo.png);
+  }
+  :global .ms-BrandIcon--photo.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/photo.png);
+  }
+  :global .ms-BrandIcon--photo.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/photo.png);
+  }
+  :global .ms-BrandIcon--potx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/potx.png);
+  }
+  :global .ms-BrandIcon--potx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/potx.png);
+  }
+  :global .ms-BrandIcon--potx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/potx.png);
+  }
+  :global .ms-BrandIcon--ppsx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/ppsx.png);
+  }
+  :global .ms-BrandIcon--ppsx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/ppsx.png);
+  }
+  :global .ms-BrandIcon--ppsx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/ppsx.png);
+  }
+  :global .ms-BrandIcon--pptx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/pptx.png);
+  }
+  :global .ms-BrandIcon--pptx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/pptx.png);
+  }
+  :global .ms-BrandIcon--pptx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/pptx.png);
+  }
+  :global .ms-BrandIcon--pub.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/pub.png);
+  }
+  :global .ms-BrandIcon--pub.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/pub.png);
+  }
+  :global .ms-BrandIcon--pub.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/pub.png);
+  }
+  :global .ms-BrandIcon--rtf.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/rtf.png);
+  }
+  :global .ms-BrandIcon--rtf.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/rtf.png);
+  }
+  :global .ms-BrandIcon--rtf.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/rtf.png);
+  }
+  :global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/sharedfolder.png);
+  }
+  :global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/sharedfolder.png);
+  }
+  :global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/sharedfolder.png);
+  }
+  :global .ms-BrandIcon--spo.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/spo.png);
+  }
+  :global .ms-BrandIcon--spo.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/spo.png);
+  }
+  :global .ms-BrandIcon--spo.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/spo.png);
+  }
+  :global .ms-BrandIcon--sysfile.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/sysfile.png);
+  }
+  :global .ms-BrandIcon--sysfile.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/sysfile.png);
+  }
+  :global .ms-BrandIcon--sysfile.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/sysfile.png);
+  }
+  :global .ms-BrandIcon--txt.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/txt.png);
+  }
+  :global .ms-BrandIcon--txt.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/txt.png);
+  }
+  :global .ms-BrandIcon--txt.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/txt.png);
+  }
+  :global .ms-BrandIcon--vector.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/vector.png);
+  }
+  :global .ms-BrandIcon--vector.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/vector.png);
+  }
+  :global .ms-BrandIcon--vector.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/vector.png);
+  }
+  :global .ms-BrandIcon--video.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/video.png);
+  }
+  :global .ms-BrandIcon--video.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/video.png);
+  }
+  :global .ms-BrandIcon--video.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/video.png);
+  }
+  :global .ms-BrandIcon--vsdx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/vsdx.png);
+  }
+  :global .ms-BrandIcon--vsdx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/vsdx.png);
+  }
+  :global .ms-BrandIcon--vsdx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/vsdx.png);
+  }
+  :global .ms-BrandIcon--vssx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/vssx.png);
+  }
+  :global .ms-BrandIcon--vssx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/vssx.png);
+  }
+  :global .ms-BrandIcon--vssx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/vssx.png);
+  }
+  :global .ms-BrandIcon--vstx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/vstx.png);
+  }
+  :global .ms-BrandIcon--vstx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/vstx.png);
+  }
+  :global .ms-BrandIcon--vstx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/vstx.png);
+  }
+  :global .ms-BrandIcon--xlsx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xlsx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xlsx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xltx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/xltx.png);
+  }
+  :global .ms-BrandIcon--xltx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/xltx.png);
+  }
+  :global .ms-BrandIcon--xltx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/xltx.png);
+  }
+  :global .ms-BrandIcon--xml.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/xml.png);
+  }
+  :global .ms-BrandIcon--xml.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/xml.png);
+  }
+  :global .ms-BrandIcon--xml.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/xml.png);
+  }
+  :global .ms-BrandIcon--xsn.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/xsn.png);
+  }
+  :global .ms-BrandIcon--xsn.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/xsn.png);
+  }
+  :global .ms-BrandIcon--xsn.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/xsn.png);
+  }
+  :global .ms-BrandIcon--zip.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/zip.png);
+  }
+  :global .ms-BrandIcon--zip.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/zip.png);
+  }
+  :global .ms-BrandIcon--zip.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/zip.png);
+  }
+}
+@media only screen and (min-resolution: 192dpi) {
+  :global .ms-BrandIcon--access.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_16x2.png);
+  }
+  :global .ms-BrandIcon--access.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_48x2.png);
+  }
+  :global .ms-BrandIcon--access.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_96x2.png);
+  }
+  :global .ms-BrandIcon--excel.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_16x2.png);
+  }
+  :global .ms-BrandIcon--excel.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_48x2.png);
+  }
+  :global .ms-BrandIcon--excel.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_96x2.png);
+  }
+  :global .ms-BrandIcon--infopath.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_16x2.png);
+  }
+  :global .ms-BrandIcon--infopath.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_48x2.png);
+  }
+  :global .ms-BrandIcon--infopath.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_96x2.png);
+  }
+  :global .ms-BrandIcon--office.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_16x2.png);
+  }
+  :global .ms-BrandIcon--office.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_48x2.png);
+  }
+  :global .ms-BrandIcon--office.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_96x2.png);
+  }
+  :global .ms-BrandIcon--onedrive.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_16x2.png);
+  }
+  :global .ms-BrandIcon--onedrive.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_48x2.png);
+  }
+  :global .ms-BrandIcon--onedrive.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_96x2.png);
+  }
+  :global .ms-BrandIcon--onenote.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_16x2.png);
+  }
+  :global .ms-BrandIcon--onenote.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_48x2.png);
+  }
+  :global .ms-BrandIcon--onenote.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_96x2.png);
+  }
+  :global .ms-BrandIcon--outlook.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_16x2.png);
+  }
+  :global .ms-BrandIcon--outlook.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_48x2.png);
+  }
+  :global .ms-BrandIcon--outlook.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_96x2.png);
+  }
+  :global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_16x2.png);
+  }
+  :global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_48x2.png);
+  }
+  :global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_96x2.png);
+  }
+  :global .ms-BrandIcon--project.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_16x2.png);
+  }
+  :global .ms-BrandIcon--project.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_48x2.png);
+  }
+  :global .ms-BrandIcon--project.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_96x2.png);
+  }
+  :global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_16x2.png);
+  }
+  :global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_48x2.png);
+  }
+  :global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_96x2.png);
+  }
+  :global .ms-BrandIcon--teams.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_16x2.png);
+  }
+  :global .ms-BrandIcon--teams.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_48x2.png);
+  }
+  :global .ms-BrandIcon--teams.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_96x2.png);
+  }
+  :global .ms-BrandIcon--visio.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_16x2.png);
+  }
+  :global .ms-BrandIcon--visio.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_48x2.png);
+  }
+  :global .ms-BrandIcon--visio.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_96x2.png);
+  }
+  :global .ms-BrandIcon--word.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_16x2.png);
+  }
+  :global .ms-BrandIcon--word.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_48x2.png);
+  }
+  :global .ms-BrandIcon--word.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_96x2.png);
+  }
+  :global .ms-BrandIcon--accdb.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/accdb.png);
+  }
+  :global .ms-BrandIcon--accdb.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/accdb.png);
+  }
+  :global .ms-BrandIcon--accdb.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/accdb.png);
+  }
+  :global .ms-BrandIcon--archive.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/archive.png);
+  }
+  :global .ms-BrandIcon--archive.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/archive.png);
+  }
+  :global .ms-BrandIcon--archive.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/archive.png);
+  }
+  :global .ms-BrandIcon--audio.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/audio.png);
+  }
+  :global .ms-BrandIcon--audio.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/audio.png);
+  }
+  :global .ms-BrandIcon--audio.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/audio.png);
+  }
+  :global .ms-BrandIcon--code.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/code.png);
+  }
+  :global .ms-BrandIcon--code.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/code.png);
+  }
+  :global .ms-BrandIcon--code.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/code.png);
+  }
+  :global .ms-BrandIcon--csv.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/csv.png);
+  }
+  :global .ms-BrandIcon--csv.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/csv.png);
+  }
+  :global .ms-BrandIcon--csv.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/csv.png);
+  }
+  :global .ms-BrandIcon--docset.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/docset.png);
+  }
+  :global .ms-BrandIcon--docset.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/docset.png);
+  }
+  :global .ms-BrandIcon--docset.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/docset.png);
+  }
+  :global .ms-BrandIcon--docx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/docx.png);
+  }
+  :global .ms-BrandIcon--docx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/docx.png);
+  }
+  :global .ms-BrandIcon--docx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/docx.png);
+  }
+  :global .ms-BrandIcon--dotx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/dotx.png);
+  }
+  :global .ms-BrandIcon--dotx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/dotx.png);
+  }
+  :global .ms-BrandIcon--dotx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/dotx.png);
+  }
+  :global .ms-BrandIcon--email.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/email.png);
+  }
+  :global .ms-BrandIcon--email.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/email.png);
+  }
+  :global .ms-BrandIcon--email.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/email.png);
+  }
+  :global .ms-BrandIcon--exe.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/exe.png);
+  }
+  :global .ms-BrandIcon--exe.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/exe.png);
+  }
+  :global .ms-BrandIcon--exe.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/exe.png);
+  }
+  :global .ms-BrandIcon--folder.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/folder.png);
+  }
+  :global .ms-BrandIcon--folder.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/folder.png);
+  }
+  :global .ms-BrandIcon--folder.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/folder.png);
+  }
+  :global .ms-BrandIcon--font.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/font.png);
+  }
+  :global .ms-BrandIcon--font.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/font.png);
+  }
+  :global .ms-BrandIcon--font.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/font.png);
+  }
+  :global .ms-BrandIcon--genericfile.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/genericfile.png);
+  }
+  :global .ms-BrandIcon--genericfile.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/genericfile.png);
+  }
+  :global .ms-BrandIcon--genericfile.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/genericfile.png);
+  }
+  :global .ms-BrandIcon--html.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/html.png);
+  }
+  :global .ms-BrandIcon--html.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/html.png);
+  }
+  :global .ms-BrandIcon--html.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/html.png);
+  }
+  :global .ms-BrandIcon--link.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/link.png);
+  }
+  :global .ms-BrandIcon--link.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/link.png);
+  }
+  :global .ms-BrandIcon--link.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/link.png);
+  }
+  :global .ms-BrandIcon--listitem.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/listitem.png);
+  }
+  :global .ms-BrandIcon--listitem.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/listitem.png);
+  }
+  :global .ms-BrandIcon--listitem.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/listitem.png);
+  }
+  :global .ms-BrandIcon--model.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/model.png);
+  }
+  :global .ms-BrandIcon--model.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/model.png);
+  }
+  :global .ms-BrandIcon--model.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/model.png);
+  }
+  :global .ms-BrandIcon--mpp.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/mpp.png);
+  }
+  :global .ms-BrandIcon--mpp.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/mpp.png);
+  }
+  :global .ms-BrandIcon--mpp.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/mpp.png);
+  }
+  :global .ms-BrandIcon--mpt.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/mpt.png);
+  }
+  :global .ms-BrandIcon--mpt.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/mpt.png);
+  }
+  :global .ms-BrandIcon--mpt.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/mpt.png);
+  }
+  :global .ms-BrandIcon--odp.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/odp.png);
+  }
+  :global .ms-BrandIcon--odp.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/odp.png);
+  }
+  :global .ms-BrandIcon--odp.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/odp.png);
+  }
+  :global .ms-BrandIcon--ods.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/ods.png);
+  }
+  :global .ms-BrandIcon--ods.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/ods.png);
+  }
+  :global .ms-BrandIcon--ods.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/ods.png);
+  }
+  :global .ms-BrandIcon--odt.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/odt.png);
+  }
+  :global .ms-BrandIcon--odt.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/odt.png);
+  }
+  :global .ms-BrandIcon--odt.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/odt.png);
+  }
+  :global .ms-BrandIcon--one.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/one.png);
+  }
+  :global .ms-BrandIcon--one.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/one.png);
+  }
+  :global .ms-BrandIcon--one.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/one.png);
+  }
+  :global .ms-BrandIcon--onetoc.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/onetoc.png);
+  }
+  :global .ms-BrandIcon--onetoc.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/onetoc.png);
+  }
+  :global .ms-BrandIcon--onetoc.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/onetoc.png);
+  }
+  :global .ms-BrandIcon--pdf.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/pdf.png);
+  }
+  :global .ms-BrandIcon--pdf.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/pdf.png);
+  }
+  :global .ms-BrandIcon--pdf.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/pdf.png);
+  }
+  :global .ms-BrandIcon--photo.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/photo.png);
+  }
+  :global .ms-BrandIcon--photo.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/photo.png);
+  }
+  :global .ms-BrandIcon--photo.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/photo.png);
+  }
+  :global .ms-BrandIcon--potx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/potx.png);
+  }
+  :global .ms-BrandIcon--potx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/potx.png);
+  }
+  :global .ms-BrandIcon--potx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/potx.png);
+  }
+  :global .ms-BrandIcon--ppsx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/ppsx.png);
+  }
+  :global .ms-BrandIcon--ppsx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/ppsx.png);
+  }
+  :global .ms-BrandIcon--ppsx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/ppsx.png);
+  }
+  :global .ms-BrandIcon--pptx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/pptx.png);
+  }
+  :global .ms-BrandIcon--pptx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/pptx.png);
+  }
+  :global .ms-BrandIcon--pptx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/pptx.png);
+  }
+  :global .ms-BrandIcon--pub.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/pub.png);
+  }
+  :global .ms-BrandIcon--pub.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/pub.png);
+  }
+  :global .ms-BrandIcon--pub.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/pub.png);
+  }
+  :global .ms-BrandIcon--rtf.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/rtf.png);
+  }
+  :global .ms-BrandIcon--rtf.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/rtf.png);
+  }
+  :global .ms-BrandIcon--rtf.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/rtf.png);
+  }
+  :global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/sharedfolder.png);
+  }
+  :global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/sharedfolder.png);
+  }
+  :global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/sharedfolder.png);
+  }
+  :global .ms-BrandIcon--spo.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/spo.png);
+  }
+  :global .ms-BrandIcon--spo.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/spo.png);
+  }
+  :global .ms-BrandIcon--spo.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/spo.png);
+  }
+  :global .ms-BrandIcon--sysfile.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/sysfile.png);
+  }
+  :global .ms-BrandIcon--sysfile.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/sysfile.png);
+  }
+  :global .ms-BrandIcon--sysfile.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/sysfile.png);
+  }
+  :global .ms-BrandIcon--txt.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/txt.png);
+  }
+  :global .ms-BrandIcon--txt.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/txt.png);
+  }
+  :global .ms-BrandIcon--txt.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/txt.png);
+  }
+  :global .ms-BrandIcon--vector.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/vector.png);
+  }
+  :global .ms-BrandIcon--vector.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/vector.png);
+  }
+  :global .ms-BrandIcon--vector.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/vector.png);
+  }
+  :global .ms-BrandIcon--video.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/video.png);
+  }
+  :global .ms-BrandIcon--video.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/video.png);
+  }
+  :global .ms-BrandIcon--video.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/video.png);
+  }
+  :global .ms-BrandIcon--vsdx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/vsdx.png);
+  }
+  :global .ms-BrandIcon--vsdx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/vsdx.png);
+  }
+  :global .ms-BrandIcon--vsdx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/vsdx.png);
+  }
+  :global .ms-BrandIcon--vssx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/vssx.png);
+  }
+  :global .ms-BrandIcon--vssx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/vssx.png);
+  }
+  :global .ms-BrandIcon--vssx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/vssx.png);
+  }
+  :global .ms-BrandIcon--vstx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/vstx.png);
+  }
+  :global .ms-BrandIcon--vstx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/vstx.png);
+  }
+  :global .ms-BrandIcon--vstx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/vstx.png);
+  }
+  :global .ms-BrandIcon--xlsx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xlsx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xlsx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xltx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/xltx.png);
+  }
+  :global .ms-BrandIcon--xltx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/xltx.png);
+  }
+  :global .ms-BrandIcon--xltx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/xltx.png);
+  }
+  :global .ms-BrandIcon--xml.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/xml.png);
+  }
+  :global .ms-BrandIcon--xml.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/xml.png);
+  }
+  :global .ms-BrandIcon--xml.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/xml.png);
+  }
+  :global .ms-BrandIcon--xsn.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/xsn.png);
+  }
+  :global .ms-BrandIcon--xsn.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/xsn.png);
+  }
+  :global .ms-BrandIcon--xsn.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/xsn.png);
+  }
+  :global .ms-BrandIcon--zip.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/zip.png);
+  }
+  :global .ms-BrandIcon--zip.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/zip.png);
+  }
+  :global .ms-BrandIcon--zip.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/zip.png);
+  }
+}
+@media only screen and (min-resolution: 288dpi) {
+  :global .ms-BrandIcon--access.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_16x3.png);
+  }
+  :global .ms-BrandIcon--access.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_48x3.png);
+  }
+  :global .ms-BrandIcon--access.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/access_96x3.png);
+  }
+  :global .ms-BrandIcon--excel.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_16x3.png);
+  }
+  :global .ms-BrandIcon--excel.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_48x3.png);
+  }
+  :global .ms-BrandIcon--excel.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/excel_96x3.png);
+  }
+  :global .ms-BrandIcon--infopath.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_16x3.png);
+  }
+  :global .ms-BrandIcon--infopath.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_48x3.png);
+  }
+  :global .ms-BrandIcon--infopath.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/infopath_96x3.png);
+  }
+  :global .ms-BrandIcon--office.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_16x3.png);
+  }
+  :global .ms-BrandIcon--office.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_48x3.png);
+  }
+  :global .ms-BrandIcon--office.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/office_96x3.png);
+  }
+  :global .ms-BrandIcon--onedrive.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_16x3.png);
+  }
+  :global .ms-BrandIcon--onedrive.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_48x3.png);
+  }
+  :global .ms-BrandIcon--onedrive.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onedrive_96x3.png);
+  }
+  :global .ms-BrandIcon--onenote.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_16x3.png);
+  }
+  :global .ms-BrandIcon--onenote.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_48x3.png);
+  }
+  :global .ms-BrandIcon--onenote.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/onenote_96x3.png);
+  }
+  :global .ms-BrandIcon--outlook.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_16x3.png);
+  }
+  :global .ms-BrandIcon--outlook.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_48x3.png);
+  }
+  :global .ms-BrandIcon--outlook.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/outlook_96x3.png);
+  }
+  :global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_16x3.png);
+  }
+  :global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_48x3.png);
+  }
+  :global .ms-BrandIcon--powerpoint.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/powerpoint_96x3.png);
+  }
+  :global .ms-BrandIcon--project.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_16x3.png);
+  }
+  :global .ms-BrandIcon--project.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_48x3.png);
+  }
+  :global .ms-BrandIcon--project.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/project_96x3.png);
+  }
+  :global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_16x3.png);
+  }
+  :global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_48x3.png);
+  }
+  :global .ms-BrandIcon--sharepoint.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/sharepoint_96x3.png);
+  }
+  :global .ms-BrandIcon--teams.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_16x3.png);
+  }
+  :global .ms-BrandIcon--teams.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_48x3.png);
+  }
+  :global .ms-BrandIcon--teams.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/teams_96x3.png);
+  }
+  :global .ms-BrandIcon--visio.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_16x3.png);
+  }
+  :global .ms-BrandIcon--visio.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_48x3.png);
+  }
+  :global .ms-BrandIcon--visio.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/visio_96x3.png);
+  }
+  :global .ms-BrandIcon--word.ms-BrandIcon--icon16 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_16x3.png);
+  }
+  :global .ms-BrandIcon--word.ms-BrandIcon--icon48 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_48x3.png);
+  }
+  :global .ms-BrandIcon--word.ms-BrandIcon--icon96 {
+    background-image: url(https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product-fluent/png/word_96x3.png);
+  }
+  :global .ms-BrandIcon--accdb.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/accdb.png);
+  }
+  :global .ms-BrandIcon--accdb.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/accdb.png);
+  }
+  :global .ms-BrandIcon--accdb.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/accdb.png);
+  }
+  :global .ms-BrandIcon--archive.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/archive.png);
+  }
+  :global .ms-BrandIcon--archive.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/archive.png);
+  }
+  :global .ms-BrandIcon--archive.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/archive.png);
+  }
+  :global .ms-BrandIcon--audio.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/audio.png);
+  }
+  :global .ms-BrandIcon--audio.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/audio.png);
+  }
+  :global .ms-BrandIcon--audio.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/audio.png);
+  }
+  :global .ms-BrandIcon--code.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/code.png);
+  }
+  :global .ms-BrandIcon--code.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/code.png);
+  }
+  :global .ms-BrandIcon--code.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/code.png);
+  }
+  :global .ms-BrandIcon--csv.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/csv.png);
+  }
+  :global .ms-BrandIcon--csv.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/csv.png);
+  }
+  :global .ms-BrandIcon--csv.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/csv.png);
+  }
+  :global .ms-BrandIcon--docset.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/docset.png);
+  }
+  :global .ms-BrandIcon--docset.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/docset.png);
+  }
+  :global .ms-BrandIcon--docset.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/docset.png);
+  }
+  :global .ms-BrandIcon--docx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/docx.png);
+  }
+  :global .ms-BrandIcon--docx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/docx.png);
+  }
+  :global .ms-BrandIcon--docx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/docx.png);
+  }
+  :global .ms-BrandIcon--dotx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/dotx.png);
+  }
+  :global .ms-BrandIcon--dotx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/dotx.png);
+  }
+  :global .ms-BrandIcon--dotx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/dotx.png);
+  }
+  :global .ms-BrandIcon--email.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/email.png);
+  }
+  :global .ms-BrandIcon--email.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/email.png);
+  }
+  :global .ms-BrandIcon--email.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/email.png);
+  }
+  :global .ms-BrandIcon--exe.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/exe.png);
+  }
+  :global .ms-BrandIcon--exe.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/exe.png);
+  }
+  :global .ms-BrandIcon--exe.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/exe.png);
+  }
+  :global .ms-BrandIcon--folder.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/folder.png);
+  }
+  :global .ms-BrandIcon--folder.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/folder.png);
+  }
+  :global .ms-BrandIcon--folder.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/folder.png);
+  }
+  :global .ms-BrandIcon--font.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/font.png);
+  }
+  :global .ms-BrandIcon--font.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/font.png);
+  }
+  :global .ms-BrandIcon--font.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/font.png);
+  }
+  :global .ms-BrandIcon--genericfile.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/genericfile.png);
+  }
+  :global .ms-BrandIcon--genericfile.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/genericfile.png);
+  }
+  :global .ms-BrandIcon--genericfile.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/genericfile.png);
+  }
+  :global .ms-BrandIcon--html.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/html.png);
+  }
+  :global .ms-BrandIcon--html.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/html.png);
+  }
+  :global .ms-BrandIcon--html.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/html.png);
+  }
+  :global .ms-BrandIcon--link.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/link.png);
+  }
+  :global .ms-BrandIcon--link.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/link.png);
+  }
+  :global .ms-BrandIcon--link.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/link.png);
+  }
+  :global .ms-BrandIcon--listitem.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/listitem.png);
+  }
+  :global .ms-BrandIcon--listitem.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/listitem.png);
+  }
+  :global .ms-BrandIcon--listitem.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/listitem.png);
+  }
+  :global .ms-BrandIcon--model.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/model.png);
+  }
+  :global .ms-BrandIcon--model.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/model.png);
+  }
+  :global .ms-BrandIcon--model.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/model.png);
+  }
+  :global .ms-BrandIcon--mpp.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/mpp.png);
+  }
+  :global .ms-BrandIcon--mpp.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/mpp.png);
+  }
+  :global .ms-BrandIcon--mpp.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/mpp.png);
+  }
+  :global .ms-BrandIcon--mpt.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/mpt.png);
+  }
+  :global .ms-BrandIcon--mpt.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/mpt.png);
+  }
+  :global .ms-BrandIcon--mpt.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/mpt.png);
+  }
+  :global .ms-BrandIcon--odp.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/odp.png);
+  }
+  :global .ms-BrandIcon--odp.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/odp.png);
+  }
+  :global .ms-BrandIcon--odp.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/odp.png);
+  }
+  :global .ms-BrandIcon--ods.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/ods.png);
+  }
+  :global .ms-BrandIcon--ods.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/ods.png);
+  }
+  :global .ms-BrandIcon--ods.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/ods.png);
+  }
+  :global .ms-BrandIcon--odt.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/odt.png);
+  }
+  :global .ms-BrandIcon--odt.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/odt.png);
+  }
+  :global .ms-BrandIcon--odt.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/odt.png);
+  }
+  :global .ms-BrandIcon--one.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/one.png);
+  }
+  :global .ms-BrandIcon--one.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/one.png);
+  }
+  :global .ms-BrandIcon--one.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/one.png);
+  }
+  :global .ms-BrandIcon--onetoc.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/onetoc.png);
+  }
+  :global .ms-BrandIcon--onetoc.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/onetoc.png);
+  }
+  :global .ms-BrandIcon--onetoc.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/onetoc.png);
+  }
+  :global .ms-BrandIcon--pdf.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/pdf.png);
+  }
+  :global .ms-BrandIcon--pdf.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/pdf.png);
+  }
+  :global .ms-BrandIcon--pdf.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/pdf.png);
+  }
+  :global .ms-BrandIcon--photo.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/photo.png);
+  }
+  :global .ms-BrandIcon--photo.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/photo.png);
+  }
+  :global .ms-BrandIcon--photo.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/photo.png);
+  }
+  :global .ms-BrandIcon--potx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/potx.png);
+  }
+  :global .ms-BrandIcon--potx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/potx.png);
+  }
+  :global .ms-BrandIcon--potx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/potx.png);
+  }
+  :global .ms-BrandIcon--ppsx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/ppsx.png);
+  }
+  :global .ms-BrandIcon--ppsx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/ppsx.png);
+  }
+  :global .ms-BrandIcon--ppsx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/ppsx.png);
+  }
+  :global .ms-BrandIcon--pptx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/pptx.png);
+  }
+  :global .ms-BrandIcon--pptx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/pptx.png);
+  }
+  :global .ms-BrandIcon--pptx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/pptx.png);
+  }
+  :global .ms-BrandIcon--pub.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/pub.png);
+  }
+  :global .ms-BrandIcon--pub.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/pub.png);
+  }
+  :global .ms-BrandIcon--pub.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/pub.png);
+  }
+  :global .ms-BrandIcon--rtf.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/rtf.png);
+  }
+  :global .ms-BrandIcon--rtf.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/rtf.png);
+  }
+  :global .ms-BrandIcon--rtf.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/rtf.png);
+  }
+  :global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/sharedfolder.png);
+  }
+  :global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/sharedfolder.png);
+  }
+  :global .ms-BrandIcon--sharedfolder.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/sharedfolder.png);
+  }
+  :global .ms-BrandIcon--spo.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/spo.png);
+  }
+  :global .ms-BrandIcon--spo.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/spo.png);
+  }
+  :global .ms-BrandIcon--spo.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/spo.png);
+  }
+  :global .ms-BrandIcon--sysfile.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/sysfile.png);
+  }
+  :global .ms-BrandIcon--sysfile.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/sysfile.png);
+  }
+  :global .ms-BrandIcon--sysfile.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/sysfile.png);
+  }
+  :global .ms-BrandIcon--txt.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/txt.png);
+  }
+  :global .ms-BrandIcon--txt.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/txt.png);
+  }
+  :global .ms-BrandIcon--txt.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/txt.png);
+  }
+  :global .ms-BrandIcon--vector.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/vector.png);
+  }
+  :global .ms-BrandIcon--vector.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/vector.png);
+  }
+  :global .ms-BrandIcon--vector.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/vector.png);
+  }
+  :global .ms-BrandIcon--video.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/video.png);
+  }
+  :global .ms-BrandIcon--video.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/video.png);
+  }
+  :global .ms-BrandIcon--video.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/video.png);
+  }
+  :global .ms-BrandIcon--vsdx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/vsdx.png);
+  }
+  :global .ms-BrandIcon--vsdx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/vsdx.png);
+  }
+  :global .ms-BrandIcon--vsdx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/vsdx.png);
+  }
+  :global .ms-BrandIcon--vssx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/vssx.png);
+  }
+  :global .ms-BrandIcon--vssx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/vssx.png);
+  }
+  :global .ms-BrandIcon--vssx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/vssx.png);
+  }
+  :global .ms-BrandIcon--vstx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/vstx.png);
+  }
+  :global .ms-BrandIcon--vstx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/vstx.png);
+  }
+  :global .ms-BrandIcon--vstx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/vstx.png);
+  }
+  :global .ms-BrandIcon--xlsx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xlsx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xlsx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xltx.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/xltx.png);
+  }
+  :global .ms-BrandIcon--xltx.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/xltx.png);
+  }
+  :global .ms-BrandIcon--xltx.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/xltx.png);
+  }
+  :global .ms-BrandIcon--xml.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/xml.png);
+  }
+  :global .ms-BrandIcon--xml.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/xml.png);
+  }
+  :global .ms-BrandIcon--xml.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/xml.png);
+  }
+  :global .ms-BrandIcon--xsn.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/xsn.png);
+  }
+  :global .ms-BrandIcon--xsn.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/xsn.png);
+  }
+  :global .ms-BrandIcon--xsn.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/xsn.png);
+  }
+  :global .ms-BrandIcon--zip.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/zip.png);
+  }
+  :global .ms-BrandIcon--zip.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/zip.png);
+  }
+  :global .ms-BrandIcon--zip.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/zip.png);
+  }
+}
+:global .ms-BrandIcon--onepkg.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/one.png);
+}
+:global .ms-BrandIcon--onepkg.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/one.png);
+}
+:global .ms-BrandIcon--onepkg.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/one.png);
+}
+:global .ms-BrandIcon--xls.ms-BrandIcon--icon16 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16/xlsx.png);
+}
+:global .ms-BrandIcon--xls.ms-BrandIcon--icon48 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48/xlsx.png);
+}
+:global .ms-BrandIcon--xls.ms-BrandIcon--icon96 {
+  background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96/xlsx.png);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  :global .ms-BrandIcon--onepkg.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/one.png);
+  }
+  :global .ms-BrandIcon--onepkg.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/one.png);
+  }
+  :global .ms-BrandIcon--onepkg.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/one.png);
+  }
+  :global .ms-BrandIcon--xls.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_1.5x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xls.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_1.5x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xls.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_1.5x/xlsx.png);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  :global .ms-BrandIcon--onepkg.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/one.png);
+  }
+  :global .ms-BrandIcon--onepkg.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/one.png);
+  }
+  :global .ms-BrandIcon--onepkg.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/one.png);
+  }
+  :global .ms-BrandIcon--xls.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_2x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xls.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_2x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xls.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_2x/xlsx.png);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi) {
+  :global .ms-BrandIcon--onepkg.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/one.png);
+  }
+  :global .ms-BrandIcon--onepkg.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/one.png);
+  }
+  :global .ms-BrandIcon--onepkg.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/one.png);
+  }
+  :global .ms-BrandIcon--xls.ms-BrandIcon--icon16 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/16_3x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xls.ms-BrandIcon--icon48 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/48_3x/xlsx.png);
+  }
+  :global .ms-BrandIcon--xls.ms-BrandIcon--icon96 {
+    background-image: url(https://spoprod-a.akamaihd.net/files/fabric/assets/item-types-fluent/96_3x/xlsx.png);
+  }
+}

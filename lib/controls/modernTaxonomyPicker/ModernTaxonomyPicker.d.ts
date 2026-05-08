@@ -1,7 +1,7 @@
 import { BaseComponentContext, IReadonlyTheme } from '@microsoft/sp-component-base';
 import { ITermInfo, ITermSetInfo, ITermStoreInfo } from '@pnp/sp/taxonomy';
-import { ISuggestionItemProps } from '@fluentui/react/lib/Pickers';
-import { IModernTermPickerProps, ITermItemProps } from './modernTermPicker/ModernTermPicker.types';
+import { IPickerItemProps, ISuggestionItemProps } from '@fluentui/react/lib/Pickers';
+import { IModernTermPickerProps } from './modernTermPicker/ModernTermPicker.types';
 export type Optional<T, K extends keyof T> = Pick<Partial<T>, K> & Omit<T, K>;
 export interface IModernTaxonomyPickerProps {
     allowMultipleSelections?: boolean;
@@ -15,7 +15,7 @@ export interface IModernTaxonomyPickerProps {
     disabled?: boolean;
     required?: boolean;
     onChange?: (newValue?: ITermInfo[]) => void;
-    onRenderItem?: (itemProps: ITermItemProps) => JSX.Element;
+    onRenderItem?: (itemProps: IPickerItemProps<ITermInfo>) => JSX.Element;
     onRenderSuggestionsItem?: (term: ITermInfo, itemProps: ISuggestionItemProps<ITermInfo>) => JSX.Element;
     placeHolder?: string;
     customPanelWidth?: number;

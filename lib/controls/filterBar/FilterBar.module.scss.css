@@ -1,0 +1,92 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+.container {
+  padding: 0 16px;
+  align-items: center;
+  background: #ffffff;
+  position: relative;
+  height: 42px;
+  white-space: pre;
+  display: flex;
+  color: "[theme:neutralSecondary, default:#605e5c]";
+  overflow: hidden;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
+}
+
+.pillGroup {
+  display: flex;
+  align-items: center;
+}
+
+html[dir=ltr] .label {
+  margin-right: 4px;
+}
+html[dir=ltr] .overflow .label {
+  margin-left: 0;
+}
+html[dir=ltr] .pill {
+  padding-left: 8px;
+}
+html[dir=ltr] .icon {
+  margin-right: 0;
+}
+html[dir=ltr] .clearAll {
+  margin-right: 0;
+}
+html[dir=ltr] .clearAll {
+  margin-left: auto;
+}
+
+html[dir=ltr] .label {
+  margin-left: 8px;
+}
+html[dir=ltr] .pill {
+  padding-right: 8px;
+}
+html[dir=ltr] .icon {
+  margin-left: 10px;
+}
+
+.pill {
+  background: "[theme:neutralLighter, default:#f3f2f1]";
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  margin: 0 4px;
+  cursor: pointer;
+  z-index: 2;
+  color: inherit;
+}
+
+.pillText {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 2px;
+}
+
+.icon {
+  font-size: 12px;
+}
+
+.overflow {
+  padding: 2px 8px;
+}
+.overflow .pillGroup {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.overflow .pill {
+  margin: 6px 0;
+}
+
+.clearAll {
+  background: 0 0;
+  border: 1px solid "[theme:neutralSecondary, default:#605e5c]";
+  height: 22px;
+}

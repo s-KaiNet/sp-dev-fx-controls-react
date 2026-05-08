@@ -1,0 +1,387 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+.richtext {
+  color: inherit;
+}
+
+.insertLinkDialog :global .ms-Dialog-main {
+  max-width: 540px;
+  width: 540px;
+}
+.insertLinkDialog .actions {
+  position: relative;
+  width: 100%;
+  min-height: 24px;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  font-size: 0px;
+}
+.insertLinkDialog .actions .actionsRight {
+  text-align: right;
+  margin-right: -4px;
+  font-size: 0px;
+}
+.insertLinkDialog .actions .actionsRight .action {
+  margin-top: 0px;
+  margin-right: 4px;
+  margin-bottom: 0px;
+  margin-left: 4px;
+}
+.insertLinkDialog .actions .actionsRight .unlinkButton {
+  margin-top: 4px;
+  font-size: 14px;
+  float: left;
+}
+
+.headerDropDown {
+  width: 160px;
+}
+
+.toolbarDropDown {
+  height: 34px;
+}
+
+.toolbarDropDownTitleIcon {
+  margin-top: -2px;
+  margin-right: 0px;
+}
+
+.toolbarDropDownIcon {
+  margin-top: -2px;
+  margin-right: 0px;
+  margin-left: -4px;
+}
+
+.toolbarDropDownOption.toolbarButtonH2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.toolbarDropDownOption.toolbarButtonH3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.toolbarDropDownOption.toolbarButtonH4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.toolbarDropDownOption.toolbarButtonBlockQuote {
+  font-size: 16px;
+  font-style: italic;
+}
+.toolbarDropDownOption.toolbarButtonNormal {
+  font-size: 16px;
+}
+
+.toolbarSubmenuCaret {
+  display: inline-block;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  speak: none;
+  top: 50%;
+  color: "[theme:neutralLighterAlt, default:#faf9f8]";
+}
+
+.toolbarSubmenuDisplayButton {
+  width: 100%;
+}
+
+:global .pnp-richtext-quill-container .ql-toolbar {
+  background-color: transparent;
+  color: "[theme:neutralLighterAlt, default:#faf9f8]";
+  border: none;
+  display: none;
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-TooltipHost {
+  display: inline-block !important;
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-Dropdown-container {
+  display: inline-block !important;
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-Button {
+  background-color: "[theme:neutralPrimary, default:#323130]";
+  color: "[theme:neutralLighterAlt, default:#faf9f8]" !important;
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-Button:hover {
+  background-color: "[theme:neutralTertiary, default:#a19f9d]";
+  color: "[theme:neutralLighterAlt, default:#faf9f8]";
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-Button:focus {
+  border: 1px solid "[theme:neutralLighterAlt, default:#faf9f8]";
+  outline: 0;
+  color: "[theme:neutralLighterAlt, default:#faf9f8]";
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-Button:active {
+  color: "[theme:neutralLighterAlt, default:#faf9f8]";
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-Button.is-checked {
+  background-color: "[theme:themePrimary, default:#0078d4]" !important;
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-Dropdown-title {
+  background-color: "[theme:neutralPrimary, default:#323130]";
+  color: "[theme:neutralLighterAlt, default:#faf9f8]" !important;
+  border: none;
+  min-height: 34px;
+  padding-bottom: 0px;
+  padding-left: 9px;
+  padding-right: 20px;
+  padding-top: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-property: background-color, color;
+  border-radius: 0;
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-Dropdown-title:hover {
+  background-color: "[theme:neutralTertiary, default:#a19f9d]";
+  color: "[theme:neutralLighterAlt, default:#faf9f8]";
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-Dropdown-title:focus {
+  border: 1px solid "[theme:neutralLighterAlt, default:#faf9f8]";
+  outline: 0;
+  color: "[theme:neutralLighterAlt, default:#faf9f8]";
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-Dropdown-title:active {
+  color: "[theme:neutralLighterAlt, default:#faf9f8]";
+}
+:global .pnp-richtext-quill-container .ql-toolbar .ms-Dropdown-caretDownWrapper {
+  right: 4px;
+  margin-top: -1px;
+}
+:global .pnp-richtext-quill-container .ql-snow.ql-toolbar button,
+:global .pnp-richtext-quill-container .ql-snow .ql-toolbar button {
+  background-color: "[theme:neutralPrimary, default:#323130]";
+  color: "[theme:neutralLighterAlt, default:#faf9f8]";
+  font-size: 16px;
+  min-width: 34px;
+  height: 34px;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 0;
+}
+:global .pnp-richtext-quill-container .ql-toolbar.ql-snow {
+  padding: 0px;
+  font-family: "Segoe UI Web (West European)", Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  border: none;
+  margin-bottom: 2px;
+  z-index: 3;
+  -webkit-animation-name: ms-fadeIn, ms-slideUpIn10;
+  animation-name: ms-fadeIn, ms-slideUpIn10;
+  -webkit-animation-duration: 167ms;
+  animation-duration: 167ms;
+  -webkit-animation-timing-function: cubic-bezier(0.1, 0.25, 0.75, 0.9);
+  animation-timing-function: cubic-bezier(0.1, 0.25, 0.75, 0.9);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: all 367ms cubic-bezier(0.1, 0.9, 0.2, 1);
+  transition: all 367ms cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+:global .pnp-richtext-quill-container .ql-snow.ql-toolbar:after,
+:global .pnp-richtext-quill-container .ql-snow .ql-toolbar:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+:global .pnp-richtext-quill-container .ql-container.ql-snow {
+  border: none;
+}
+:global .pnp-richtext-quill-container .ql-active .ql-editor:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: "[theme:neutralTertiary, default:#a19f9d]";
+}
+:global .pnp-richtext-quill-container .ql-active .ql-editor:focus,
+:global .pnp-richtext-quill-container .ql-active .ql-editor:active,
+:global .pnp-richtext-quill-container .ql-active .ql-editor:active:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: "[theme:themePrimary, default:#0078d4]";
+}
+:global .pnp-richtext-quill-container .ql-active .ql-toolbar {
+  display: inline-flex;
+  position: absolute;
+  top: -28px;
+  opacity: 1;
+  height: 34px;
+  -webkit-box-shadow: 0 0 5px 0 #c8c8c8;
+  box-shadow: 0px 0px 5px 0px #c8c8c8;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor, :global .pnp-richtext-quill-container .ql-editor {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  min-height: 68px;
+  font-family: "Segoe UI Web (West European)", Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 18px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor h2, :global .pnp-richtext-quill-container .ql-editor h2 {
+  font-weight: 600 !important;
+  font-size: 28px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor h3, :global .pnp-richtext-quill-container .ql-editor h3 {
+  font-size: 24px;
+  font-weight: 600 !important;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor h4, :global .pnp-richtext-quill-container .ql-editor h4 {
+  font-size: 20px;
+  font-weight: 600 !important;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor blockquote,
+:global .pnp-richtext-quill-container .ql-snow .ql-editor div,
+:global .pnp-richtext-quill-container .ql-snow .ql-editor h2,
+:global .pnp-richtext-quill-container .ql-snow .ql-editor h3,
+:global .pnp-richtext-quill-container .ql-snow .ql-editor h4,
+:global .pnp-richtext-quill-container .ql-snow .ql-editor ol,
+:global .pnp-richtext-quill-container .ql-snow .ql-editor p,
+:global .pnp-richtext-quill-container .ql-snow .ql-editor ul, :global .pnp-richtext-quill-container .ql-editor blockquote,
+:global .pnp-richtext-quill-container .ql-editor div,
+:global .pnp-richtext-quill-container .ql-editor h2,
+:global .pnp-richtext-quill-container .ql-editor h3,
+:global .pnp-richtext-quill-container .ql-editor h4,
+:global .pnp-richtext-quill-container .ql-editor ol,
+:global .pnp-richtext-quill-container .ql-editor p,
+:global .pnp-richtext-quill-container .ql-editor ul {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3;
+  word-wrap: break-word;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor blockquote, :global .pnp-richtext-quill-container .ql-editor blockquote {
+  border-bottom-color: "[theme:neutralLighter, default:#f3f2f1]";
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-style: none;
+  border-left-width: 0;
+  border-left-color: transparent;
+  border-right-style: none;
+  border-right-width: 0;
+  border-right-color: transparent;
+  border-top-color: "[theme:neutralLighter, default:#f3f2f1]";
+  border-top-style: solid;
+  border-top-width: 1px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 28px;
+  padding-bottom: 32px;
+  margin-top: 28px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+  text-align: center;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-xsmall, :global .pnp-richtext-quill-container .ql-editor .ql-size-xsmall {
+  font-size: 10px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-small, :global .pnp-richtext-quill-container .ql-editor .ql-size-small {
+  font-size: 12px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-medium, :global .pnp-richtext-quill-container .ql-editor .ql-size-medium {
+  font-size: 14px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-mediumplus, :global .pnp-richtext-quill-container .ql-editor .ql-size-mediumplus {
+  font-size: 16px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-large, :global .pnp-richtext-quill-container .ql-editor .ql-size-large {
+  font-size: 18px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-xlarge, :global .pnp-richtext-quill-container .ql-editor .ql-size-xlarge {
+  font-size: 20px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-xlargeplus, :global .pnp-richtext-quill-container .ql-editor .ql-size-xlargeplus {
+  font-size: 24px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-xxlarge, :global .pnp-richtext-quill-container .ql-editor .ql-size-xxlarge {
+  font-size: 28px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-xxxlarge, :global .pnp-richtext-quill-container .ql-editor .ql-size-xxxlarge {
+  font-size: 32px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-xxlargeplus, :global .pnp-richtext-quill-container .ql-editor .ql-size-xxlargeplus {
+  font-size: 36px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-super, :global .pnp-richtext-quill-container .ql-editor .ql-size-super {
+  font-size: 42px;
+}
+:global .pnp-richtext-quill-container .ql-snow .ql-editor .ql-size-superlarge, :global .pnp-richtext-quill-container .ql-editor .ql-size-superlarge {
+  font-size: 68px;
+}
+@media screen and (min-width: 1024px) {
+  :global .pnp-richtext-quill-container .ql-editor div,
+  :global .pnp-richtext-quill-container .ql-editor ol,
+  :global .pnp-richtext-quill-container .ql-editor p,
+  :global .pnp-richtext-quill-container .ql-editor ul {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+}
+:global .pnp-richtext-quill-container .ql-active .ql-editor {
+  color: inherit;
+}
+:global .pnp-richtext-quill-container .ql-tooltip {
+  display: none !important;
+}
+:global .pnp-richtext-quill-container .ql-editor.ql-blank::before {
+  font-style: normal;
+  color: "[theme:neutralTertiary, default:#a19f9d]";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+:global .pnp-richtext-quill-container .quill .ql-editor {
+  border-width: 1px;
+  border-style: solid;
+  border-color: "[theme:neutralTertiary, default:#a19f9d]";
+}
+:global .pnp-richtext-quill-container .quill .ql-editor:hover {
+  border-color: "[theme:neutralDark, default:#201f1e]";
+}
+:global .pnp-richtext-quill-container .quill .ql-editor:active::after, :global .pnp-richtext-quill-container .quill .ql-editor:active:focus::after, :global .pnp-richtext-quill-container .quill .ql-editor:active:hover::after, :global .pnp-richtext-quill-container .quill .ql-editor:focus::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  border-style: solid;
+  border-width: 2px;
+  inset: -1px;
+  border-color: "[theme:themePrimary, default:#0078d4]";
+  border-radius: 2px;
+}
+:global .pnp-richtext-quill-container .ql-editor a {
+  color: "[theme:themePrimary, default: #0078d4]";
+}
+:global .pnp-richtext-quill-container .ql-editor a:hover {
+  color: "[theme:themeDarker, default: #004578]";
+}
+:global .pnp-richtext-quill-container .ql-editor ol li:not(.ql-direction-rtl),
+:global .pnp-richtext-quill-container .ql-editor ul li:not(.ql-direction-rtl) {
+  padding-left: 0;
+}
+:global .pnp-richtext-quill-container div#DropDownStyles-list .ms-Dropdown-item, :global .pnp-richtext-quill-container div#DropDownAlign-list .ms-Dropdown-item, :global .pnp-richtext-quill-container div#DropDownLists-list .ms-Dropdown-item {
+  background-color: "[theme:neutralPrimary, default:#323130]" !important;
+  color: "[theme:neutralLighterAlt, default:#faf9f8]" !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-property: background-color, color;
+}
+:global .pnp-richtext-quill-container div#DropDownStyles-list .ms-Dropdown-item:hover, :global .pnp-richtext-quill-container div#DropDownAlign-list .ms-Dropdown-item:hover, :global .pnp-richtext-quill-container div#DropDownLists-list .ms-Dropdown-item:hover {
+  background-color: "[theme:neutralTertiary, default:#a19f9d]" !important;
+  color: "[theme:neutralLighterAlt, default:#faf9f8]" !important;
+  cursor: pointer;
+}
+:global .pnp-richtext-quill-container div#DropDownStyles-list .ms-Dropdown-item.is-selected,
+:global .pnp-richtext-quill-container div#DropDownStyles-list .ms-Dropdown-item.is-selected:hover, :global .pnp-richtext-quill-container div#DropDownAlign-list .ms-Dropdown-item.is-selected,
+:global .pnp-richtext-quill-container div#DropDownAlign-list .ms-Dropdown-item.is-selected:hover, :global .pnp-richtext-quill-container div#DropDownLists-list .ms-Dropdown-item.is-selected,
+:global .pnp-richtext-quill-container div#DropDownLists-list .ms-Dropdown-item.is-selected:hover {
+  background-color: "[theme:themePrimary, default:#0078d4]" !important;
+  color: "[theme:neutralLighterAlt, default:#faf9f8]" !important;
+}

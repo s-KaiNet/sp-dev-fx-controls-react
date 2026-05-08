@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ITermInfo, ITermStoreInfo } from '@pnp/sp/taxonomy';
 import { IStyle, ITheme } from '@fluentui/react/lib/Styling';
 import { IStyleFunctionOrObject } from '@fluentui/react/lib/Utilities';

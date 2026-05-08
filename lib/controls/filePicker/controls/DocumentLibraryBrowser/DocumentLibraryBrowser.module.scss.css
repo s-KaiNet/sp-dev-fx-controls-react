@@ -1,0 +1,60 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+/** TILES **/
+.documentLibraryBrowserContainer {
+  padding: 0;
+}
+
+.filePickerFolderCardTile {
+  width: 10vw;
+  margin: 1vh 0;
+  text-align: center;
+  outline: none;
+}
+[dir=ltr] .filePickerFolderCardTile {
+  float: left;
+}
+[dir=rtl] .filePickerFolderCardTile {
+  float: right;
+}
+.filePickerFolderCardTile:hover {
+  background-color: #f3f2f1;
+  border-radius: 5px;
+}
+.filePickerFolderCardTile:hover .filePickerFolderCardTitle {
+  text-decoration: underline;
+}
+.filePickerFolderCardTile .filePickerFolderCardImage {
+  height: 100%;
+  cursor: pointer;
+  margin: 1vw 0 0;
+}
+.filePickerFolderCardTile .filePickerFolderCardImage .filePickerFolderCoverBack {
+  display: block;
+  position: absolute;
+}
+.filePickerFolderCardTile .filePickerFolderCardImage .filePickerFolderCoverFront {
+  display: block;
+}
+.filePickerFolderCardTile .filePickerFolderCardImage .filePickerFolderCoverBack,
+.filePickerFolderCardTile .filePickerFolderCardImage .filePickerFolderCoverFront {
+  margin: 0 1vw;
+  width: 8vw;
+}
+.filePickerFolderCardTile .filePickerFolderCardImage .filePickerFolderCoverBack img,
+.filePickerFolderCardTile .filePickerFolderCardImage .filePickerFolderCoverFront img {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.filePickerFolderCardTile .filePickerFolderCardTitle {
+  cursor: pointer;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 1vh 0.5vw;
+  text-align: center;
+}

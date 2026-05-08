@@ -37,6 +37,23 @@ export declare class ListItemAttachments extends React.Component<IListItemAttach
      */
     private onConfirmedDeleteAttachment;
     /**
+     * Get file extension from filename
+     * @param fileName - The file name to extract extension from
+     * @returns The file extension (without the dot) or empty string if no extension
+     */
+    private getFileExtension;
+    /**
+     * Renders attachments in tile/thumbnail mode using DocumentCard components
+     * @returns JSX element containing attachment tiles
+     */
+    private renderTiles;
+    /**
+     * Renders attachments in list mode using DetailsList component
+     * Supports both normal and compact display modes
+     * @returns JSX element containing attachment list
+     */
+    private renderDetailsList;
+    /**
      * Default React render method
      */
     render(): React.ReactElement<IListItemAttachmentsProps>;

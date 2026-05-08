@@ -1,0 +1,38 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.relative, .fieldRendererText, .ellipsis {
+  position: relative;
+}
+
+.fabricIcon {
+  display: inline-block;
+  font-family: "FabricMDL2Icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+}
+
+.fieldRendererText {
+  white-space: normal;
+  overflow: hidden;
+  max-height: 7em;
+}
+.fieldRendererText.isTruncated {
+  height: 98px;
+  display: inline-block;
+  overflow: hidden;
+}
+.fieldRendererText.isTruncated .truncate {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 4em;
+}

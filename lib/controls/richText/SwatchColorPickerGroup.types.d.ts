@@ -1,7 +1,7 @@
 export interface ISwatchColorPickerGroupProps {
     groupColors: ISwatchColor[];
     groupText: string;
-    onColorChanged: (string: any) => void;
+    onColorChanged: (color: string) => void;
     selectedColor?: string;
 }
 export interface ISwatchColorPickerGroupState {

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+html[dir=ltr] .termSuggestionContainer {
+  text-align: left;
+}
+html[dir=ltr] .termSynonymList {
+  padding-left: 0;
+}
+
+html[dir=rtl] .termSuggestionContainer {
+  text-align: right;
+}
+html[dir=rtl] .termSynonymList {
+  padding-right: 0;
+}
+
+.termSuggestionContainer {
+  padding-top: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 7px;
+}
+.termSuggestionContainer .termSuggestionPath,
+.termSuggestionContainer .termSynonymList {
+  font-size: 12px;
+  color: #666666;
+}
+.termSuggestionContainer .termSynonymList {
+  color: #605e5c;
+  font-size: var(--ms-fonts-medium-fontSize, 14px);
+  list-style: none;
+  margin-block-start: 2px;
+  margin-top: 2px;
+}
+.termSuggestionContainer .termSynonymList > li::before {
+  content: "•";
+  font-size: 11px;
+  padding-left: 4px;
+}
+.termSuggestionContainer .termSynonymList > li > span.synonymPrefix {
+  font-weight: 600;
+}

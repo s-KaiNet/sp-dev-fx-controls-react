@@ -1,0 +1,65 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.relative, .signalField, .ellipsis {
+  position: relative;
+}
+
+.fabricIcon {
+  display: inline-block;
+  font-family: "FabricMDL2Icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+}
+
+.signalField {
+  display: inline-flex;
+  max-width: 100%;
+  flex-direction: row nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  vertical-align: top;
+}
+.signalField .signal {
+  display: inline-block;
+  margin: 0 4px;
+  transition: color 0.2s linear;
+}
+html[dir=ltr] .signalField .signal:first-child {
+  margin-left: 0px;
+}
+.signalField .newItem {
+  width: 0;
+  height: 1em;
+  position: relative;
+  line-height: 1em;
+  color: #da3b01;
+}
+html[dir=ltr] .signalField .newItem {
+  margin-right: 0px;
+}
+.signalField .newItem .newIcon {
+  position: absolute;
+  bottom: 100%;
+  font-size: 0.66em;
+  margin-bottom: -0.75em;
+}
+html[dir=ltr] .signalField .newItem .newIcon {
+  right: -1px;
+}
+.signalField .signalFieldValue {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+}
+.signalField .signalFieldValue .value {
+  font-size: 14px !important;
+}

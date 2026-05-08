@@ -1,0 +1,28 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+.animatedDialogTitleContainer {
+  text-align: center;
+}
+.animatedDialogTitleContainer i {
+  font-size: 52px;
+  color: "[theme:themePrimary, default:#0078d7]";
+}
+.animatedDialogTitleContainer span {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 0.4em;
+}
+
+.animatedDialogFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25em;
+}
+.animatedDialogFooter button {
+  min-width: 100px;
+  margin: 0px 10px;
+}
+.animatedDialogFooter .loader {
+  margin-top: 15px;
+}

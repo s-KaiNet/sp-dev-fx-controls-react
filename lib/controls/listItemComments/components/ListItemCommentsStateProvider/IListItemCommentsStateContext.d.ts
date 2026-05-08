@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { EListItemCommentsStateTypes } from "./EListItemCommentsStateTypes";
 import { IListItemCommentsState } from "./IListItemCommentsState";
 export interface IListItemCommentsStateContext {

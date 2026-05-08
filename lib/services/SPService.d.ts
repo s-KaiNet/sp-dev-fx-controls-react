@@ -47,8 +47,9 @@ export default class SPService implements ISPService {
      * @param listId
      * @param itemId
      * @param webUrl
+     * @returns Updated list item with new ETag
      */
-    deleteAttachment(fileName: string, listId: string, itemId: number, webUrl?: string): Promise<void>;
+    deleteAttachment(fileName: string, listId: string, itemId: number, webUrl?: string): Promise<any>;
     /**
      * Add attachment
      *
@@ -57,8 +58,9 @@ export default class SPService implements ISPService {
      * @param fileName
      * @param file
      * @param webUrl
+     * @returns Updated list item with new ETag
      */
-    addAttachment(listId: string, itemId: number, fileName: string, file: File, webUrl?: string): Promise<void>;
+    addAttachment(listId: string, itemId: number, fileName: string, file: File, webUrl?: string): Promise<any>;
     /**
      * Get attachement for list item
      *

@@ -145,6 +145,10 @@ export interface IDynamicFormProps {
      * CSS Class name to add to the root element.
      */
     className?: string;
+    /**
+     * Number of items to display in the lookup fields of the form.
+     */
+    itemsQueryCountLimit?: number;
 }
 export type IDynamicFormStyleProps = Pick<IDynamicFormProps, 'className'> & {};
 export interface IDynamicFormSubComponentStyles {

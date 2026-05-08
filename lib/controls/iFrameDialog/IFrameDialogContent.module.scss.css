@@ -1,0 +1,11 @@
+.iFrameDialog {
+  border: none;
+  height: 100%;
+}
+.iFrameDialog .spinnerContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -14px;
+  margin-top: -14px;
+}
