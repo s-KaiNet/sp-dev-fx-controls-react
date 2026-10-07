@@ -81,6 +81,7 @@ export default class ControlsTest extends React.Component<IControlsTestProps, IC
      * @param items
      */
     private _getPeoplePickerItems;
+    private defaultUsers;
     /**
      * Selected item from the list data picker
      */

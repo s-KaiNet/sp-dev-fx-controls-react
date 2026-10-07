@@ -39,7 +39,7 @@ export default class SPPeopleSearchService {
     /**
      * Search person by its email or login name
      */
-    searchPersonByEmailOrLogin(email: string, principalTypes: PrincipalType[], siteUrl?: string, groupId?: number | string | (string | number)[], ensureUser?: boolean, allowUnvalidated?: boolean): Promise<IPeoplePickerUserItem>;
+    searchPersonByEmailOrLogin(email: string, principalTypes: PrincipalType[], siteUrl?: string, groupId?: number | string | (string | number)[], ensureUser?: boolean, allowUnvalidated?: boolean, maximumSuggestions?: number): Promise<IPeoplePickerUserItem>;
     /**
      * Search All Users from the SharePoint People database
      */

@@ -70,4 +70,5 @@ export declare const toRelativeUrl: (absoluteUrl: string) => string;
 export declare function sortString(a: string, b: string, isDesc: boolean): number;
 export declare function sortDate(a: string | number | Date, b: string | number | Date, isDesc: boolean): number;
 export declare function dateToNumber(date: string | number | Date): number;
+export declare function isValidISODateString(dateString: string): boolean;
 //# sourceMappingURL=GeneralHelper.d.ts.map

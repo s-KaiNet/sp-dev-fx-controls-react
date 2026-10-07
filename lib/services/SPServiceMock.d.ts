@@ -1,4 +1,4 @@
-import { ISPService, ILibsOptions, IFieldsOptions, IContentTypesOptions, IRenderListDataAsStreamClientFormResult } from "./ISPService";
+import { ISPService, ILibsOptions, IFieldsOptions, IContentTypesOptions, IRenderListDataAsStreamClientFormResult, IRenderExtendedListFormDataResultNotesField, IRenderExtendedListFormDataResultStatic } from "./ISPService";
 import { ISPContentType, ISPField, ISPLists, ISPViews } from "../common/SPEntities";
 import { orderBy } from '../controls/viewPicker/IViewPicker';
 export default class SPServiceMock implements ISPService {
@@ -7,6 +7,7 @@ export default class SPServiceMock implements ISPService {
     constructor(includeDelay?: boolean, delayTimeout?: number);
     getListFormRenderInfo(listId: string): Promise<IRenderListDataAsStreamClientFormResult>;
     getAdditionalListFormFieldInfo(listId: string, webUrl?: string): Promise<ISPField[]>;
+    getExtendedListFormData(listId: string, itemId: number, webUrl?: string): Promise<IRenderExtendedListFormDataResultStatic & IRenderExtendedListFormDataResultNotesField>;
     getFields(options?: IFieldsOptions): Promise<ISPField[]>;
     getContentTypes(options?: IContentTypesOptions): Promise<ISPContentType[]>;
     getListItems(filterText: string, listId: string, internalColumnName: string, field: ISPField, keyInternalColumnName?: string, webUrl?: string): Promise<any[]>;

@@ -1,6 +1,6 @@
 import { BaseComponentContext } from '@microsoft/sp-component-base';
 import { ISPContentType, ISPField, ISPLists, IUploadImageResult, ISPViews } from "../common/SPEntities";
-import { IContentTypesOptions, IFieldsOptions, ILibsOptions, IRenderListDataAsStreamClientFormResult, ISPService } from "./ISPService";
+import { IContentTypesOptions, IFieldsOptions, ILibsOptions, IRenderExtendedListFormDataResultStatic, IRenderExtendedListFormDataResultNotesField, IRenderListDataAsStreamClientFormResult, ISPService } from "./ISPService";
 import { orderBy } from '../controls/viewPicker/IViewPicker';
 export default class SPService implements ISPService {
     private _context;
@@ -110,6 +110,14 @@ export default class SPService implements ISPService {
      * Captures information not returned by RenderListDataAsStream with RenderOptions = 64
      */
     getAdditionalListFormFieldInfo(listId: string, webUrl?: string): Promise<ISPField[]>;
+    /**
+     * Retrieves extended list form data for a list item, including append-only note history.
+     * Calls RenderExtendedListFormData with options=30 to include version history.
+     * @param listId - The GUID of the SharePoint list
+     * @param itemId - The ID of the list item
+     * @param webUrl - Optional web URL; defaults to the current web
+     */
+    getExtendedListFormData(listId: string, itemId: number, webUrl?: string): Promise<IRenderExtendedListFormDataResultStatic & IRenderExtendedListFormDataResultNotesField>;
     private _filterListItemsFieldValuesAsText;
     /**
      * Gets the collection of view for a selected list

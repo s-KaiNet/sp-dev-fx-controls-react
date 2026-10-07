@@ -227,6 +227,24 @@ export interface IRenderListDataAsStreamClientFormResult {
     EnableAttachments: "true" | "false";
     FormRenderModes: IClientFormRenderModeByContentType;
 }
+export interface IRenderExtendedListFormDataResultStatic {
+    ListData: Record<string, unknown>;
+    ListSchema: {
+        New: IClientFormInfoByContentType;
+        Edit: IClientFormInfoByContentType;
+    };
+}
+export interface IRenderExtendedListFormDataResultNotesField {
+    [fieldName: string]: IAppendOnlyNoteHistoryEntry[];
+}
+export interface IAppendOnlyNoteHistoryEntry {
+    value: string;
+    versionId: number;
+    createdEmail: string;
+    createdTitle: string;
+    createdId: number;
+    createdTime: string;
+}
 export interface ISPService {
     /**
      * Get the lists from SharePoint
@@ -254,6 +272,14 @@ export interface ISPService {
      * Captures information not returned by RenderListDataAsStream with RenderOptions = 64
      */
     getAdditionalListFormFieldInfo(listId: string, webUrl?: string): Promise<ISPField[]>;
+    /**
+     * Retrieves extended list form data for a list item, including append-only note history.
+     * Calls RenderExtendedListFormData with options=30 to include version history.
+     * @param listId - The GUID of the SharePoint list
+     * @param itemId - The ID of the list item
+     * @param webUrl - Optional web URL; defaults to the current web
+     */
+    getExtendedListFormData(listId: string, itemId: number, webUrl?: string): Promise<IRenderExtendedListFormDataResultStatic & IRenderExtendedListFormDataResultNotesField>;
     /**
      *  Get the views from lists or libraries
      * @params listId, orderBy, onViewsRetrived

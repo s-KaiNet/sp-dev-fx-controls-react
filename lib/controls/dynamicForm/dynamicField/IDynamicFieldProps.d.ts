@@ -3,6 +3,7 @@ import { IDropdownOption } from "@fluentui/react/lib/Dropdown";
 import { IStyle, IStyleFunctionOrObject, Theme } from '@fluentui/react';
 import { IFilePickerResult } from '../../filePicker';
 import { ChoiceFieldFormatType } from '@pnp/sp/fields';
+import { IAppendOnlyNoteHistoryEntry } from '../../../services/ISPService';
 export type DateFormat = 'DateTime' | 'DateOnly';
 export type FieldChangeAdditionalData = IFilePickerResult;
 export interface IDynamicFieldProps {
@@ -55,6 +56,7 @@ export interface IDynamicFieldProps {
     useModernTaxonomyPickerControl?: boolean;
     options?: IDropdownOption[];
     isRichText?: boolean;
+    isAppendOnly?: boolean;
     dateFormat?: DateFormat;
     firstDayOfWeek: number;
     principalType?: string;
@@ -66,6 +68,7 @@ export interface IDynamicFieldProps {
     customIcon?: string;
     orderBy?: string;
     choiceType?: ChoiceFieldFormatType;
+    notesAppendOnlyHistory?: IAppendOnlyNoteHistoryEntry[];
     /** Used for customize component styling */
     styles?: IStyleFunctionOrObject<IDynamicFieldStyleProps, IDynamicFieldStyles>;
 }
@@ -89,5 +92,9 @@ export interface IDynamicFieldStyles {
     thumbnailFieldButtons: IStyle;
     selectedFileContainer: IStyle;
     fieldRequired: IStyle;
+    appendOnlyHistoryContainer: IStyle;
+    appendOnlyHistoryEntry: IStyle;
+    appendOnlyHistoryAuthor: IStyle;
+    appendOnlyHistoryDate: IStyle;
 }
 //# sourceMappingURL=IDynamicFieldProps.d.ts.map
